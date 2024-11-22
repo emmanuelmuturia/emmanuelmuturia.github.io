@@ -1,0 +1,42 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif; /* A clean and modern font */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); /* Cool gradient */
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Container for content */
+  .container {
+    text-align: center;
+  }
+  
+  /* Title styles */
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+  }
+  
+  /* Google Play button styles */
+  .play-button img {
+    max-width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .play-button img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
