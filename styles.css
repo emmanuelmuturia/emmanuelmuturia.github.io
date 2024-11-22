@@ -1,42 +1,53 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif; /* A clean and modern font */
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); /* Cool gradient */
-    color: #fff;
-    text-align: center;
-  }
-  
-  /* Container for content */
-  .container {
-    text-align: center;
-  }
-  
-  /* Title styles */
-  .title {
-    font-size: 3rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    margin-bottom: 20px;
-  }
-  
-  /* Google Play button styles */
-  .play-button img {
-    max-width: 200px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .play-button img:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  }
-  
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  /* Gradient background matching logo colors */
+  background: linear-gradient(135deg, #1b3c52, #1f5870, #234f5b); 
+  background-size: 400% 400%;
+  animation: gradient-animation 15s ease infinite; /* Subtle gradient animation */
+
+  color: #ffffff; /* Text color for good contrast */
+}
+
+/* Cool font styling for the "Get the app" text */
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Verdana', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Animation for a dynamic gradient effect */
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Button styling for the Google Play button */
+button {
+  background-color: #4CAF50; /* Green for a nice pop of color */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
