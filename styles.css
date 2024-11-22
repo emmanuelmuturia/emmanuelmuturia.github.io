@@ -57,3 +57,9 @@ button:hover {
   font-weight: 400;
   font-style: normal;
 }
+
+.trademark {
+  font-family: 'Permanent Marker', sans-serif; /* Force the desired font */
+  font-size: inherit; /* Matches the parent text size */
+  font-weight: inherit; /* Matches the parent font weight */
+}
