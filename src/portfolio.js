@@ -20,10 +20,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Emmanuel Muturia",
+  title: "Hi, my name is Emmanuel Muturia",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "I practise Cyber Security, specialising in Mobile..."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -33,13 +33,10 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/emmanuelmuturia",
+  twitter: "https://x.com/emmanuelmuturia",
+  linkedin: "https://www.linkedin.com/in/emmanuelmuturia",
+  medium: "https://medium.com/@emmanuelmuturia",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -126,23 +123,11 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Strathmore University",
+      logo: require("./assets/images/strathmoreUniversityLogo.png"),
+      subHeader: "Bachelor of Science [BSc.] in Telecommunications",
+      desc: "I took up Leadership roles in the following Clubs & Societies:",
+      descBullets: ["Google Developer Student Clubs [GDSC]", "Millenium Campus Network [MCN]", "Strathmore Business Club [SBC]"]
     }
   ]
 };
@@ -150,7 +135,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -212,29 +197,29 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Tech Communities",
+  subtitle: "Besides my Technical Skills, I also help organise these Tech communities:",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/android254.png"),
+      projectName: "Android254",
+      projectDesc: "Android254 brings together Android Engineers to learn more about Android, best practices and also hear talks from industry experts...",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Learn More",
+          url: "https://www.meetup.com/Android254"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/kotlinKenya.png"),
+      projectName: "Kotlin Kenya",
+      projectDesc: "Karibu Kotlin Kenya! We are a collective bunch of lovely people from all different backgrounds interested in this fun[ctional] language that has been taking the programming world by storm [well, at least in the JVM arena]...",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Learn More",
+          url: "https://www.meetup.com/KotlinKenya"
         }
       ]
     }
@@ -246,59 +231,81 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Here are the certifications that I have been awarded throughout my Career...",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title: "CCNA [Introduction To Networking]",
+      image: require("./assets/images/ccna.png"),
+      imageAlt: "CCNA [Introduction To Networking]",
       footerLink: [
         {
           name: "Certification",
           url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
         },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "CCNA [Routing & Switching]",
+      image: require("./assets/images/ccnaRS.png"),
+      imageAlt: "CCNA [Routing & Switching]",
       footerLink: [
         {
-          name: "View Google Assistant Action",
+          name: "Certification",
           url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "AWS Certified Cloud Practitioner",
+      image: require("./assets/images/awsCloudPractitioner.png"),
+      imageAlt: "AWS Certified Cloud Practitioner",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Certification",
+          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
         }
       ]
-    }
+    },
+
+    {
+      title: "HCIA Datacom",
+      image: require("./assets/images/hciaDatacom.png"),
+      imageAlt: "HCIA Datacom",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+        }
+      ]
+    },
+
+    {
+      title: "HCIA WLAN",
+      image: require("./assets/images/hciaWLAN.png"),
+      imageAlt: "HCIA WLAN",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+        }
+      ]
+    },
+
+    {
+      title: "Microsoft SC-900",
+      image: require("./assets/images/sc900.png"),
+      imageAlt: "Microsoft SC-900",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+        }
+      ]
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -330,18 +337,30 @@ const blogSection = {
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
+  title: "Talks",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "Here are a few presentations that I have given..."
   ),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
+      title: "Unlocking Passkeys in Android (feat. Credentials Manager)",
+      subtitle: "Android254 Monthly Meetup",
+      slides_url: "https://speakerdeck.com/emmanuelmuturia/unlocking-passkeys-in-android-feat-credentials-manager",
+      event_url: "https://www.meetup.com/android254"
+    },
+    {
+      title: "The 3 Musketeers of Android Security (feat. Africa's Talking)",
+      subtitle: "Africa's Talking Summit 2023",
+      slides_url: "https://speakerdeck.com/emmanuelmuturia/the-3-musketeers-of-android-security-feat-africas-talking",
+      event_url: "https://summit.africastalking.com/"
+    },
+    {
+      title: "How To Build Insecure Android Apps (feat. Sanitizers)",
+      subtitle: "DroidCon Kenya 2023",
+      slides_url: "https://speakerdeck.com/emmanuelmuturia/how-to-build-insecure-android-apps-feat-sanitizers",
+      event_url: "https://droidcon.co.ke/"
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -356,7 +375,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -371,7 +390,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Let us connect...",
   number: "+92-0000000000",
   email_address: "saadpasta70@gmail.com"
 };
@@ -379,11 +398,11 @@ const contactInfo = {
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
+  userName: "emmanuelmuturia", //Replace "twitter" with your twitter username without @
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
