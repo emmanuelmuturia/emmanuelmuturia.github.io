@@ -22,9 +22,7 @@ const illustration = {
 const greeting = {
   username: "Emmanuel Muturia",
   title: "Hi, my name is Emmanuel Muturia",
-  subTitle: emoji(
-    "I practise Cyber Security, specialising in Mobile..."
-  ),
+  subTitle: emoji("I practise Cyber Security, specialising in Mobile..."),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -127,7 +125,11 @@ const educationInfo = {
       logo: require("./assets/images/strathmoreUniversityLogo.png"),
       subHeader: "Bachelor of Science [BSc.] in Telecommunications",
       desc: "I took up Leadership roles in the following Clubs & Societies:",
-      descBullets: ["Google Developer Student Clubs [GDSC]", "Millenium Campus Network [MCN]", "Strathmore Business Club [SBC]"]
+      descBullets: [
+        "Google Developer Student Clubs [GDSC]",
+        "Millenium Campus Network [MCN]",
+        "Strathmore Business Club [SBC]"
+      ]
     }
   ]
 };
@@ -198,12 +200,14 @@ const openSource = {
 
 const bigProjects = {
   title: "Tech Communities",
-  subtitle: "Besides my Technical Skills, I also help organise these Tech communities:",
+  subtitle:
+    "Besides my Technical Skills, I also help organise these Tech communities:",
   projects: [
     {
       image: require("./assets/images/android254.png"),
       projectName: "Android254",
-      projectDesc: "Android254 brings together Android Engineers to learn more about Android, best practices and also hear talks from industry experts...",
+      projectDesc:
+        "Android254 brings together Android Engineers to learn more about Android, best practices and also hear talks from industry experts...",
       footerLink: [
         {
           name: "Learn More",
@@ -215,7 +219,8 @@ const bigProjects = {
     {
       image: require("./assets/images/kotlinKenya.png"),
       projectName: "Kotlin Kenya",
-      projectDesc: "Karibu Kotlin Kenya! We are a collective bunch of lovely people from all different backgrounds interested in this fun[ctional] language that has been taking the programming world by storm [well, at least in the JVM arena]...",
+      projectDesc:
+        "Karibu Kotlin Kenya! We are a collective bunch of lovely people from all different backgrounds interested in this fun[ctional] language that has been taking the programming world by storm [well, at least in the JVM arena]...",
       footerLink: [
         {
           name: "Learn More",
@@ -244,7 +249,7 @@ const achievementSection = {
         {
           name: "Certification",
           url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
+        }
       ]
     },
     {
@@ -305,7 +310,7 @@ const achievementSection = {
           url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
         }
       ]
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -338,29 +343,30 @@ const blogSection = {
 
 const talkSection = {
   title: "Talks",
-  subtitle: emoji(
-    "Here are a few presentations that I have given..."
-  ),
+  subtitle: emoji("Here are a few presentations that I have given..."),
 
   talks: [
     {
       title: "Unlocking Passkeys in Android (feat. Credentials Manager)",
       subtitle: "Android254 Monthly Meetup",
-      slides_url: "https://speakerdeck.com/emmanuelmuturia/unlocking-passkeys-in-android-feat-credentials-manager",
+      slides_url:
+        "https://speakerdeck.com/emmanuelmuturia/unlocking-passkeys-in-android-feat-credentials-manager",
       event_url: "https://www.meetup.com/android254"
     },
     {
       title: "The 3 Musketeers of Android Security (feat. Africa's Talking)",
       subtitle: "Africa's Talking Summit 2023",
-      slides_url: "https://speakerdeck.com/emmanuelmuturia/the-3-musketeers-of-android-security-feat-africas-talking",
+      slides_url:
+        "https://speakerdeck.com/emmanuelmuturia/the-3-musketeers-of-android-security-feat-africas-talking",
       event_url: "https://summit.africastalking.com/"
     },
     {
       title: "How To Build Insecure Android Apps (feat. Sanitizers)",
       subtitle: "DroidCon Kenya 2023",
-      slides_url: "https://speakerdeck.com/emmanuelmuturia/how-to-build-insecure-android-apps-feat-sanitizers",
+      slides_url:
+        "https://speakerdeck.com/emmanuelmuturia/how-to-build-insecure-android-apps-feat-sanitizers",
       event_url: "https://droidcon.co.ke/"
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -389,8 +395,7 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Let us connect...",
+  subtitle: "Let us connect...",
   number: "+92-0000000000",
   email_address: "saadpasta70@gmail.com"
 };
