@@ -377,6 +377,7 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact"),
+  email_address: "science@emmanuelmuturia.com"
 };
 
 // Twitter Section
