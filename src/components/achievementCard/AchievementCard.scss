@@ -75,3 +75,11 @@
 span.certificate-tag:hover {
   background: $buttonHover;
 }
+.clickable-card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.clickable-card:hover {
+  transform: scale(1.02);
+}

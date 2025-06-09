@@ -213,80 +213,47 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Certifications 🏆 "),
-  subtitle:
-    "Here are the certifications that I have been awarded throughout my Career...",
-
+  title: emoji("Certifications"),
   achievementsCards: [
     {
       title: "CCNA [Introduction To Networking]",
       image: require("./assets/images/ccna.png"),
       imageAlt: "CCNA [Introduction To Networking]",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        }
-      ]
+      url: ""
     },
     {
       title: "CCNA [Routing & Switching]",
       image: require("./assets/images/ccnaRS.png"),
       imageAlt: "CCNA [Routing & Switching]",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+      url: ""
     },
 
     {
       title: "AWS Certified Cloud Practitioner",
       image: require("./assets/images/awsCloudPractitioner.png"),
       imageAlt: "AWS Certified Cloud Practitioner",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+      url: ""
     },
 
     {
       title: "HCIA Datacom",
       image: require("./assets/images/hciaDatacom.png"),
       imageAlt: "HCIA Datacom",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+      url: ""
     },
 
     {
       title: "HCIA WLAN",
       image: require("./assets/images/hciaWLAN.png"),
       imageAlt: "HCIA WLAN",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+      url: ""
     },
 
     {
       title: "Microsoft SC-900",
       image: require("./assets/images/sc900.png"),
       imageAlt: "Microsoft SC-900",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+      url: "https://learn.microsoft.com/api/credentials/share/en-us/emmanuelmuturia/B8FCE3614A1AB26C?sharingId=7A0D56BE201DBB61"
     }
   ],
   display: true // Set false to hide this section, defaults to true
