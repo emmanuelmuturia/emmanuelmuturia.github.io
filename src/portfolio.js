@@ -44,16 +44,11 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "My Skills",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    "- Mobile App Development [Android]...",
+    "- Mobile Design [UI/UX]...",
+    "- Mobile Security [Mobile Apps]..."
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -61,55 +56,31 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Android",
+      fontAwesomeClassname: "fab fa-android"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
+      skillName: "AWS",
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-linux"
+    },
+    {
+      skillName: "Firebase",
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
     }
   ],
@@ -162,29 +133,34 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Android Engineering",
+      company: "DroidCon Kenya",
+      companylogo: require("./assets/images/droidcon_kenya.png"),
+      date: "June 2023 – Present",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Resolved a critical issue on the “Filter” button in the “Sessions” tab, enhancing Jetpack Compose UI stability and reducing app crashes leading to the release of the final product with over 100 downloads",
+        "Optimised Android SDK components by eliminating redundant String declarations and improving CI/CD processes",
+
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Android Development [Contract]",
+      company: "CIFOR-ICRAF",
+      companylogo: require("./assets/images/cifor_icraf.jpeg"),
+      date: "June 2024 – Sep 2024",
+      descBullets: [
+        "Improved the User Experience [UX] by testing the Regreening App and facilitating knowledge sharing in a team environment by participating in workshops that improved team productivity and alignment",
+        "Debugged and optimised RESTful API calls and leveraged Room [SQLite] for offline data storage, reducing data synchronisation time"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Network Operations Centre Engineering [Internship]",
+      company: "Kinde Engineering Works Ltd.",
+      companylogo: require("./assets/images/kinde.png"),
+      date: "Feb 2023 – April 2023",
+      descBullets: [
+        "Acknowledged assigned tickets on the Remedy BMC platform and reached out to the technicians assigned to the regions adjacent to the location of the Fibre faults"
+      ]
     }
   ]
 };
