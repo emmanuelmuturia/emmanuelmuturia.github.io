@@ -156,7 +156,7 @@ const workExperiences = {
     {
       role: "Network Operations Centre Engineering [Internship]",
       company: "Kinde Engineering Works Ltd.",
-      companylogo: require("./assets/images/kinde.png"),
+      companylogo: require("./assets/images/kinde_engineering_works.png"),
       date: "Feb 2023 – April 2023",
       descBullets: [
         "Acknowledged assigned tickets on the Remedy BMC platform and reached out to the technicians assigned to the regions adjacent to the location of the Fibre faults"
