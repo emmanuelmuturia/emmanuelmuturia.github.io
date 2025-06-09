@@ -316,6 +316,44 @@ const blogSection = {
   display: true // Set false to hide this section, defaults to true
 };
 
+// src/portfolio.js
+const labsSection = {
+  display: true,
+  displayLabs: "true",
+  title: "Labs",
+  labs: [
+    {
+      pdfUrl: "/pdfs/lab1.pdf",
+      title: "Lab #1 [Microsoft Identity and Access Management Solutions Lab]"
+    },
+    {
+      pdfUrl: "/pdfs/lab2.pdf",
+      title: "Lab #2 [Describe Capabilities of Microsoft Security Solutions]",
+    },
+    {
+      pdfUrl: "/pdfs/lab3.pdf",
+      title: "Lab #3 [Manage Microsoft Entra ID Identities]",
+    },
+    {
+      pdfUrl: "/pdfs/lab4.pdf",
+      title: "Lab #4 [Capabilities of Microsoft Compliance Solution]",
+    },
+    {
+      pdfUrl: "/pdfs/lab5.pdf",
+      title: "Lab #5 [Manage Subscriptions and RBAC]",
+    },
+    {
+      pdfUrl: "/pdfs/lab6.pdf",
+      title: "Lab #6 [Manage Governance via Azure Policy]",
+    },
+    {
+      pdfUrl: "/pdfs/lab7.pdf",
+      title: "Lab #7 [Manage Azure resources by using Azure Resource Manager Templates]",
+    },
+  ],
+};
+
+
 // Talks Sections
 
 const talkSection = {
@@ -399,6 +437,7 @@ export {
   bigProjects,
   achievementSection,
   blogSection,
+  labsSection,
   talkSection,
   podcastSection,
   contactInfo,
