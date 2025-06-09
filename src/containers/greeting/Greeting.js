@@ -53,15 +53,26 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )}
-          </div>
+  {/* Hide Lottie animation */}
+  <div style={{ display: "none" }}>
+    {illustration.animated ? (
+      <DisplayLottie animationData={landingPerson} />
+    ) : (
+      <img
+        alt="man sitting on table"
+        src={require("../../assets/images/manOnTable.svg")}
+      />
+    )}
+  </div>
+
+  {/* New image displayed instead of Lottie */}
+  <img
+    alt="Greeting Visual"
+    src={require("../../assets/images/profile_photo.png")}
+    className="greeting-replacement-image"
+  />
+</div>
+
         </div>
       </div>
     </Fade>

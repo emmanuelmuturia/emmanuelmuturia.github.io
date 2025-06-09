@@ -21,11 +21,12 @@ const illustration = {
 
 const greeting = {
   username: "Emmanuel Muturia",
-  title: "Hi, my name is Emmanuel Muturia",
+  title: "Hi, my name is Emmanuel Muturia...",
   subTitle: emoji("I practise Cyber Security, specialising in Mobile..."),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "", // Set to empty to hide the button
+  profileImage: require("./assets/images/profile_photo.png"),
+  displayGreeting: true, // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
