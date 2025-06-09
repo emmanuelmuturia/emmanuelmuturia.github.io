@@ -98,9 +98,9 @@ const educationInfo = {
       subHeader: "Bachelor of Science [BSc.] in Telecommunications",
       desc: "I took up Leadership roles in the following Clubs & Societies:",
       descBullets: [
-        "Google Developer Student Clubs [GDSC]",
-        "Millenium Campus Network [MCN]",
-        "Strathmore Business Club [SBC]"
+        "Google Developer Student Clubs [GDSC]...",
+        "Millenium Campus Network [MCN]...",
+        "Strathmore Business Club [SBC]..."
       ]
     }
   ]
