@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "./Labs.scss";
 import LabCard from "../../components/labCard/LabCard";
-import { labsSection } from "../../portfolio";
-import { Fade } from "react-reveal";
+import {labsSection} from "../../portfolio";
+import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Labs() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
 
   if (!labsSection.display) {
     return null;
@@ -35,7 +35,7 @@ export default function Labs() {
                 lab={{
                   pdfUrl: lab.pdfUrl,
                   title: lab.title,
-                  description: lab.description,
+                  description: lab.description
                 }}
               />
             ))}
