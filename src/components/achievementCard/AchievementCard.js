@@ -1,7 +1,7 @@
 import React from "react";
 import "./AchievementCard.scss";
 
-export default function AchievementCard({ cardInfo, isDark }) {
+export default function AchievementCard({cardInfo, isDark}) {
   function openUrlInNewTab(url, name) {
     if (!url) {
       console.log(`URL for ${name} not found`);
@@ -13,16 +13,18 @@ export default function AchievementCard({ cardInfo, isDark }) {
 
   return (
     <div
-      className={isDark ? "dark-mode certificate-card clickable-card" : "certificate-card clickable-card"}
+      className={
+        isDark
+          ? "dark-mode certificate-card clickable-card"
+          : "certificate-card clickable-card"
+      }
       onClick={() => {
-  if (!cardInfo.url) {
-    console.log(`URL for ${cardInfo.title} not found`);
-    return;
-  }
-  openUrlInNewTab(cardInfo.url, cardInfo.title);
-}}
-
-
+        if (!cardInfo.url) {
+          console.log(`URL for ${cardInfo.title} not found`);
+          return;
+        }
+        openUrlInNewTab(cardInfo.url, cardInfo.title);
+      }}
     >
       <div className="certificate-image-div">
         <img
