@@ -23,10 +23,9 @@ const greeting = {
   username: "Emmanuel Muturia",
   title: "Hi, my name is Emmanuel Muturia...",
   subTitle: emoji("I practise Cyber Security, specialising in Mobile..."),
-  resumeLink:
-    "", // Set to empty to hide the button
+  resumeLink: "", // Set to empty to hide the button
   profileImage: require("./assets/images/profile_photo.png"),
-  displayGreeting: true, // Set false to hide this section, defaults to true
+  displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
@@ -139,8 +138,7 @@ const workExperiences = {
       date: "June 2023 – Present",
       descBullets: [
         "Resolved a critical issue on the “Filter” button in the “Sessions” tab, enhancing Jetpack Compose UI stability and reducing app crashes leading to the release of the final product with over 100 downloads",
-        "Optimised Android SDK components by eliminating redundant String declarations and improving CI/CD processes",
-
+        "Optimised Android SDK components by eliminating redundant String declarations and improving CI/CD processes"
       ]
     },
     {
@@ -295,31 +293,31 @@ const labsSection = {
     },
     {
       pdfUrl: "/pdfs/lab2.pdf",
-      title: "Lab #2 [Describe Capabilities of Microsoft Security Solutions]",
+      title: "Lab #2 [Describe Capabilities of Microsoft Security Solutions]"
     },
     {
       pdfUrl: "/pdfs/lab3.pdf",
-      title: "Lab #3 [Manage Microsoft Entra ID Identities]",
+      title: "Lab #3 [Manage Microsoft Entra ID Identities]"
     },
     {
       pdfUrl: "/pdfs/lab4.pdf",
-      title: "Lab #4 [Capabilities of Microsoft Compliance Solution]",
+      title: "Lab #4 [Capabilities of Microsoft Compliance Solution]"
     },
     {
       pdfUrl: "/pdfs/lab5.pdf",
-      title: "Lab #5 [Manage Subscriptions and RBAC]",
+      title: "Lab #5 [Manage Subscriptions and RBAC]"
     },
     {
       pdfUrl: "/pdfs/lab6.pdf",
-      title: "Lab #6 [Manage Governance via Azure Policy]",
+      title: "Lab #6 [Manage Governance via Azure Policy]"
     },
     {
       pdfUrl: "/pdfs/lab7.pdf",
-      title: "Lab #7 [Manage Azure resources by using Azure Resource Manager Templates]",
-    },
-  ],
+      title:
+        "Lab #7 [Manage Azure resources by using Azure Resource Manager Templates]"
+    }
+  ]
 };
-
 
 // Talks Sections
 
