@@ -44,7 +44,7 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "My Skills",
+  title: "Skills",
   skills: [
     "- Mobile App Development [Android]...",
     "- Mobile Design [UI/UX]...",
@@ -60,6 +60,10 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-android"
     },
     {
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-linux"
+    },
+    {
       skillName: "Git",
       fontAwesomeClassname: "fab fa-git"
     },
@@ -68,20 +72,16 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "Linux",
-      fontAwesomeClassname: "fab fa-linux"
-    },
-    {
-      skillName: "Firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
       skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
       skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "Firebase",
+      fontAwesomeClassname: "fas fa-fire"
     }
   ],
   display: true // Set false to hide this section, defaults to true
