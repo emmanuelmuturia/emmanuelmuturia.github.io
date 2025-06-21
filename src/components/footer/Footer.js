@@ -10,9 +10,7 @@ export default function Footer() {
     <Fade bottom duration={1000} distance="5px">
       <div className="footer-div">
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          {
-            "© 2025 by Emmanuel Muturia™"
-          }
+          {"© 2025 by Emmanuel Muturia™"}
         </p>
       </div>
     </Fade>
