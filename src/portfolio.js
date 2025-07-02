@@ -22,7 +22,7 @@ const illustration = {
 const greeting = {
   username: "Emmanuel Muturia",
   title: "Hi, my name is Emmanuel Muturia...",
-  subTitle: emoji("I practise Cyber Security, specialising in Mobile..."),
+  subTitle: emoji("I help fight Crime on The Internet through my skills in Cyber Security as part of my journey in mastering DevSecOps..."),
   resumeLink: "", // Set to empty to hide the button
   profileImage: require("./assets/images/profile_photo.png"),
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -33,8 +33,8 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/emmanuelmuturia",
   twitter: "https://x.com/emmanuelmuturia",
-  linkedin: "https://www.linkedin.com/in/emmanuelmuturia",
   medium: "https://medium.com/@emmanuelmuturia",
+  linkedin: "https://www.linkedin.com/in/emmanuelmuturia",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
