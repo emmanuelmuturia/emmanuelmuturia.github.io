@@ -11,10 +11,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
-  pull_request:
-    branches:
-      - main    
+      - main  
   schedule:
     - cron: "0 12 * * 1"
 
