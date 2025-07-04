@@ -46,9 +46,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "Skills",
-  skills: [
-    
-  ],
+  skills: [],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
