@@ -46,11 +46,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "Skills",
-  skills: [
-    "- Mobile App Development [Android]...",
-    "- Mobile Design [UI/UX]...",
-    "- Mobile Security [Mobile Apps]..."
-  ],
+  skills: [],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
