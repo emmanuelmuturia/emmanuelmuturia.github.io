@@ -10,9 +10,12 @@ const MEDIUM_USERNAME = process.env.MEDIUM_USERNAME;
 const TIMEOUT = 15000; // 15 seconds
 
 const ERR = {
-  noUserName: "❌ GitHub Username is undefined. Please set all relevant environment variables.",
-  requestFailed: "❌ Request to GitHub failed. Check the GitHub token or connectivity.",
-  requestFailedMedium: "❌ Request to Medium failed. Check Medium username or connectivity."
+  noUserName:
+    "❌ GitHub Username is undefined. Please set all relevant environment variables.",
+  requestFailed:
+    "❌ Request to GitHub failed. Check the GitHub token or connectivity.",
+  requestFailedMedium:
+    "❌ Request to Medium failed. Check Medium username or connectivity."
 };
 
 function safeRequest(options, dataToSend, onSuccess, onFail) {
@@ -29,7 +32,9 @@ function safeRequest(options, dataToSend, onSuccess, onFail) {
       }
 
       if (data.includes("rate limit")) {
-        return onFail(new Error("Rate limit exceeded by GitHub. Try again later."));
+        return onFail(
+          new Error("Rate limit exceeded by GitHub. Try again later.")
+        );
       }
 
       onSuccess(data);

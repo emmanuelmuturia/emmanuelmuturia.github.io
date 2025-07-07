@@ -33,7 +33,7 @@
 
 .education-roundedimg {
   object-fit: contain; // Ensures full image scales inside
-  padding: 1rem;       // Adjust this as needed
+  padding: 1rem; // Adjust this as needed
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
@@ -124,6 +124,6 @@
     margin-right: 0;
   }
   .education-text-bullets li {
-  color: #fff !important;
-}
+    color: #fff !important;
+  }
 }
