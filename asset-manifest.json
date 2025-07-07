@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.76d1ea8b.css",
-    "main.js": "/static/js/main.05bb8aed.js",
+    "main.css": "/static/css/main.add3ca61.css",
+    "main.js": "/static/js/main.bf9d67e0.js",
     "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
     "static/js/64.18766a64.chunk.js": "/static/js/64.18766a64.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
@@ -11,7 +11,7 @@
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/kotlinKenya.png": "/static/media/kotlinKenya.2541215c77e1b3fefea0.png",
     "static/media/ccna.png": "/static/media/ccna.e09389804e884b4eccf0.png",
-    "static/media/strathmoreUniversityLogo.png": "/static/media/strathmoreUniversityLogo.049662991f8c35721b9b.png",
+    "static/media/strathmoreUniversityLogo.png": "/static/media/strathmoreUniversityLogo.2e59f60f9cd6c3dbee87.png",
     "static/media/kinde_engineering_works.png": "/static/media/kinde_engineering_works.b6fd0b44097f35ec004b.png",
     "static/media/hciaDatacom.png": "/static/media/hciaDatacom.f64574abecff1bd732d1.png",
     "static/media/android254.png": "/static/media/android254.ef6dd6e6fec72035fc8f.png",
@@ -27,15 +27,15 @@
     "static/media/resume.pdf": "/static/media/resume.f0f733dd3cd732b39262.pdf",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.76d1ea8b.css.map": "/static/css/main.76d1ea8b.css.map",
-    "main.05bb8aed.js.map": "/static/js/main.05bb8aed.js.map",
+    "main.add3ca61.css.map": "/static/css/main.add3ca61.css.map",
+    "main.bf9d67e0.js.map": "/static/js/main.bf9d67e0.js.map",
     "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
     "64.18766a64.chunk.js.map": "/static/js/64.18766a64.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
     "769.268fc5ea.chunk.js.map": "/static/js/769.268fc5ea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76d1ea8b.css",
-    "static/js/main.05bb8aed.js"
+    "static/css/main.add3ca61.css",
+    "static/js/main.bf9d67e0.js"
   ]
 }
