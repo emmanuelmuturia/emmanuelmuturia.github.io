@@ -1,3 +1,5 @@
 node_modules
 .env
 build/
+/public/blogs.json
+/public/profile.json
