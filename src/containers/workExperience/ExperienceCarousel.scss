@@ -1,0 +1,157 @@
+@import "../../_globalColor";
+
+.experience-carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.experience-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 3rem;
+    padding: 1rem 0;
+    width: 100%;
+    scrollbar-width: none;
+}
+
+.experience-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-arrow {
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    margin: 0 0.5rem;
+    transition: background 0.2s;
+}
+
+.carousel-arrow:active {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.carousel-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    outline: none;
+    min-width: 320px;
+    max-width: 320px;
+    margin: 0 1rem;
+}
+
+.circle-logo-wrapper {
+    background: none;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+}
+
+.carousel-logo {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.carousel-company {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+}
+
+.carousel-title {
+    margin-top: 0.7rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #555;
+    text-align: center;
+}
+
+.carousel-date {
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    color: #888;
+    text-align: center;
+}
+
+// Remove all hover/focus/grey/white effects
+.carousel-circle:hover .circle-logo-wrapper,
+.carousel-circle:focus .circle-logo-wrapper,
+.carousel-circle:hover .carousel-title,
+.carousel-circle:focus .carousel-title,
+.carousel-circle:hover .carousel-date,
+.carousel-circle:focus .carousel-date {
+    background: none;
+    color: inherit;
+    box-shadow: none;
+}
+
+.dark-mode .circle-logo-wrapper {
+    background: none;
+}
+
+.dark-mode .carousel-company {
+    color: #eee;
+}
+
+.dark-mode .carousel-title {
+    color: #bbb;
+}
+
+.dark-mode .carousel-date {
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .experience-carousel {
+        gap: 1rem;
+    }
+
+    .carousel-circle {
+        min-width: 180px;
+        max-width: 180px;
+    }
+
+    .circle-logo-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+
+    .carousel-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .carousel-company {
+        font-size: 1rem;
+    }
+
+    .carousel-title {
+        font-size: 0.9rem;
+    }
+
+    .carousel-date {
+        font-size: 0.8rem;
+    }
+}
