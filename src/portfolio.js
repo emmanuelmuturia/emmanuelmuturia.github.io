@@ -130,10 +130,21 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Cyber Security Training",
+      company: "Cyber Shujaa",
+      companylogo: require("./assets/images/cyberShujaa.png"),
+      date: "April 2025 – Present",
+      link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
+      descBullets: [
+        "In this training, I learnt the art of Offensive Security to uncover Cyber Threats and Vulnerabilities before the Cybercriminals do..."
+      ]
+    },
+    {
       role: "Android Engineering",
       company: "DroidCon Kenya",
       companylogo: require("./assets/images/droidcon_kenya.png"),
       date: "June 2023 – Present",
+      link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
       descBullets: [
         "Resolved a critical issue on the “Filter” button in the “Sessions” tab, enhancing Jetpack Compose UI stability and reducing app crashes leading to the release of the final product with over 100 downloads",
         "Optimised Android SDK components by eliminating redundant String declarations and improving CI/CD processes"
@@ -144,6 +155,7 @@ const workExperiences = {
       company: "CIFOR-ICRAF",
       companylogo: require("./assets/images/cifor_icraf.jpeg"),
       date: "June 2024 – Sep 2024",
+      link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
       descBullets: [
         "Improved the User Experience [UX] by testing the Regreening App and facilitating knowledge sharing in a team environment by participating in workshops that improved team productivity and alignment",
         "Debugged and optimised RESTful API calls and leveraged Room [SQLite] for offline data storage, reducing data synchronisation time"
@@ -154,6 +166,7 @@ const workExperiences = {
       company: "Kinde Engineering Works Ltd.",
       companylogo: require("./assets/images/kinde_engineering_works.png"),
       date: "Feb 2023 – April 2023",
+      link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
       descBullets: [
         "Acknowledged assigned tickets on the Remedy BMC platform and reached out to the technicians assigned to the regions adjacent to the location of the Fibre faults"
       ]

@@ -24,7 +24,7 @@ export default function ExperienceCarousel({ isDark }) {
                 onClick={() => scroll("left")}
                 aria-label="Scroll left"
             >
-                <FontAwesomeIcon icon={faChevronLeft} color="#fff" size="2x" />
+                <FontAwesomeIcon icon={faChevronLeft} color="#fff" style={{ fontSize: '2.2rem' }} />
             </button>
             <div className="experience-carousel" ref={carouselRef}>
                 {workExperiences.experience.map((exp, i) => (
@@ -35,6 +35,7 @@ export default function ExperienceCarousel({ isDark }) {
                         target="_blank"
                         rel="noopener noreferrer"
                         tabIndex={0}
+                        style={{ marginRight: i === workExperiences.experience.length - 1 ? 0 : undefined }}
                     >
                         <div className="circle-logo-wrapper">
                             <img
@@ -54,7 +55,7 @@ export default function ExperienceCarousel({ isDark }) {
                 onClick={() => scroll("right")}
                 aria-label="Scroll right"
             >
-                <FontAwesomeIcon icon={faChevronRight} color="#fff" size="2x" />
+                <FontAwesomeIcon icon={faChevronRight} color="#fff" style={{ fontSize: '2.2rem' }} />
             </button>
         </div>
     );
