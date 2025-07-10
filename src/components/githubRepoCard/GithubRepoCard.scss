@@ -2,7 +2,9 @@
 
 .repo-card-div {
   color: $githubRepoCardColor;
-  background-color: $lightBackground2;
+  background-color: #000; // Black background
+  border-radius: 21px;
+  border: 2px solid #fff; // White border
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   padding: 2rem;
   cursor: pointer;
@@ -10,8 +12,14 @@
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .repo-card-div:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  background-color: #fff !important; // White on hover
+  box-shadow: 0 0 24px 4px #fff, $lightBoxShadowDark 0px 20px 30px -10px; // White glow
+  border-color: #fff;
+
+  // Make all text and icons black on hover for visibility
+  color: #111 !important;
 }
 
 .repo-stats {
@@ -75,12 +83,14 @@
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  line-clamp: 2;
 }
 
 .dark-card-mode {
   background-color: $darkBackground;
   color: $textColorDark;
 }
+
 .dark-card-mode p {
   color: $textColorDark;
 }
@@ -92,4 +102,37 @@
 .dark-card-mode:hover {
   background-color: $buttonColor !important;
   box-shadow: 0px 0px 16px $darkBoxShadow;
+}
+
+.dark-card-mode.repo-card-div {
+  background-color: #000 !important; // Black background in dark mode
+  border-radius: 21px;
+  border: 2px solid #fff;
+  color: $textColorDark;
+}
+
+.dark-card-mode.repo-card-div:hover {
+  background-color: #fff !important; // White on hover
+  color: #222 !important;
+  box-shadow: 0 0 24px 4px #fff, $lightBoxShadowDark 0px 20px 30px -10px;
+  border-color: #fff;
+
+  // Make all text and icons black on hover for visibility
+  color: #111 !important;
+}
+
+.repo-card-div:hover .repo-name,
+.repo-card-div:hover .repo-description,
+.repo-card-div:hover .repo-stats,
+.repo-card-div:hover .repo-left-stat,
+.repo-card-div:hover p,
+.repo-card-div:hover svg,
+.dark-card-mode.repo-card-div:hover .repo-name,
+.dark-card-mode.repo-card-div:hover .repo-description,
+.dark-card-mode.repo-card-div:hover .repo-stats,
+.dark-card-mode.repo-card-div:hover .repo-left-stat,
+.dark-card-mode.repo-card-div:hover p,
+.dark-card-mode.repo-card-div:hover svg {
+  color: #111 !important;
+  fill: #111 !important;
 }

@@ -84,9 +84,9 @@ export default function GithubRepoCard({repo, isDark}) {
                 <p>{repo.node.stargazers.totalCount}</p>
               </span>
             </div>
-            <div className="repo-right-stat">
+            {/* <div className="repo-right-stat">
               <p>{formatFileSizeDisplay(repo.node.diskUsage)}</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
