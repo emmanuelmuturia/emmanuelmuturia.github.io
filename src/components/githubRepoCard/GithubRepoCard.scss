@@ -2,8 +2,9 @@
 
 .repo-card-div {
   color: $githubRepoCardColor;
-  background-color: #ededed; // Grey background
+  background-color: #000; // Black background
   border-radius: 21px;
+  border: 2px solid #fff; // White border
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   padding: 2rem;
   cursor: pointer;
@@ -15,6 +16,7 @@
 .repo-card-div:hover {
   background-color: #fff !important; // White on hover
   box-shadow: 0 0 24px 4px #fff, $lightBoxShadowDark 0px 20px 30px -10px; // White glow
+  border-color: #fff;
 }
 
 .repo-stats {
