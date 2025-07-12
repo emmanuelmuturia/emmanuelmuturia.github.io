@@ -18,7 +18,7 @@ export default function TechCommunitiesCarousel({ isDark }) {
     };
 
     return (
-        <div className="experience-carousel-wrapper">
+        <div className="experience-carousel-wrapper tech-communities-carousel">
             <button
                 className="carousel-arrow left"
                 onClick={() => scroll("left")}
