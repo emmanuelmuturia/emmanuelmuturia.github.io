@@ -16,12 +16,17 @@
   color: $textColorDark !important;
 }
 
-.dark-menu li a:hover {
-  background-color: $buttonColor !important;
+.dark-menu li a:hover,
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: transparent !important;
+  transform: scale(1.08);
+  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.2s;
+  z-index: 2;
 }
 
 .header {
-  background-color: $lightBackground1;
+  background-color: $darkBackground;
   max-width: 100%;
   padding: 15px 20px;
   margin: 0px auto;
@@ -41,13 +46,13 @@
 .header li a {
   display: block;
   padding: 15px 20px;
-  color: $textColor;
+  color: $textColorDark;
   text-decoration: none;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: $headerHoverBG;
+  background-color: $darkBackground;
 }
 
 .header .logo {
@@ -163,20 +168,80 @@
   .header li {
     float: left;
   }
+
   .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   .header .menu {
     max-height: none;
   }
+
   .header .menu-icon {
     display: none;
   }
 }
+
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0 0 0;
+    position: relative;
+    min-height: 56px;
+  }
+
+  .header .menu-icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    float: none;
+    padding: 8px 8px;
+    z-index: 10;
+    display: inline-block;
+  }
+
+  .header .logo {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0;
+    float: none;
+    text-align: center;
+    width: fit-content;
+    z-index: 5;
+    top: 10px;
+  }
+
+  .header .logo-name {
+    font-size: 1.1rem;
+    font-family: "Agustina Regular";
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    padding: 0 4px;
+    display: inline-block;
+  }
+
+  .header .menu {
+    width: 100vw;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: $darkBackground;
+    position: absolute;
+    top: 56px;
+    z-index: 1;
   }
 }

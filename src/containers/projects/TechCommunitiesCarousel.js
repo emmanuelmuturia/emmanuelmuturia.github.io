@@ -4,7 +4,7 @@ import {bigProjects} from "../../portfolio";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronLeft, faChevronRight} from "@fortawesome/free-solid-svg-icons";
 
-export default function TechCommunitiesCarousel({isDark}) {
+export default function TechCommunitiesCarousel() {
   const carouselRef = useRef(null);
 
   const scroll = direction => {
@@ -34,7 +34,7 @@ export default function TechCommunitiesCarousel({isDark}) {
         {bigProjects.projects.map((proj, i) => (
           <a
             key={i}
-            className={`carousel-circle${isDark ? " dark-mode" : ""}`}
+            className="carousel-circle dark-mode"
             href={
               proj.footerLink && proj.footerLink[0]
                 ? proj.footerLink[0].url

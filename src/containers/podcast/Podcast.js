@@ -1,12 +1,9 @@
-import React, {useContext} from "react";
+import React from "react";
 import "./Podcast.scss";
 import {podcastSection} from "../../portfolio";
 import {Fade} from "react-reveal";
-import StyleContext from "../../contexts/StyleContext";
 
 export default function Podcast() {
-  const {isDark} = useContext(StyleContext);
-
   if (!podcastSection)
     console.error("podcastSection object for Podcast section is missing");
 
@@ -18,13 +15,7 @@ export default function Podcast() {
       <div className="main">
         <div className="podcast-header">
           <h1 className="podcast-header-title">{podcastSection.title}</h1>
-          <p
-            className={
-              isDark
-                ? "dark-mode podcast-header-subtitle"
-                : "subTitle podcast-header-subtitle"
-            }
-          >
+          <p className="dark-mode podcast-header-subtitle">
             {podcastSection.subtitle}
           </p>
         </div>

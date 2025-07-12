@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: The Emmanuel Muturia™ Website Deployment CI/CD Pipeline
 
 env:
   CI: false
@@ -12,32 +12,30 @@ on:
   push:
     branches:
       - main
-  schedule:
-    - cron: "0 12 * * 1"
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout...
         uses: actions/checkout@v3
         with:
           persist-credentials: false
 
-      - name: Setup Node.js 🔧
+      - name: Setup Node.js...
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
 
       # ❌ Removed npm@latest step to avoid Version Conflict...
 
-      - name: Install and Build 🔧
+      - name: Install and Build...
         run: |
           npm install
           npm run build
 
-      - name: Deploy 🚀
+      - name: Deploy...
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
