@@ -1,7 +1,7 @@
 import React from "react";
 import "./AchievementCard.scss";
 
-export default function AchievementCard({ cardInfo }) {
+export default function AchievementCard({cardInfo}) {
   function openUrlInNewTab(url, name) {
     if (!url) {
       return;

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Achievement.scss";
 import AchievementCard from "../../components/achievementCard/AchievementCard";
-import { achievementSection } from "../../portfolio";
-import { Fade } from "react-reveal";
+import {achievementSection} from "../../portfolio";
+import {Fade} from "react-reveal";
 import Button from "../../components/button/Button";
 
 export default function Achievement() {
@@ -37,7 +37,9 @@ export default function Achievement() {
               );
             })}
           </div>
-          <div style={{ display: "flex", justifyContent: "center", marginTop: 24 }}>
+          <div
+            style={{display: "flex", justifyContent: "center", marginTop: 24}}
+          >
             <Button
               text="More Credentials"
               href="https://www.credly.com/users/emmanuelmuturia"
