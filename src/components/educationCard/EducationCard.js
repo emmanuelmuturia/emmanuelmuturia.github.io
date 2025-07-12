@@ -1,17 +1,17 @@
-import React, { createRef } from "react";
-import { Fade, Slide } from "react-reveal";
+import React, {createRef} from "react";
+import {Fade, Slide} from "react-reveal";
 import "./EducationCard.scss";
 
-export default function EducationCard({ school }) {
+export default function EducationCard({school}) {
   const imgRef = createRef();
 
-  const GetDescBullets = ({ descBullets }) => {
+  const GetDescBullets = ({descBullets}) => {
     return descBullets
       ? descBullets.map((item, i) => (
-        <li key={i} className="subTitle">
-          {item}
-        </li>
-      ))
+          <li key={i} className="subTitle">
+            {item}
+          </li>
+        ))
       : null;
   };
 
