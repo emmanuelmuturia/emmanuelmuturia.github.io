@@ -45,9 +45,10 @@
   align-items: center;
 }
 .achievement-cards-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem 2.5rem;
 }
 .certificate-card-footer {
   display: flex;
@@ -82,4 +83,95 @@ span.certificate-tag:hover {
 
 .clickable-card:hover {
   transform: scale(1.02);
+}
+.achievement-circle-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  margin: 0 1.5rem 2.5rem 1.5rem;
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.achievement-circle-card:hover,
+.achievement-circle-card:focus {
+  box-shadow: none;
+  background: none;
+  transform: scale(1.07);
+  z-index: 2;
+}
+.achievement-circle-image-wrapper {
+  background: #fff;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 0 0 2px #eee;
+  transition: background 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.achievement-circle-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  background: #fff;
+  display: block;
+}
+.achievement-circle-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.dark-mode .achievement-circle-title {
+  color: #eee;
+}
+@media (max-width: 1100px) {
+  .achievement-cards-div {
+    gap: 1.5rem 1.5rem;
+  }
+  .achievement-circle-card {
+    width: 180px;
+  }
+  .achievement-circle-image-wrapper {
+    width: 140px;
+    height: 140px;
+  }
+  .achievement-circle-image {
+    width: 110px;
+    height: 110px;
+  }
+}
+@media (max-width: 768px) {
+  .achievement-cards-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem 0;
+  }
+  .achievement-circle-card {
+    width: 90vw;
+    max-width: 320px;
+    margin: 0 auto 2rem auto;
+  }
+  .achievement-circle-image-wrapper {
+    width: 60vw;
+    height: 60vw;
+    max-width: 180px;
+    max-height: 180px;
+    min-width: 100px;
+    min-height: 100px;
+  }
+  .achievement-circle-image {
+    width: 90%;
+    height: 90%;
+    min-width: 60px;
+    min-height: 60px;
+  }
 }

@@ -41,6 +41,32 @@
   margin: 0px;
 }
 
+.blog-card {
+  display: block;
+  position: relative;
+  background-color: $lightBackground1; // Match Projects: use background color
+  border-radius: 21px;
+  border: 1.2px solid #fff; // White border
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  transition: box-shadow 0.3s, background 0.3s, color 0.3s;
+  color: #fff; // All text white by default
+}
+
+.blog-card:hover {
+  background-color: #fff !important; // White on hover
+  color: #111 !important; // All text black on hover
+  box-shadow: 0 0 24px 4px #fff, $lightBoxShadowDark 0px 20px 30px -10px;
+}
+
+.blog-card:hover .blog-title,
+.blog-card:hover .small {
+  color: #111 !important; // All text black on hover
+}
+
 .go-corner {
   display: flex;
   align-items: center;
@@ -51,55 +77,24 @@
   overflow: hidden;
   top: 0;
   right: 0;
-  background-color: $buttonColor;
+  background-color: #fff;
   border-radius: 0 4px 0 32px;
+  transition: background 0.22s, color 0.22s;
+  z-index: 2;
+}
+
+.blog-card:hover .go-corner {
+  background: #111;
 }
 
 .go-arrow {
-  margin-top: -4px;
-  margin-right: -4px;
-  color: $textColorDark;
+  color: #111;
   font-family: courier, sans;
+  transition: color 0.22s;
 }
 
-.blog-card {
-  display: block;
-  position: relative;
-  background-color: transparent;
-  border-radius: 4px;
-  text-decoration: none;
-  z-index: 0;
-  overflow: hidden;
-  height: 100%;
-}
-
-.blog-card::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: -16px;
-  right: -16px;
-  background: $buttonColor;
-  height: 32px;
-  width: 32px;
-  border-radius: 32px;
-  transform: scale(1);
-  transform-origin: 50% 50%;
-  transition: transform 0.4s ease-out;
-}
-
-.blog-card:hover::before {
-  transform: scale(30);
-}
-
-.blog-card:hover > .small {
-  transition: all 0.3s ease-out;
-  color: $blogCardHoverSmallColor;
-}
-
-.blog-card:hover > h3 {
-  transition: all 0.3s ease-out;
-  color: $darkBoxShadow2;
+.blog-card:hover .go-arrow {
+  color: #fff;
 }
 
 @media screen and (max-width: 480px) and (min-width: 300px),

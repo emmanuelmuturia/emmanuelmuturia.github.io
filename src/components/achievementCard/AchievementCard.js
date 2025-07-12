@@ -4,44 +4,37 @@ import "./AchievementCard.scss";
 export default function AchievementCard({cardInfo, isDark}) {
   function openUrlInNewTab(url, name) {
     if (!url) {
-      console.log(`URL for ${name} not found`);
       return;
     }
     var win = window.open(url, "_blank");
     if (win) win.focus();
   }
 
+  const clickable = !!cardInfo.url;
+  const handleClick = () => {
+    if (clickable) {
+      openUrlInNewTab(cardInfo.url, cardInfo.title);
+    }
+  };
+
   return (
     <div
-      className={
-        isDark
-          ? "dark-mode certificate-card clickable-card"
-          : "certificate-card clickable-card"
-      }
-      onClick={() => {
-        if (!cardInfo.url) {
-          console.log(`URL for ${cardInfo.title} not found`);
-          return;
-        }
-        openUrlInNewTab(cardInfo.url, cardInfo.title);
-      }}
+      className={`achievement-circle-card${isDark ? " dark-mode" : ""}${
+        clickable ? " clickable" : ""
+      }`}
+      onClick={handleClick}
+      tabIndex={0}
+      role="button"
+      style={{cursor: clickable ? "pointer" : "default"}}
     >
-      <div className="certificate-image-div">
+      <div className="achievement-circle-image-wrapper">
         <img
           src={cardInfo.image}
           alt={cardInfo.imageAlt || "Card Thumbnail"}
-          className="card-image"
+          className="achievement-circle-image"
         />
       </div>
-      <div className="certificate-detail-div">
-        <h5 className={isDark ? "dark-mode card-title" : "card-title"}>
-          {cardInfo.title}
-        </h5>
-        <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>
-          {cardInfo.description}
-        </p>
-      </div>
-      {/* Footer removed */}
+      <div className="achievement-circle-title">{cardInfo.title}</div>
     </div>
   );
 }

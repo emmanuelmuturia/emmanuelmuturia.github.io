@@ -175,8 +175,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Tech Communities",
-  subtitle:
-    "Besides my Technical Skills, I also help organise these Tech communities:",
+  subtitle: "",
   projects: [
     {
       image: require("./assets/images/android254.png"),
@@ -281,7 +280,7 @@ const blogSection = {
 
 // src/portfolio.js
 const labsSection = {
-  display: true,
+  display: false,
   displayLabs: "true",
   title: "Labs",
   labs: [
@@ -321,7 +320,7 @@ const labsSection = {
 
 const talkSection = {
   title: "Talks",
-  subtitle: emoji("Here are a few presentations that I have given..."),
+  subtitle: "",
 
   talks: [
     {
