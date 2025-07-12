@@ -23,7 +23,12 @@
   text-align: center;
   width: 2.6rem;
   margin-bottom: 10px;
-  transition: 0.2s ease-in;
+  transition: 0.2s ease-in, transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-button i:hover {
+  transform: scale(1.13);
+  z-index: 2;
 }
 
 .facebook i {
@@ -74,7 +79,7 @@
 .linkedin i:hover,
 .facebook i:hover,
 .instagram i:hover,
-.stack-overflow i:hover,
+.stack-over-flow i:hover,
 .kaggle i:hover,
 .medium i:hover {
   background-color: $textColor;
