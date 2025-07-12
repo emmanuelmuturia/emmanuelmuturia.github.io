@@ -16,8 +16,13 @@
   color: $textColorDark !important;
 }
 
-.dark-menu li a:hover {
-  background-color: $buttonColor !important;
+.dark-menu li a:hover,
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: transparent !important;
+  transform: scale(1.08);
+  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.2s;
+  z-index: 2;
 }
 
 .header {
