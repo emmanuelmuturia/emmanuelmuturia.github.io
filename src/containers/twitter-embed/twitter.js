@@ -1,9 +1,8 @@
-import React, {Suspense, useContext} from "react";
+import React, { Suspense } from "react";
 import "./twitter.scss";
 import Loading from "../loading/Loading";
-import {TwitterTimelineEmbed} from "react-twitter-embed";
-import {twitterDetails} from "../../portfolio";
-import StyleContext from "../../contexts/StyleContext";
+import { TwitterTimelineEmbed } from "react-twitter-embed";
+import { twitterDetails } from "../../portfolio";
 
 const renderLoader = () => <Loading />;
 const cantDisplayError =
@@ -19,7 +18,6 @@ function timeOut() {
 var widthScreen = window.screen.width;
 
 export default function Twitter() {
-  const {isDark} = useContext(StyleContext);
 
   if (!twitterDetails.display) {
     return null;
@@ -35,12 +33,12 @@ export default function Twitter() {
             <TwitterTimelineEmbed
               sourceType="profile"
               screenName={twitterDetails.userName}
-              options={{height: 400, width: {widthScreen}}}
+              options={{ height: 400, width: { widthScreen } }}
               placeholder={renderLoader()}
               autoHeight={false}
               borderColor="#fff"
-              key={isDark ? "1" : "2"}
-              theme={isDark ? "dark" : "light"}
+              key={"1"}
+              theme={"dark"}
               noFooter={true}
               onload={timeOut()}
             />
