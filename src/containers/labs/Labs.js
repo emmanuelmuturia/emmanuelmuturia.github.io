@@ -1,11 +1,10 @@
 import React from "react";
 import "./Labs.scss";
 import LabCard from "../../components/labCard/LabCard";
-import { labsSection } from "../../portfolio";
-import { Fade } from "react-reveal";
+import {labsSection} from "../../portfolio";
+import {Fade} from "react-reveal";
 
 export default function Labs() {
-
   if (!labsSection.display) {
     return null;
   }
@@ -15,9 +14,7 @@ export default function Labs() {
       <div className="main" id="labs">
         <div className="lab-header">
           <h1 className="lab-header-text">{labsSection.title}</h1>
-          <p className="subTitle lab-subtitle">
-            {labsSection.subtitle}
-          </p>
+          <p className="subTitle lab-subtitle">{labsSection.subtitle}</p>
         </div>
 
         <div className="lab-main-div">
