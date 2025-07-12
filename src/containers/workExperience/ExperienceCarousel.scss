@@ -75,7 +75,7 @@
 
 .circle-logo-wrapper {
   background: #fff;
-  border-radius: 50%;
+  border-radius: 50% !important;
   width: 220px;
   height: 220px;
   display: flex;
@@ -86,11 +86,11 @@
 }
 
 .carousel-logo {
-  width: 210px;
-  height: 210px;
-  object-fit: contain;
-  border-radius: 0; // Remove border-radius so rectangular images with white backgrounds blend in
-  background: #fff; // Ensure image background is white
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 50% !important;
+  background: #fff;
   display: block;
 }
 
@@ -148,4 +148,62 @@
 // Center carousel if 2 or fewer items
 .experience-carousel {
   justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .experience-carousel-wrapper {
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .experience-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 0.5rem 0;
+    overflow-x: visible;
+    scroll-snap-type: none;
+    justify-content: center;
+  }
+  .carousel-circle {
+    min-width: 0;
+    max-width: 90vw;
+    width: 90vw;
+    margin: 0 0 2.5rem 0;
+    scroll-snap-align: unset;
+    justify-content: center;
+    display: flex;
+  }
+  .circle-logo-wrapper {
+    width: 60vw;
+    height: 60vw;
+    max-width: 220px;
+    max-height: 220px;
+    min-width: 120px;
+    min-height: 120px;
+    border-radius: 50% !important;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    background: #fff;
+  }
+  .carousel-logo {
+    width: 90%;
+    height: 90%;
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 50% !important;
+    object-fit: cover;
+    background: #fff;
+    display: block;
+  }
+  .carousel-arrow {
+    display: none;
+  }
 }

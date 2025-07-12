@@ -104,8 +104,13 @@
     justify-content: space-around;
   }
   .greeting-text {
-    font-size: 30px;
+    font-size: 24px; // Smaller name size for mobile
     text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .greet-main {
+    margin-top: 0.5rem; // Very little space below header
   }
   .greeting-text-p {
     font-size: 16px;
