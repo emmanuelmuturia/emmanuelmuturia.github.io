@@ -1,4 +1,4 @@
-name: The Emmanuel Muturia™ Website Code Formatting Check
+name: The Emmanuel Muturia™ Website Code Formatting CI/CD Pipeline
 on:
   push:
     branches:
