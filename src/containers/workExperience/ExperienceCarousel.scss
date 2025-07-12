@@ -20,6 +20,7 @@
   width: 100%;
   max-width: 100%;
   scrollbar-width: none;
+  justify-content: center; // Center items horizontally
 }
 
 .experience-carousel::-webkit-scrollbar {
@@ -64,14 +65,16 @@
   align-items: center;
   text-decoration: none;
   outline: none;
-  min-width: 320px;
+  min-width: 0;
+  width: 320px;
   max-width: 320px;
   flex-shrink: 0;
   margin: 0 1rem;
+  box-sizing: border-box;
 }
 
 .circle-logo-wrapper {
-  background: none;
+  background: #fff;
   border-radius: 50%;
   width: 220px;
   height: 220px;
@@ -79,14 +82,16 @@
   align-items: center;
   justify-content: center;
   box-shadow: none;
+  overflow: hidden;
 }
 
 .carousel-logo {
   width: 210px;
   height: 210px;
   object-fit: contain;
-  border-radius: 50%;
-  background: transparent;
+  border-radius: 0; // Remove border-radius so rectangular images with white backgrounds blend in
+  background: #fff; // Ensure image background is white
+  display: block;
 }
 
 .carousel-company {
@@ -140,80 +145,7 @@
   color: #888;
 }
 
-@media (max-width: 1300px) {
-  .experience-carousel-wrapper {
-    max-width: 100vw;
-  }
-
-  .carousel-circle {
-    min-width: 260px;
-    max-width: 260px;
-  }
-
-  .circle-logo-wrapper {
-    width: 140px;
-    height: 140px;
-  }
-
-  .carousel-logo {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@media (max-width: 768px) {
-  .experience-carousel {
-    gap: 0;
-    padding: 1rem 0;
-    width: 100vw;
-    max-width: 100vw;
-    overflow-x: hidden;
-  }
-
-  .carousel-circle {
-    min-width: 100vw;
-    max-width: 100vw;
-    margin: 0;
-  }
-
-  .circle-logo-wrapper {
-    width: 70vw;
-    height: 70vw;
-    max-width: 320px;
-    max-height: 320px;
-    min-width: 140px;
-    min-height: 140px;
-  }
-
-  .carousel-logo {
-    width: 50vw;
-    height: 50vw;
-    max-width: 160px;
-    max-height: 160px;
-    min-width: 50px;
-    min-height: 50px;
-  }
-
-  .carousel-company {
-    font-size: 1rem;
-  }
-
-  .carousel-title {
-    font-size: 0.9rem;
-  }
-
-  .carousel-date {
-    font-size: 0.8rem;
-  }
-
-  .carousel-arrow {
-    width: 2.2rem;
-    height: 2.2rem;
-    font-size: 2rem;
-  }
-
-  html,
-  body {
-    overflow-x: hidden;
-  }
+// Center carousel if 2 or fewer items
+.experience-carousel {
+  justify-content: center;
 }
