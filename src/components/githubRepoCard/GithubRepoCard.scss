@@ -5,7 +5,7 @@
   background-color: #000; // Black background
   border-radius: 21px;
   border: 2px solid #fff; // White border
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  box-shadow: $darkBoxShadow 0px 10px 30px -15px;
   padding: 2rem;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
@@ -14,12 +14,10 @@
 }
 
 .repo-card-div:hover {
-  background-color: #fff !important; // White on hover
-  box-shadow: 0 0 24px 4px #fff, $lightBoxShadowDark 0px 20px 30px -10px; // White glow
+  background-color: #222 !important; // Darker shade on hover
+  box-shadow: $darkBoxShadow2 0 0 24px 4px; // Darker glow
   border-color: #fff;
-
-  // Make all text and icons black on hover for visibility
-  color: #111 !important;
+  color: #fff !important;
 }
 
 .repo-stats {
@@ -114,7 +112,7 @@
 .dark-card-mode.repo-card-div:hover {
   background-color: #fff !important; // White on hover
   color: #222 !important;
-  box-shadow: 0 0 24px 4px #fff, $lightBoxShadowDark 0px 20px 30px -10px;
+  box-shadow: 0 0 24px 4px #fff, $darkBoxShadow2 0px 20px 30px -10px;
   border-color: #fff;
 
   // Make all text and icons black on hover for visibility

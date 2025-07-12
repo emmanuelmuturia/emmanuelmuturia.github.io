@@ -15,17 +15,19 @@
   margin-bottom: 20px;
 }
 
-.software-skill-inline > i {
-  color: $subTitle;
+.software-skill-inline>i {
+  color: $textColorDark;
 }
 
-.software-skill-inline > i:hover {
+.software-skill-inline>i:hover {
   color: #fff;
 }
-.software-skill-inline > p {
-  color: $subTitle;
+
+.software-skill-inline>p {
+  color: $textColorDark;
   font-size: 10px;
 }
-.software-skill-inline > i:hover ~ p {
+
+.software-skill-inline>i:hover~p {
   color: #fff;
 }

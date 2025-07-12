@@ -1,10 +1,10 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import "./ExperienceCarousel.scss";
-import {workExperiences} from "../../portfolio";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faChevronLeft, faChevronRight} from "@fortawesome/free-solid-svg-icons";
+import { workExperiences } from "../../portfolio";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-export default function ExperienceCarousel({isDark}) {
+export default function ExperienceCarousel() {
   const carouselRef = useRef(null);
 
   const scroll = direction => {
@@ -27,14 +27,14 @@ export default function ExperienceCarousel({isDark}) {
         <FontAwesomeIcon
           icon={faChevronLeft}
           color="#fff"
-          style={{fontSize: "2.2rem"}}
+          style={{ fontSize: "2.2rem" }}
         />
       </button>
       <div className="experience-carousel" ref={carouselRef}>
         {workExperiences.experience.map((exp, i) => (
           <a
             key={i}
-            className={`carousel-circle${isDark ? " dark-mode" : ""}`}
+            className="carousel-circle dark-mode"
             href={exp.link || "#"}
             target="_blank"
             rel="noopener noreferrer"
@@ -65,7 +65,7 @@ export default function ExperienceCarousel({isDark}) {
         <FontAwesomeIcon
           icon={faChevronRight}
           color="#fff"
-          style={{fontSize: "2.2rem"}}
+          style={{ fontSize: "2.2rem" }}
         />
       </button>
     </div>

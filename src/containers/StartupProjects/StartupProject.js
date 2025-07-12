@@ -1,12 +1,10 @@
-import React, {useContext} from "react";
+import React from "react";
 import "./StartupProjects.scss";
-import {bigProjects} from "../../portfolio";
-import {Fade} from "react-reveal";
-import StyleContext from "../../contexts/StyleContext";
+import { bigProjects } from "../../portfolio";
+import { Fade } from "react-reveal";
 import TechCommunitiesCarousel from "./TechCommunitiesCarousel";
 
 export default function StartupProject() {
-  const {isDark} = useContext(StyleContext);
   if (!bigProjects.display) {
     return null;
   }
@@ -15,16 +13,10 @@ export default function StartupProject() {
       <div className="main" id="tech-communities">
         <div>
           <h1 className="skills-heading">{bigProjects.title}</h1>
-          <p
-            className={
-              isDark
-                ? "dark-mode project-subtitle"
-                : "subTitle project-subtitle"
-            }
-          >
+          <p className="subTitle project-subtitle">
             {bigProjects.subtitle}
           </p>
-          <TechCommunitiesCarousel isDark={isDark} />
+          <TechCommunitiesCarousel />
         </div>
       </div>
     </Fade>
