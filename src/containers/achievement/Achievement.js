@@ -1,11 +1,11 @@
-import React, {useContext} from "react";
+import React from "react";
 import "./Achievement.scss";
 import AchievementCard from "../../components/achievementCard/AchievementCard";
 import {achievementSection} from "../../portfolio";
 import {Fade} from "react-reveal";
-import StyleContext from "../../contexts/StyleContext";
+import Button from "../../components/button/Button";
+
 export default function Achievement() {
-  const {isDark} = useContext(StyleContext);
   if (!achievementSection.display) {
     return null;
   }
@@ -14,22 +14,10 @@ export default function Achievement() {
       <div className="main" id="achievements">
         <div className="achievement-main-div">
           <div className="achievement-header">
-            <h1
-              className={
-                isDark
-                  ? "dark-mode heading achievement-heading"
-                  : "heading achievement-heading"
-              }
-            >
+            <h1 className="heading achievement-heading">
               {achievementSection.title}
             </h1>
-            <p
-              className={
-                isDark
-                  ? "dark-mode subTitle achievement-subtitle"
-                  : "subTitle achievement-subtitle"
-              }
-            >
+            <p className="subTitle achievement-subtitle">
               {achievementSection.subtitle}
             </p>
           </div>
@@ -38,7 +26,6 @@ export default function Achievement() {
               return (
                 <AchievementCard
                   key={i}
-                  isDark={isDark}
                   cardInfo={{
                     title: card.title,
                     description: card.subtitle,
@@ -49,6 +36,15 @@ export default function Achievement() {
                 />
               );
             })}
+          </div>
+          <div
+            style={{display: "flex", justifyContent: "center", marginTop: 24}}
+          >
+            <Button
+              text="More Credentials"
+              href="https://www.credly.com/users/emmanuelmuturia"
+              newTab={true}
+            />
           </div>
         </div>
       </div>

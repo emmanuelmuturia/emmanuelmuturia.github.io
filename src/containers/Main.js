@@ -17,14 +17,10 @@ import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
 import {splashScreen} from "../portfolio";
-import {StyleProvider} from "../contexts/StyleContext";
-import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
 import Labs from "./labs/Labs";
 
 const Main = () => {
-  const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-  const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
     useState(true);
 
@@ -40,37 +36,31 @@ const Main = () => {
     }
   }, []);
 
-  const changeTheme = () => {
-    setIsDark(!isDark);
-  };
-
   return (
-    <div className={isDark ? "dark-mode" : null}>
-      <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
-        {isShowingSplashAnimation && splashScreen.enabled ? (
-          <SplashScreen />
-        ) : (
-          <>
-            <Header />
-            <Greeting />
-            <Skills />
-            <StackProgress />
-            <Education />
-            <WorkExperience />
-            <Projects />
-            <StartupProject />
-            <Achievement />
-            <Blogs />
-            <Labs />
-            <Talks />
-            <Twitter />
-            <Podcast />
-            <Profile />
-            <Footer />
-            <ScrollToTopButton />
-          </>
-        )}
-      </StyleProvider>
+    <div className="dark-mode">
+      {isShowingSplashAnimation && splashScreen.enabled ? (
+        <SplashScreen />
+      ) : (
+        <>
+          <Header />
+          <Greeting />
+          <Skills />
+          <StackProgress />
+          <Education />
+          <WorkExperience />
+          <Projects />
+          <StartupProject />
+          <Achievement />
+          <Blogs />
+          <Labs />
+          <Talks />
+          <Twitter />
+          <Podcast />
+          <Profile />
+          <Footer />
+          <ScrollToTopButton />
+        </>
+      )}
     </div>
   );
 };
