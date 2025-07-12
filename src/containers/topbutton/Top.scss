@@ -8,8 +8,8 @@
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #fff !important;
-  color: #000 !important;
+  background-color: #fff;
+  color: #000;
   cursor: pointer;
   padding: 15px;
   border-radius: 15px;
@@ -17,7 +17,27 @@
 }
 
 #topButton:hover {
-  background-color: #e0e0e0 !important;
-  color: #000 !important;
+  background-color: #000;
+  color: #fff;
+  border: 1.5px solid #fff;
   transition: all ease-in-out 0.2s;
+}
+
+// Mobile styles
+@media screen and (max-width: 600px) {
+  #topButton {
+    bottom: 16px;
+    right: 16px;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 22px;
+    box-shadow: 0 2px 8px #111;
+    background-color: #fff;
+    color: #000;
+  }
+  #topButton:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1.5px solid #fff;
+  }
 }
