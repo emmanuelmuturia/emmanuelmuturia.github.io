@@ -1,4 +1,4 @@
-name: The Emmanuel Muturia™ Website CI/CD Pipeline
+name: The Emmanuel Muturia™ Website Deployment CI/CD Pipeline
 
 env:
   CI: false
