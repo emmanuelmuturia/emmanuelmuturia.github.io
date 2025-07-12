@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "./StartupProjects.scss";
-import { bigProjects } from "../../portfolio";
-import { Fade } from "react-reveal";
+import {bigProjects} from "../../portfolio";
+import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 import TechCommunitiesCarousel from "./TechCommunitiesCarousel";
 
 export default function StartupProject() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
   if (!bigProjects.display) {
     return null;
   }
