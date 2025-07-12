@@ -175,8 +175,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Tech Communities",
-  subtitle:
-    "",
+  subtitle: "",
   projects: [
     {
       image: require("./assets/images/android254.png"),

@@ -1,7 +1,7 @@
 import React from "react";
 import "./AchievementCard.scss";
 
-export default function AchievementCard({ cardInfo, isDark }) {
+export default function AchievementCard({cardInfo, isDark}) {
   function openUrlInNewTab(url, name) {
     if (!url) {
       return;
@@ -19,13 +19,13 @@ export default function AchievementCard({ cardInfo, isDark }) {
 
   return (
     <div
-      className={`achievement-circle-card${
-        isDark ? " dark-mode" : ""
-      }${clickable ? " clickable" : ""}`}
+      className={`achievement-circle-card${isDark ? " dark-mode" : ""}${
+        clickable ? " clickable" : ""
+      }`}
       onClick={handleClick}
       tabIndex={0}
       role="button"
-      style={{ cursor: clickable ? "pointer" : "default" }}
+      style={{cursor: clickable ? "pointer" : "default"}}
     >
       <div className="achievement-circle-image-wrapper">
         <img
