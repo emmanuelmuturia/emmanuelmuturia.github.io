@@ -159,6 +159,7 @@
     flex-direction: column;
     align-items: center;
   }
+
   .experience-carousel {
     display: flex;
     flex-direction: column;
@@ -169,6 +170,7 @@
     scroll-snap-type: none;
     justify-content: center;
   }
+
   .carousel-circle {
     min-width: 0;
     max-width: 90vw;
@@ -178,6 +180,7 @@
     justify-content: center;
     display: flex;
   }
+
   .circle-logo-wrapper {
     width: 60vw;
     height: 60vw;
@@ -193,6 +196,7 @@
     box-shadow: none;
     background: #fff;
   }
+
   .carousel-logo {
     width: 90%;
     height: 90%;
@@ -203,6 +207,7 @@
     background: #fff;
     display: block;
   }
+
   .carousel-arrow {
     display: none;
   }
