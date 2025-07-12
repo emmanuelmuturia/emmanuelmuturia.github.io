@@ -176,7 +176,7 @@ const openSource = {
 const bigProjects = {
   title: "Tech Communities",
   subtitle:
-    "Besides my Technical Skills, I also help organise these Tech communities:",
+    "",
   projects: [
     {
       image: require("./assets/images/android254.png"),
