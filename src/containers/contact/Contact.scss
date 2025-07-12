@@ -26,11 +26,18 @@
   text-decoration: none;
 }
 
-.contact-detail:hover,
-.contact-detail-email:hover {
+.contact-detail:hover {
   color: $textColor;
   text-shadow: 2px 1px 2px $contactDetailHoverTS;
   transition: all 0.3s;
+}
+
+/* Remove hover effect for email address */
+.contact-detail-email:hover {
+  color: $subTitle;
+  text-shadow: none;
+  transition: none;
+  cursor: default;
 }
 
 .contact-subtitle {
