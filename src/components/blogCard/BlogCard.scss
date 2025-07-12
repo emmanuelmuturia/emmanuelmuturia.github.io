@@ -7,7 +7,7 @@
 .blog-container {
   border-radius: 10px;
   color: $blogCardContainerColor;
-  background-color: $lightBackground1;
+  background: #000 !important;
   box-shadow: 0 0 36px $lightBoxShadow;
   cursor: pointer;
   height: 200px;
@@ -44,7 +44,7 @@
 .blog-card {
   display: block;
   position: relative;
-  background-color: $lightBackground1; // Match Projects: use background color
+  background: #000 !important;
   border-radius: 21px;
   border: 1.2px solid #fff; // White border
   text-decoration: none;
@@ -53,7 +53,7 @@
   height: 100%;
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   transition: box-shadow 0.3s, background 0.3s, color 0.3s;
-  color: #fff; // All text white by default
+  color: #fff !important;
 }
 
 .blog-card:hover {
