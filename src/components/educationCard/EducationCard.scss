@@ -8,7 +8,7 @@
 .education-card-border {
   height: 30px;
   width: 80%;
-  border-top: 2px solid #fff; // Always white
+  border-top: 2px solid #fff;
   margin-bottom: 20px;
   -webkit-transition: width 0.6s ease-in-out;
   -moz-transition: width 0.6s ease-in-out;
@@ -29,15 +29,16 @@
   overflow: hidden;
   white-space: nowrap;
   height: 27px;
+  color: $textColorDark;
 }
 
 .education-roundedimg {
-  object-fit: contain; // Ensures full image scales inside
-  padding: 1rem; // Adjust this as needed
+  object-fit: contain;
+  padding: 1rem;
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-  background-color: #fff; // Optional: for a clean circle background
+  background-color: $darkBackground;
 }
 
 .education-card-right {
@@ -45,7 +46,7 @@
 }
 
 .education-text-subHeader {
-  color: $textColor;
+  color: $textColorDark;
   font-weight: 700;
   font-size: 19px;
   margin: 0px;
@@ -54,7 +55,7 @@
 }
 
 .education-text-duration {
-  color: $titleColor;
+  color: $textColorDark;
   font-size: 19px;
   margin: 0px;
   padding-top: 0.5rem;
@@ -76,25 +77,31 @@
     flex-direction: column;
     padding-bottom: 10px;
   }
+
   .education-card-right {
     max-width: 90%;
   }
+
   .education-card-border {
     width: 90%;
-    border-top: 2px solid #fff; // Always white
+    border-top: 2px solid #fff;
     border-color: #fff !important;
   }
+
   .education-text-subHeader {
     padding-top: 0.5rem;
     font-size: 16px;
   }
+
   .education-text-school {
     font-size: 20px;
     height: 23px;
   }
+
   .education-text-duration {
     font-size: 16px;
   }
+
   .education-roundedimg {
     width: 10rem;
     height: 10rem;
@@ -108,14 +115,17 @@
   .education-card {
     text-align: center;
   }
+
   .education-card-right {
     max-width: 100%;
   }
+
   .education-card-border {
     width: 100%;
-    border-top: 2px solid #fff; // Always white
+    border-top: 2px solid #fff;
     border-color: #fff !important;
   }
+
   .education-roundedimg {
     margin-top: 10px;
     width: 4rem;
@@ -123,6 +133,7 @@
     margin-bottom: 1rem;
     margin-right: 0;
   }
+
   .education-text-bullets li {
     color: #fff !important;
   }

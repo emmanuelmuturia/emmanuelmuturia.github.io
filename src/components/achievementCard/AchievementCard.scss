@@ -5,37 +5,40 @@
   height: auto;
   width: 250px;
 }
+
 .card-title {
-  color: $titleColor;
+  color: $textColorDark;
   font-size: 1.375rem;
   line-height: 24px;
   font-weight: 700;
   margin: 15px 0 0 0;
 }
+
 .card-subtitle {
-  color: $cardSubtitle;
+  color: $textColorDark;
   font-size: 1.063rem;
   line-height: 1.5rem;
 }
+
 .certificate-card {
-  background-color: $lightBackground2;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  background-color: $darkBackground;
+  box-shadow: $darkBoxShadow 0px 10px 30px -15px;
   padding: 1.5rem;
   border-radius: 10px;
-  border: 1px solid $lightBorder1;
+  border: 1px solid $educationCardBorder;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .certificate-detail-div {
   text-align: center;
 }
+
 .certificate-card:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  box-shadow: $darkBoxShadow2 0px 20px 30px -10px;
 }
-.dark-mode.certificate-card:hover {
-  box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
-}
+
 .certificate-image-div {
   position: relative;
   height: 250px;
@@ -44,21 +47,24 @@
   justify-content: center;
   align-items: center;
 }
+
 .achievement-cards-div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2.5rem 2.5rem;
 }
+
 .certificate-card-footer {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .certificate-card-footer span.certificate-tag {
   background: $buttonColor;
-  color: $lightBackground3;
+  color: $textColorDark;
   vertical-align: middle;
   align-items: center;
   border-radius: 4px;
@@ -73,9 +79,11 @@
   cursor: pointer;
   transition: 0.2s ease-in;
 }
+
 span.certificate-tag:hover {
   background: $buttonHover;
 }
+
 .clickable-card {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
@@ -84,6 +92,7 @@ span.certificate-tag:hover {
 .clickable-card:hover {
   transform: scale(1.02);
 }
+
 .achievement-circle-card {
   display: flex;
   flex-direction: column;
@@ -96,6 +105,7 @@ span.certificate-tag:hover {
   outline: none;
   transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .achievement-circle-card:hover,
 .achievement-circle-card:focus {
   box-shadow: none;
@@ -103,6 +113,7 @@ span.certificate-tag:hover {
   transform: scale(1.07);
   z-index: 2;
 }
+
 .achievement-circle-image-wrapper {
   background: #fff;
   border-radius: 50%;
@@ -116,6 +127,7 @@ span.certificate-tag:hover {
   box-shadow: 0 0 0 2px #eee;
   transition: background 0.18s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .achievement-circle-image {
   width: 150px;
   height: 150px;
@@ -123,6 +135,7 @@ span.certificate-tag:hover {
   background: #fff;
   display: block;
 }
+
 .achievement-circle-title {
   font-size: 1.1rem;
   font-weight: 700;
@@ -130,36 +143,44 @@ span.certificate-tag:hover {
   text-align: center;
   margin-top: 0.5rem;
 }
+
 .dark-mode .achievement-circle-title {
   color: #eee;
 }
+
 @media (max-width: 1100px) {
   .achievement-cards-div {
     gap: 1.5rem 1.5rem;
   }
+
   .achievement-circle-card {
     width: 180px;
   }
+
   .achievement-circle-image-wrapper {
     width: 140px;
     height: 140px;
   }
+
   .achievement-circle-image {
     width: 110px;
     height: 110px;
   }
 }
+
 @media (max-width: 768px) {
   .achievement-cards-div {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem 0;
   }
+
   .achievement-circle-card {
     width: 90vw;
     max-width: 320px;
     margin: 0 auto 2rem auto;
   }
+
   .achievement-circle-image-wrapper {
     width: 60vw;
     height: 60vw;
@@ -168,6 +189,7 @@ span.certificate-tag:hover {
     min-width: 100px;
     min-height: 100px;
   }
+
   .achievement-circle-image {
     width: 90%;
     height: 90%;
