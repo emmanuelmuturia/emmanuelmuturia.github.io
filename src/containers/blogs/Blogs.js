@@ -1,11 +1,9 @@
-import React, {useState, useEffect, useContext} from "react";
+import React, {useState, useEffect} from "react";
 import "./Blog.scss";
 import BlogCard from "../../components/blogCard/BlogCard";
 import {blogSection} from "../../portfolio";
 import {Fade} from "react-reveal";
-import StyleContext from "../../contexts/StyleContext";
 export default function Blogs() {
-  const {isDark} = useContext(StyleContext);
   const [mediumBlogs, setMediumBlogs] = useState([]);
   function setMediumBlogsFunction(array) {
     setMediumBlogs(array);
@@ -52,13 +50,7 @@ export default function Blogs() {
       <div className="main" id="blogs">
         <div className="blog-header">
           <h1 className="blog-header-text">{blogSection.title}</h1>
-          <p
-            className={
-              isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle"
-            }
-          >
-            {blogSection.subtitle}
-          </p>
+          <p className="subTitle blog-subtitle">{blogSection.subtitle}</p>
         </div>
         <div className="blog-main-div">
           <div className="blog-text-div">
@@ -68,7 +60,6 @@ export default function Blogs() {
                   return (
                     <BlogCard
                       key={i}
-                      isDark={isDark}
                       blog={{
                         url: blog.url,
                         image: blog.image,
@@ -82,7 +73,6 @@ export default function Blogs() {
                   return (
                     <BlogCard
                       key={i}
-                      isDark={isDark}
                       blog={{
                         url: blog.link,
                         title: blog.title,

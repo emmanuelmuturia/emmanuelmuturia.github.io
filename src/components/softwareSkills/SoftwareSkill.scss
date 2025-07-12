@@ -16,16 +16,18 @@
 }
 
 .software-skill-inline > i {
-  color: $subTitle;
+  color: $textColorDark;
 }
 
 .software-skill-inline > i:hover {
   color: #fff;
 }
+
 .software-skill-inline > p {
-  color: $subTitle;
+  color: $textColorDark;
   font-size: 10px;
 }
+
 .software-skill-inline > i:hover ~ p {
   color: #fff;
 }

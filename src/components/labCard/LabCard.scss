@@ -1,12 +1,14 @@
+@import "../../_globalColor";
+
 .lab-card-container {
   cursor: pointer;
 }
 
 .lab-card {
   position: relative;
-  background: #ffffff;
+  background: $darkBackground;
   border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px $darkBoxShadow;
   padding: 1.5rem;
   transition: transform 0.3s ease;
   overflow: hidden;
@@ -36,7 +38,6 @@
     opacity: 1;
   }
 
-  // Content layering
   * {
     position: relative;
     z-index: 1;
@@ -49,7 +50,7 @@
 
   .lab-description {
     font-size: 1rem;
-    color: #555;
+    color: $textColorDark;
   }
 
   .go-corner {
@@ -70,14 +71,5 @@
     color: white;
     font-size: 1rem;
     font-weight: bold;
-  }
-}
-
-.dark-mode.lab-card {
-  background: #1e1e2f;
-  color: #ddd;
-
-  .lab-description {
-    color: #aaa;
   }
 }
