@@ -31,7 +31,7 @@ function Header() {
         <label
           className="menu-icon"
           htmlFor="menu-btn"
-          style={{ color: "white" }}
+          style={{color: "white"}}
         >
           <span className="navicon"></span>
         </label>
