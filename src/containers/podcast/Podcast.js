@@ -1,7 +1,7 @@
 import React from "react";
 import "./Podcast.scss";
-import {podcastSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { podcastSection } from "../../portfolio";
+import { Fade } from "react-reveal";
 
 export default function Podcast() {
   if (!podcastSection)
