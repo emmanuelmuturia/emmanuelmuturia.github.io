@@ -59,18 +59,17 @@
   display: block;
   flex: none;
   float: left;
-  font-size: 1.5em;
   text-decoration: none;
   margin-top: 10px;
   line-height: normal;
+  padding: 0;
 }
 
-.header .logo-name {
-  font-family: "Agustina Regular";
-  font-weight: bold;
-  font-variant-ligatures: no-common-ligatures;
-  -webkit-font-variant-ligatures: no-common-ligatures;
-  padding: 0 10px;
+.header .site-logo {
+  height: 70px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* menu */
@@ -162,6 +161,13 @@
   top: 0;
 }
 
+/* Force hamburger and X icon color to white for mobile and all screen sizes */
+.header .menu-icon .navicon,
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #fff !important; // White for hamburger and X icon
+}
+
 /* 48em = 768px */
 
 @media (min-width: 48em) {
@@ -225,13 +231,9 @@
     top: 10px;
   }
 
-  .header .logo-name {
-    font-size: 1.1rem;
-    font-family: "Agustina Regular";
-    font-weight: bold;
-    letter-spacing: 0.02em;
-    padding: 0 4px;
-    display: inline-block;
+  .header .logo-name,
+  .grey-color {
+    display: none !important;
   }
 
   .header .menu {
@@ -243,5 +245,13 @@
     position: absolute;
     top: 56px;
     z-index: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header .menu-icon .navicon,
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #fff !important; // White for hamburger and X icon on mobile
   }
 }

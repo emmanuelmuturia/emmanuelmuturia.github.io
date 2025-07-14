@@ -4,7 +4,6 @@ import "./BlogCard.scss";
 export default function BlogCard({blog}) {
   function openUrlInNewTab(url, name) {
     if (!url) {
-      console.log(`URL for ${name} not found`);
       return;
     }
     var win = window.open(url, "_blank");
