@@ -17,12 +17,7 @@ export default function Skills() {
           <div className="skills-image-div">
             {illustration.animated ? (
               <DisplayLottie animationData={codingPerson} />
-            ) : (
-              <img
-                alt="Man Working"
-                src={require("../../assets/images/developerActivity.svg")}
-              ></img>
-            )}
+            ) : null}
           </div>
         </Fade>
         <Fade right duration={1000}>
