@@ -59,18 +59,17 @@
   display: block;
   flex: none;
   float: left;
-  font-size: 1.5em;
   text-decoration: none;
   margin-top: 10px;
   line-height: normal;
+  padding: 0;
 }
 
-.header .logo-name {
-  font-family: "Agustina Regular";
-  font-weight: bold;
-  font-variant-ligatures: no-common-ligatures;
-  -webkit-font-variant-ligatures: no-common-ligatures;
-  padding: 0 10px;
+.header .site-logo {
+  height: 70px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* menu */
@@ -141,24 +140,24 @@
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+.header .menu-btn:checked~.menu {
   max-height: 486px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.header .menu-btn:checked~.menu-icon .navicon {
   background: transparent !important;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+.header .menu-btn:checked~.menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+.header .menu-btn:checked~.menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
@@ -232,13 +231,9 @@
     top: 10px;
   }
 
-  .header .logo-name {
-    font-size: 1.1rem;
-    font-family: "Agustina Regular";
-    font-weight: bold;
-    letter-spacing: 0.02em;
-    padding: 0 4px;
-    display: inline-block;
+  .header .logo-name,
+  .grey-color {
+    display: none !important;
   }
 
   .header .menu {
@@ -254,6 +249,7 @@
 }
 
 @media screen and (max-width: 600px) {
+
   .header .menu-icon .navicon,
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
