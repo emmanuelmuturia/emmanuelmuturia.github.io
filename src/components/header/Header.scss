@@ -162,6 +162,13 @@
   top: 0;
 }
 
+/* Force hamburger and X icon color to white for mobile and all screen sizes */
+.header .menu-icon .navicon,
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #fff !important; // White for hamburger and X icon
+}
+
 /* 48em = 768px */
 
 @media (min-width: 48em) {
@@ -243,5 +250,13 @@
     position: absolute;
     top: 56px;
     z-index: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header .menu-icon .navicon,
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #fff !important; // White for hamburger and X icon on mobile
   }
 }
