@@ -1,8 +1,8 @@
 import React from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
+import logo from "../../assets/images/logo.png";
 import {
-  greeting,
   workExperiences,
   skillsSection,
   openSource,
@@ -25,9 +25,7 @@ function Header() {
     <Headroom>
       <header className="header">
         <a href="/" className="logo">
-          <span className="grey-color"> &lt;</span>
-          <span className="logo-name">{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
+          <img src={logo} alt="Logo" className="site-logo" />
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
