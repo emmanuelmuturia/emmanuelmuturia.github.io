@@ -45,12 +45,7 @@ export default function Greeting() {
             <div style={{display: "none"}}>
               {illustration.animated ? (
                 <DisplayLottie animationData={landingPerson} />
-              ) : (
-                <img
-                  alt="man sitting on table"
-                  src={require("../../assets/images/manOnTable.svg")}
-                />
-              )}
+              ) : null}
             </div>
 
             {/* New image displayed instead of Lottie */}
