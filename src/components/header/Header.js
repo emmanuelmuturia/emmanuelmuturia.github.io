@@ -21,6 +21,14 @@ function Header() {
   const viewTalks = talkSection.display;
   const viewResume = resumeSection.display;
 
+  // Close menu after navigation (mobile)
+  const handleMenuClick = () => {
+    const menuBtn = document.getElementById("menu-btn");
+    if (menuBtn && menuBtn.checked) {
+      menuBtn.checked = false;
+    }
+  };
+
   return (
     <Headroom>
       <header className="header">
@@ -31,43 +39,47 @@ function Header() {
         <label
           className="menu-icon"
           htmlFor="menu-btn"
-          style={{color: "white"}}
+          style={{ color: "white" }}
         >
           <span className="navicon"></span>
         </label>
         <ul className="menu">
+          {/* YouTube Section Link as first item */}
+          <li>
+            <a href="#youtube" onClick={handleMenuClick}>YouTube</a>
+          </li>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills" onClick={handleMenuClick}>Skills</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Experience</a>
+              <a href="#experience" onClick={handleMenuClick}>Experience</a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Projects</a>
+              <a href="#opensource" onClick={handleMenuClick}>Projects</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Certifications</a>
+              <a href="#achievements" onClick={handleMenuClick}>Certifications</a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Publications</a>
+              <a href="#blogs" onClick={handleMenuClick}>Publications</a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a>
+              <a href="#talks" onClick={handleMenuClick}>Talks</a>
             </li>
           )}
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={handleMenuClick}>Contact</a>
           </li>
         </ul>
       </header>
