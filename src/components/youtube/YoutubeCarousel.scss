@@ -7,13 +7,24 @@
     box-shadow: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.youtube-carousel-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.01em;
+    text-align: left;
+    width: 100%;
+    padding-left: 1.5rem;
 }
 
 .youtube-carousel {
     display: flex;
-    gap: 1.5rem;
-    justify-content: center;
+    gap: 2.2rem;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     overflow-x: auto;
     margin-bottom: 1.5rem;
@@ -34,45 +45,53 @@
 }
 
 .youtube-carousel-item {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
-    padding: 1rem;
-    width: 320px;
-    min-width: 280px;
-    max-width: 90vw;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    width: 420px;
+    min-width: 340px;
+    max-width: 95vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 0.5rem;
 }
 
+.youtube-carousel-item iframe {
+    width: 100%;
+    height: 320px;
+    border-radius: 18px;
+}
+
 .youtube-video-title {
-    margin-top: 0.75rem;
-    font-size: 1rem;
-    color: #222;
+    margin-top: 0.95rem;
+    font-size: 1.13rem;
+    color: #fff;
     text-align: center;
     font-weight: 500;
 }
 
 .youtube-more-btn {
     background: #fff;
-    color: #111;
+    color: #111 !important;
     border: 2px solid #111;
-    border-radius: 8px;
-    padding: 0.75rem 2.5rem;
-    font-size: 1.1rem;
-    font-weight: 600;
+    border-radius: 18px;
+    padding: 0.95rem 2.8rem;
+    font-size: 1.18rem;
+    font-weight: 700;
     text-decoration: none;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
     transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
     margin-top: 0.5rem;
     display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
 }
 
 .youtube-more-btn:hover {
     background: #fff;
-    color: #111;
+    color: #111 !important;
     border-color: #111;
     transform: scale(1.06);
     box-shadow: 0 2px 8px #00000022;
@@ -86,26 +105,31 @@
     margin: 2rem 0;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .youtube-carousel {
-        gap: 0.75rem;
+        gap: 1.1rem;
         padding: 0 0.5rem;
     }
 
     .youtube-carousel-item {
-        width: 90vw;
+        width: 95vw;
         min-width: 220px;
         max-width: 98vw;
-        padding: 0.5rem;
+        padding: 0;
+    }
+
+    .youtube-carousel-item iframe {
+        height: 200px;
+        border-radius: 12px;
     }
 
     .youtube-video-title {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     .youtube-more-btn {
         width: 100%;
-        padding: 0.75rem 0;
+        padding: 0.85rem 0;
         font-size: 1rem;
     }
 }
