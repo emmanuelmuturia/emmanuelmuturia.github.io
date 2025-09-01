@@ -1,7 +1,7 @@
 import React from "react";
 import "./BlogCard.scss";
 
-export default function BlogCard({ blog }) {
+export default function BlogCard({blog}) {
   function openUrlInNewTab(url, name) {
     if (!url) {
       return;
