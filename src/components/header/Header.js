@@ -39,47 +39,63 @@ function Header() {
         <label
           className="menu-icon"
           htmlFor="menu-btn"
-          style={{ color: "white" }}
+          style={{color: "white"}}
         >
           <span className="navicon"></span>
         </label>
         <ul className="menu">
           {/* YouTube Section Link as first item */}
           <li>
-            <a href="#youtube" onClick={handleMenuClick}>YouTube</a>
+            <a href="#youtube" onClick={handleMenuClick}>
+              YouTube
+            </a>
           </li>
           {viewSkills && (
             <li>
-              <a href="#skills" onClick={handleMenuClick}>Skills</a>
+              <a href="#skills" onClick={handleMenuClick}>
+                Skills
+              </a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience" onClick={handleMenuClick}>Experience</a>
+              <a href="#experience" onClick={handleMenuClick}>
+                Experience
+              </a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource" onClick={handleMenuClick}>Projects</a>
+              <a href="#opensource" onClick={handleMenuClick}>
+                Projects
+              </a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements" onClick={handleMenuClick}>Certifications</a>
+              <a href="#achievements" onClick={handleMenuClick}>
+                Certifications
+              </a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs" onClick={handleMenuClick}>Publications</a>
+              <a href="#blogs" onClick={handleMenuClick}>
+                Publications
+              </a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks" onClick={handleMenuClick}>Talks</a>
+              <a href="#talks" onClick={handleMenuClick}>
+                Talks
+              </a>
             </li>
           )}
           <li>
-            <a href="#contact" onClick={handleMenuClick}>Contact</a>
+            <a href="#contact" onClick={handleMenuClick}>
+              Contact
+            </a>
           </li>
         </ul>
       </header>
