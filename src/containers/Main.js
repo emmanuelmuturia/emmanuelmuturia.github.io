@@ -19,6 +19,7 @@ import SplashScreen from "./splashScreen/SplashScreen";
 import {splashScreen} from "../portfolio";
 import "./Main.scss";
 import Labs from "./labs/Labs";
+import YoutubeCarousel from "../components/youtube/YoutubeCarousel";
 
 const Main = () => {
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
@@ -44,6 +45,7 @@ const Main = () => {
         <>
           <Header />
           <Greeting />
+          <YoutubeCarousel />
           <Skills />
           <StackProgress />
           <Education />
