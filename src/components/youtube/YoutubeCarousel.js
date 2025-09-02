@@ -15,8 +15,8 @@ export default function YoutubeCarousel() {
             setLoading(true);
             try {
                 // Use env variables for API key and channel ID
-                const apiKey = process.env.YOUTUBE_API_KEY;
-                const channelId = process.env.YOUTUBE_CHANNEL_ID;
+                const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY;
+                const channelId = process.env.REACT_APP_YOUTUBE_CHANNEL_ID;
                 const res = await fetch(
                     `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=${MAX_RESULTS}`
                 );
