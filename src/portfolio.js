@@ -37,6 +37,7 @@ const socialMediaLinks = {
   twitter: "https://x.com/emmanuelmuturia",
   medium: "https://medium.com/@emmanuelmuturia",
   linkedin: "https://www.linkedin.com/in/emmanuelmuturia",
+  youtube: "https://www.youtube.com/@emmanuelmuturia", // Added YouTube link
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
