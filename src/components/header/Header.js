@@ -44,12 +44,6 @@ function Header() {
           <span className="navicon"></span>
         </label>
         <ul className="menu">
-          {/* YouTube Section Link as first item */}
-          <li>
-            <a href="#youtube" onClick={handleMenuClick}>
-              YouTube
-            </a>
-          </li>
           {viewSkills && (
             <li>
               <a href="#skills" onClick={handleMenuClick}>
