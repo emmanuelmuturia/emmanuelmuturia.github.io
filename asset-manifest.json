@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.22dc3b38.css",
-    "main.js": "/static/js/main.ac7e5351.js",
+    "main.css": "/static/css/main.996830fa.css",
+    "main.js": "/static/js/main.b6f0dcfd.js",
     "static/css/141.29c476cd.chunk.css": "/static/css/141.29c476cd.chunk.css",
     "static/js/141.04f4cabc.chunk.js": "/static/js/141.04f4cabc.chunk.js",
     "static/css/769.1fac0194.chunk.css": "/static/css/769.1fac0194.chunk.css",
     "static/js/769.268fc5ea.chunk.js": "/static/js/769.268fc5ea.chunk.js",
     "static/media/kotlinKenya.png": "/static/media/kotlinKenya.5511bf8e46fd9e651597.png",
-    "static/media/profile_photo.png": "/static/media/profile_photo.02e435746ed36c52309b.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/logo.png": "/static/media/logo.b025159405562550a4e0.png",
+    "static/media/profile_photo.png": "/static/media/profile_photo.b025159405562550a4e0.png",
     "static/media/ccna.png": "/static/media/ccna.e09389804e884b4eccf0.png",
     "static/media/strathmoreUniversityLogo.png": "/static/media/strathmoreUniversityLogo.2e59f60f9cd6c3dbee87.png",
     "static/media/hciaDatacom.png": "/static/media/hciaDatacom.f64574abecff1bd732d1.png",
@@ -24,15 +24,15 @@
     "static/media/resume.pdf": "/static/media/resume.f0f733dd3cd732b39262.pdf",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.5ae762b7c5277a053933.svg",
-    "main.22dc3b38.css.map": "/static/css/main.22dc3b38.css.map",
-    "main.ac7e5351.js.map": "/static/js/main.ac7e5351.js.map",
+    "main.996830fa.css.map": "/static/css/main.996830fa.css.map",
+    "main.b6f0dcfd.js.map": "/static/js/main.b6f0dcfd.js.map",
     "141.29c476cd.chunk.css.map": "/static/css/141.29c476cd.chunk.css.map",
     "141.04f4cabc.chunk.js.map": "/static/js/141.04f4cabc.chunk.js.map",
     "769.1fac0194.chunk.css.map": "/static/css/769.1fac0194.chunk.css.map",
     "769.268fc5ea.chunk.js.map": "/static/js/769.268fc5ea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22dc3b38.css",
-    "static/js/main.ac7e5351.js"
+    "static/css/main.996830fa.css",
+    "static/js/main.b6f0dcfd.js"
   ]
 }
