@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.996830fa.css",
-    "main.js": "/static/js/main.c5742d88.js",
+    "main.js": "/static/js/main.762fd255.js",
     "static/css/141.29c476cd.chunk.css": "/static/css/141.29c476cd.chunk.css",
     "static/js/141.04f4cabc.chunk.js": "/static/js/141.04f4cabc.chunk.js",
     "static/css/769.1fac0194.chunk.css": "/static/css/769.1fac0194.chunk.css",
@@ -16,6 +16,7 @@
     "static/media/hciaWLAN.png": "/static/media/hciaWLAN.8b602010ea82ceed1495.png",
     "static/media/android254.png": "/static/media/android254.6b003b6e5b0abda91fae.png",
     "static/media/awsCloudPractitioner.png": "/static/media/awsCloudPractitioner.dc3e4349b946ac761f36.png",
+    "static/media/Space Ya Tech.png": "/static/media/Space Ya Tech.5d003c9bbd8b436ce993.png",
     "static/media/ccnaRS.png": "/static/media/ccnaRS.c6b576afdb872e14dc96.png",
     "static/media/kinde_engineering_works_ltd.png": "/static/media/kinde_engineering_works_ltd.de4b475154745dead907.png",
     "static/media/sc900.png": "/static/media/sc900.2c2acc06c013b6bfa593.png",
@@ -25,7 +26,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.5ae762b7c5277a053933.svg",
     "main.996830fa.css.map": "/static/css/main.996830fa.css.map",
-    "main.c5742d88.js.map": "/static/js/main.c5742d88.js.map",
+    "main.762fd255.js.map": "/static/js/main.762fd255.js.map",
     "141.29c476cd.chunk.css.map": "/static/css/141.29c476cd.chunk.css.map",
     "141.04f4cabc.chunk.js.map": "/static/js/141.04f4cabc.chunk.js.map",
     "769.1fac0194.chunk.css.map": "/static/css/769.1fac0194.chunk.css.map",
@@ -33,6 +34,6 @@
   },
   "entrypoints": [
     "static/css/main.996830fa.css",
-    "static/js/main.c5742d88.js"
+    "static/js/main.762fd255.js"
   ]
 }
