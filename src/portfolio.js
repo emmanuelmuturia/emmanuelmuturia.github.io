@@ -26,7 +26,7 @@ const greeting = {
     "Hi, my name is Emmanuel Muturia, and I help fight Crime on The Internet through my skills in Cyber Security. Since 2021, I have been studying and researching Computer Networks & Cyber Security while also learning and practising Android App Development. Since then, I have been passionate about crafting and securing Digital Products, therefore giving rise to my journey in Cyber Security..."
   ),
   resumeLink: "", // Set to empty to hide the button
-  profileImage: require("./assets/images/profile_photo.png"),
+  profileImage: require("./assets/images/The Profile Photo.png"),
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -92,7 +92,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Strathmore University",
-      logo: require("./assets/images/strathmoreUniversityLogo.png"),
+      logo: require("./assets/images/The Emmanuel Muturia™ Logo.png"),
       subHeader: "Bachelor of Science [BSc.] in Telecommunications",
       desc: "I took up Leadership roles in the following Clubs & Societies:",
       descBullets: [
@@ -133,7 +133,7 @@ const workExperiences = {
     {
       role: "Cyber Security Training",
       company: "Cyber Shujaa",
-      companylogo: require("./assets/images/cyberShujaa.png"),
+      companylogo: require("./assets/images/Cyber Shujaa.png"),
       date: "April 2025 – Present",
       link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
       descBullets: []
@@ -149,7 +149,7 @@ const workExperiences = {
     {
       role: "Network Operations Centre [NOC] Training",
       company: "Kinde Engineering Works Ltd.",
-      companylogo: require("./assets/images/kinde_engineering_works_ltd.png"),
+      companylogo: require("./assets/images/Kinde Engineering Works Limited.png"),
       date: "February 2023 – April 2023",
       link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
       descBullets: []
@@ -172,7 +172,7 @@ const bigProjects = {
   subtitle: "",
   projects: [
     {
-      image: require("./assets/images/android254.png"),
+      image: require("./assets/images/Android254.png"),
       projectName: "Android254",
       projectDesc:
         "Android254 brings together Android Engineers to learn more about Android, best practices and also hear talks from industry experts...",
@@ -185,7 +185,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/kotlinKenya.png"),
+      image: require("./assets/images/Kotlin Kenya.png"),
       projectName: "Kotlin Kenya",
       projectDesc:
         "Karibu Kotlin Kenya! We are a collective bunch of lovely people from all different backgrounds interested in this fun[ctional] language that has been taking the programming world by storm [well, at least in the JVM arena]...",
@@ -220,41 +220,41 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "CCNA [Introduction To Networking]",
-      image: require("./assets/images/ccna.png"),
+      image: require("./assets/images/CCNA [Introduction To Networks].png"),
       imageAlt: "CCNA [Introduction To Networking]",
       url: ""
     },
     {
       title: "CCNA [Routing & Switching]",
-      image: require("./assets/images/ccnaRS.png"),
+      image: require("./assets/images/CCNA [Routing & Switching].png"),
       imageAlt: "CCNA [Routing & Switching]",
       url: ""
     },
 
     {
       title: "AWS Certified Cloud Practitioner",
-      image: require("./assets/images/awsCloudPractitioner.png"),
+      image: require("./assets/images/AWS Certified Cloud Practitioner.png"),
       imageAlt: "AWS Certified Cloud Practitioner",
       url: ""
     },
 
     {
       title: "HCIA Datacom",
-      image: require("./assets/images/hciaDatacom.png"),
+      image: require("./assets/images/HCIA [Datacom].png"),
       imageAlt: "HCIA Datacom",
       url: ""
     },
 
     {
       title: "HCIA WLAN",
-      image: require("./assets/images/hciaWLAN.png"),
+      image: require("./assets/images/HCIA [WLAN].png"),
       imageAlt: "HCIA WLAN",
       url: ""
     },
 
     {
       title: "Microsoft SC-900",
-      image: require("./assets/images/sc900.png"),
+      image: require("./assets/images/Microsoft SC-900.png"),
       imageAlt: "Microsoft SC-900",
       url: "https://learn.microsoft.com/api/credentials/share/en-us/emmanuelmuturia/B8FCE3614A1AB26C?sharingId=7A0D56BE201DBB61"
     },

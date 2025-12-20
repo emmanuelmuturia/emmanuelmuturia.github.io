@@ -1,7 +1,7 @@
 import React from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/The Emmanuel Muturia™ Logo.png";
 import {
   workExperiences,
   skillsSection,

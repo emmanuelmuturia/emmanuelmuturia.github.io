@@ -1,6 +1,6 @@
 import React from "react";
 import "./SplashScreen.css";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/The Emmanuel Muturia™ Logo.png";
 
 export default function SplashScreen() {
   return (
