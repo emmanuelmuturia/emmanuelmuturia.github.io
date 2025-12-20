@@ -257,6 +257,12 @@ const achievementSection = {
       image: require("./assets/images/sc900.png"),
       imageAlt: "Microsoft SC-900",
       url: "https://learn.microsoft.com/api/credentials/share/en-us/emmanuelmuturia/B8FCE3614A1AB26C?sharingId=7A0D56BE201DBB61"
+    },
+    {
+      title: "Microsoft AZ-104",
+      image: require("./assets/images/Microsoft AZ-104.png"),
+      imageAlt: "Microsoft AZ-104",
+      url: "https://learn.microsoft.com/api/credentials/share/en-us/emmanuelmuturia/A27A40BE7EF89F6A?sharingId=7A0D56BE201DBB61"
     }
   ],
   display: true // Set false to hide this section, defaults to true
