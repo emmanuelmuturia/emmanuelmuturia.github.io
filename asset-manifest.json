@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.996830fa.css",
-    "main.js": "/static/js/main.8fcfc415.js",
+    "main.js": "/static/js/main.c5742d88.js",
     "static/css/141.29c476cd.chunk.css": "/static/css/141.29c476cd.chunk.css",
     "static/js/141.04f4cabc.chunk.js": "/static/js/141.04f4cabc.chunk.js",
     "static/css/769.1fac0194.chunk.css": "/static/css/769.1fac0194.chunk.css",
@@ -18,14 +18,14 @@
     "static/media/awsCloudPractitioner.png": "/static/media/awsCloudPractitioner.dc3e4349b946ac761f36.png",
     "static/media/ccnaRS.png": "/static/media/ccnaRS.c6b576afdb872e14dc96.png",
     "static/media/kinde_engineering_works_ltd.png": "/static/media/kinde_engineering_works_ltd.de4b475154745dead907.png",
-    "static/media/cifor_icraf.png": "/static/media/cifor_icraf.ec68cf6cad6339671027.png",
     "static/media/sc900.png": "/static/media/sc900.2c2acc06c013b6bfa593.png",
     "static/media/cyberShujaa.png": "/static/media/cyberShujaa.8f48f0f2b533f33bf22c.png",
+    "static/media/DroidCon Kenya.png": "/static/media/DroidCon Kenya.a3b916c52ac7a9449f25.png",
     "static/media/resume.pdf": "/static/media/resume.f0f733dd3cd732b39262.pdf",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.5ae762b7c5277a053933.svg",
     "main.996830fa.css.map": "/static/css/main.996830fa.css.map",
-    "main.8fcfc415.js.map": "/static/js/main.8fcfc415.js.map",
+    "main.c5742d88.js.map": "/static/js/main.c5742d88.js.map",
     "141.29c476cd.chunk.css.map": "/static/css/141.29c476cd.chunk.css.map",
     "141.04f4cabc.chunk.js.map": "/static/js/141.04f4cabc.chunk.js.map",
     "769.1fac0194.chunk.css.map": "/static/css/769.1fac0194.chunk.css.map",
@@ -33,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.996830fa.css",
-    "static/js/main.8fcfc415.js"
+    "static/js/main.c5742d88.js"
   ]
 }
