@@ -23,7 +23,7 @@ const greeting = {
   username: "Emmanuel Muturia",
   title: "Hi, my name is Emmanuel Muturia...",
   subTitle: emoji(
-    "I help fight Crime on The Internet through my skills in Cyber Security as part of my journey in mastering DevSecOps..."
+    "I help fight Crime on The Internet through my Skills in Cyber Security..."
   ),
   resumeLink: "", // Set to empty to hide the button
   profileImage: require("./assets/images/profile_photo.png"),
