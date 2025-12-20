@@ -168,7 +168,7 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Tech Communities",
+  title: "Communities",
   subtitle: "",
   projects: [
     {
@@ -193,6 +193,18 @@ const bigProjects = {
         {
           name: "Learn More",
           url: "https://www.meetup.com/KotlinKenya"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/Space Ya Tech.png"),
+      projectName: "Space Ya Tech",
+      projectDesc:
+        "Space Ya Tech is a Community fostering Innovation across African Borders for Tech Enthusiasts. With Memberships across Kenya, Tanzania, Nigeria and Pockets of Africa, we aim to give Life and let live to innovative Ideas in The Tech EcoSphere.",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: "https://www.spaceyatech.com/"
         }
       ]
     }
