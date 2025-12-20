@@ -136,8 +136,7 @@ const workExperiences = {
       companylogo: require("./assets/images/cyberShujaa.png"),
       date: "April 2025 – Present",
       link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
-      descBullets: [
-      ]
+      descBullets: []
     },
     {
       role: "Android Engineering [Security, Performance, and Testing]",
@@ -145,9 +144,7 @@ const workExperiences = {
       companylogo: require("./assets/images/DroidCon Kenya.png"),
       date: "June 2023 - April 2025",
       link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
-      descBullets: [
-        
-      ]
+      descBullets: []
     },
     {
       role: "Network Operations Centre [NOC] Training",
@@ -155,8 +152,7 @@ const workExperiences = {
       companylogo: require("./assets/images/kinde_engineering_works_ltd.png"),
       date: "February 2023 – April 2023",
       link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
-      descBullets: [
-      ]
+      descBullets: []
     }
   ]
 };
