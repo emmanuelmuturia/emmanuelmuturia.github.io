@@ -49,7 +49,7 @@ export default function Greeting() {
             {/* New image displayed instead of Lottie */}
             <img
               alt="Greeting Visual"
-              src={require("../../assets/images/profile_photo.png")}
+              src={require("../../assets/images/The Profile Photo.png")}
               className="greeting-replacement-image"
             />
           </div>
