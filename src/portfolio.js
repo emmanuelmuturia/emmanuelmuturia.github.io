@@ -20,10 +20,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Emmanuel Muturia",
-  title: "Hi, my name is Emmanuel Muturia...",
+  username: "Emmanuel Muturia™",
+  title: "Hi, my name is Emmanuel Muturia™...",
   subTitle: emoji(
-    "Hi, my name is Emmanuel Muturia, and I help fight Crime on The Internet through my skills in Cyber Security. Since 2021, I have been studying and researching Computer Networks & Cyber Security while also learning and practising Android App Development. Since then, I have been passionate about crafting and securing Digital Products, therefore giving rise to my journey in Cyber Security..."
+    "Hi, my name is Emmanuel Muturia™, and I help fight Crime on The Internet through my skills in Cyber Security. Since 2021, I have been studying and researching Computer Networks & Cyber Security while also learning and practising Android App Development. Since then, I have been passionate about crafting and securing Digital Products, therefore giving rise to my journey in Cyber Security..."
   ),
   resumeLink: "", // Set to empty to hide the button
   profileImage: require("./assets/images/The Profile Photo.png"),
