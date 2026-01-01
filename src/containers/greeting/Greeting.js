@@ -1,11 +1,11 @@
 import React from "react";
-import {Fade} from "react-reveal";
+import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
+import { illustration, greeting } from "../../portfolio";
 
 export default function Greeting() {
   if (!greeting.displayGreeting) {
@@ -40,7 +40,7 @@ export default function Greeting() {
           </div>
           <div className="greeting-image-div">
             {/* Hide Lottie animation */}
-            <div style={{display: "none"}}>
+            <div style={{ display: "none" }}>
               {illustration.animated ? (
                 <DisplayLottie animationData={landingPerson} />
               ) : null}
