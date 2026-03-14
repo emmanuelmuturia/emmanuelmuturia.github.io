@@ -16,7 +16,7 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   gap: 3rem;
-  padding: 1rem 0;
+  padding: 1rem 3rem; /* Added horizontal padding to prevent arrows from being covered */
   width: 100%;
   max-width: 100%;
   scrollbar-width: none;
