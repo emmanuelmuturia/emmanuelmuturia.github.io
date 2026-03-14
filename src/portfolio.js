@@ -34,7 +34,8 @@ const greeting = {
 
 const socialMediaLinks = {
   x: "https://x.com/emmanuelmuturia",
-  youtube: "https://www.youtube.com/channel/UCg2Ponw8OIvcSXKwR6F5mMw?sub_confirmation=1",
+  youtube:
+    "https://www.youtube.com/channel/UCg2Ponw8OIvcSXKwR6F5mMw?sub_confirmation=1",
   linkedin: "https://www.linkedin.com/in/emmanuelmuturia",
   instagram: "https://www.instagram.com/emmanuelmuturia/",
   tiktok: "https://www.tiktok.com/@emmanuelmuturia",
