@@ -84,9 +84,13 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-docker"
     },
     {
+      skillName: "Networking",
+      fontAwesomeClassname: "fa-solid fa-wifi"
+    },
+    {/*
       skillName: "Firebase",
       fontAwesomeClassname: "fas fa-fire"
-    }
+    */}
   ],
   display: true // Set false to hide this section, defaults to true
 };
