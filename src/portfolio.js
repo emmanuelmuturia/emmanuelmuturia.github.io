@@ -23,7 +23,7 @@ const greeting = {
   username: "Emmanuel Muturia™",
   title: "Hi, my name is Emmanuel Muturia™...",
   subTitle: emoji(
-    "Hi, my name is Emmanuel Muturia™, and I help fight Crime on The Internet through my skills in Cyber Security. Since 2021, I have been studying and researching Computer Networks & Cyber Security while also learning and practising Android App Development. Since then, I have been passionate about crafting and securing Digital Products, therefore giving rise to my journey in Cyber Security..."
+    "Hi, my name is Emmanuel Muturia, and I help fight Crime on The Internet through my practice in Cyber Security Engineering. Since 2019, I have been studying and researching Computer Networking and Cyber Security [Telecommunications] and acquired the foundational Knowledge needed to kickstart my Career in Cyber Security. I currently work with SMEs by helping them secure their Digital Products and Infrastructure, therefore reducing their chances of being the next hacked Companies. I intend to leverage my Brand and other Resources to empower Individuals to protect their Digital Assets through Education and Awareness in Cyber Security, thereby creating a safer Cyber Space..."
   ),
   resumeLink: "", // Set to empty to hide the button
   profileImage: require("./assets/images/The Profile Photo.png"),
