@@ -54,7 +54,7 @@ function Header() {
           {viewExperience && (
             <li>
               <a href="#experience" onClick={handleMenuClick}>
-                Experience
+                Brands
               </a>
             </li>
           )}
@@ -68,7 +68,7 @@ function Header() {
           {viewAchievement && (
             <li>
               <a href="#achievements" onClick={handleMenuClick}>
-                Certifications
+                Credentials
               </a>
             </li>
           )}
