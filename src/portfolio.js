@@ -23,7 +23,7 @@ const greeting = {
   username: "Emmanuel Muturia™",
   title: "Hi, my name is Emmanuel Muturia™...",
   subTitle: emoji(
-    "Hi, my name is Emmanuel Muturia, and I help fight Crime on The Internet through my practice in Cyber Security Engineering. Since 2019, I have been studying and researching Computer Networking and Cyber Security [Telecommunications] and acquired the foundational Knowledge needed to kickstart my Career in Cyber Security. I currently work with SMEs by helping them secure their Digital Products and Infrastructure, therefore reducing their chances of being the next hacked Companies. I intend to leverage my Brand and other Resources to empower Individuals to protect their Digital Assets through Education and Awareness in Cyber Security, thereby creating a safer Cyber Space..."
+    "Hi, my name is Emmanuel Muturia™, and I help fight Crime on The Internet through my practice in Cyber Security Engineering. Since 2019, I have been studying and researching Computer Networking and Cyber Security [Telecommunications] and acquired the foundational Knowledge needed to kickstart my Career in Cyber Security. I currently work with SMEs by helping them secure their Digital Products and Infrastructure, therefore reducing their chances of being the next hacked Companies. I intend to leverage my Brand and other Resources to empower Individuals to protect their Digital Assets through Education and Awareness in Cyber Security, thereby creating a safer Cyber Space..."
   ),
   resumeLink: "", // Set to empty to hide the button
   profileImage: require("./assets/images/The Profile Photo.png"),
@@ -33,12 +33,18 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  twitter: "https://x.com/emmanuelmuturia",
+  x: "https://x.com/emmanuelmuturia",
+  youtube:
+    "https://www.youtube.com/channel/UCg2Ponw8OIvcSXKwR6F5mMw?sub_confirmation=1",
   linkedin: "https://www.linkedin.com/in/emmanuelmuturia",
+  instagram: "https://www.instagram.com/emmanuelmuturia/",
+  tiktok: "https://www.tiktok.com/@emmanuelmuturia",
   medium: "https://medium.com/@emmanuelmuturia",
   github: "https://github.com/emmanuelmuturia",
-  instagram: "https://www.instagram.com/emmanuelmuturia",
-  // Instagram, Twitter and Kaggle are also supported in the links!
+  discord: "https://discord.com/users/612415290478952451",
+  reddit: "https://www.reddit.com/user/emmanuelmuturia",
+  threads: "https://www.threads.com/@emmanuelmuturia",
+  snapchat: "https://www.snapchat.com/add/emmanuelmuturia",
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };

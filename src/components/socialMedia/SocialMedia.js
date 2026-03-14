@@ -104,6 +104,92 @@ export default function socialMedia() {
         </a>
       ) : null}
 
+      {socialMediaLinks.youtube ? (
+        <a
+          href={socialMediaLinks.youtube}
+          className="icon-button youtube"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-youtube"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.x ? (
+        <a
+          href={socialMediaLinks.x}
+          className="icon-button twitter"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-twitter"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.tiktok ? (
+        <a
+          href={socialMediaLinks.tiktok}
+          className="icon-button tiktok"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-tiktok"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.discord ? (
+        <a
+          href={socialMediaLinks.discord}
+          className="icon-button discord"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-discord"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.reddit ? (
+        <a
+          href={socialMediaLinks.reddit}
+          className="icon-button reddit"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-reddit-alien"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+      {/*
+      {socialMediaLinks.threads ? (
+        <a
+          href={socialMediaLinks.threads}
+          className="icon-button threads"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-threads"></i>
+          <span></span>
+        </a>
+      ) : null}
+      */}
+
+      {socialMediaLinks.snapchat ? (
+        <a
+          href={socialMediaLinks.snapchat}
+          className="icon-button snapchat"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-snapchat"></i>
+          <span></span>
+        </a>
+      ) : null}
+
       {socialMediaLinks.stackoverflow ? (
         <a
           href={socialMediaLinks.stackoverflow}
