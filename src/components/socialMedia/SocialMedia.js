@@ -119,11 +119,11 @@ export default function socialMedia() {
       {socialMediaLinks.x ? (
         <a
           href={socialMediaLinks.x}
-          className="icon-button x"
+          className="icon-button twitter"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-x"></i>
+          <i className="fab fa-twitter"></i>
           <span></span>
         </a>
       ) : null}
@@ -164,6 +164,7 @@ export default function socialMedia() {
         </a>
       ) : null}
 
+      {/*
       {socialMediaLinks.threads ? (
         <a
           href={socialMediaLinks.threads}
@@ -175,6 +176,7 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+      */}
 
       {socialMediaLinks.snapchat ? (
         <a
