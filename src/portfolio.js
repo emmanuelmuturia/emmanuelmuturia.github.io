@@ -143,26 +143,34 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Cyber Security Training",
-      company: "Cyber Shujaa",
-      companylogo: require("./assets/images/Cyber Shujaa.png"),
-      date: "April 2025 – Present",
+      role: "",
+      company: "Caava Group",
+      companylogo: require("./assets/images/Caava Group.png"),
+      date: "",
       link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
       descBullets: []
     },
     {
-      role: "Android Engineering [Security, Performance, and Testing]",
+      role: "",
+      company: "CIFOR-ICRAF",
+      companylogo: require("./assets/images/CIFOR-ICRAF.png"),
+      date: "",
+      link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
+      descBullets: []
+    },
+    {
+      role: "",
       company: "DroidCon Kenya",
       companylogo: require("./assets/images/DroidCon Kenya.png"),
-      date: "June 2023 - April 2025",
+      date: "",
       link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
       descBullets: []
     },
     {
-      role: "Network Operations Centre [NOC] Training",
+      role: "",
       company: "Kinde Engineering Works Ltd.",
       companylogo: require("./assets/images/Kinde Engineering Works Limited.png"),
-      date: "February 2023 – April 2023",
+      date: "",
       link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
       descBullets: []
     }
