@@ -33,12 +33,17 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  twitter: "https://x.com/emmanuelmuturia",
+  x: "https://x.com/emmanuelmuturia",
+  youtube: "https://www.youtube.com/channel/UCg2Ponw8OIvcSXKwR6F5mMw?sub_confirmation=1",
   linkedin: "https://www.linkedin.com/in/emmanuelmuturia",
+  instagram: "https://www.instagram.com/emmanuelmuturia/",
+  tiktok: "https://www.tiktok.com/@emmanuelmuturia",
   medium: "https://medium.com/@emmanuelmuturia",
   github: "https://github.com/emmanuelmuturia",
-  instagram: "https://www.instagram.com/emmanuelmuturia",
-  // Instagram, Twitter and Kaggle are also supported in the links!
+  discord: "https://discord.com/users/612415290478952451",
+  reddit: "https://www.reddit.com/user/emmanuelmuturia",
+  threads: "https://www.threads.com/@emmanuelmuturia",
+  snapchat: "https://www.snapchat.com/add/emmanuelmuturia",
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
