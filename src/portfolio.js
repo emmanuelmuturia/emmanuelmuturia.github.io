@@ -236,7 +236,7 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Certifications"),
+  title: emoji("Credentials"),
   achievementsCards: [
     {
       title: "CCNA [Introduction To Networking]",
