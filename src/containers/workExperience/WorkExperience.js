@@ -1,8 +1,7 @@
 import React from "react";
 import "./WorkExperience.scss";
-import ExperienceCarousel from "./ExperienceCarousel";
-import {workExperiences} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { workExperiences } from "../../portfolio";
+import { Fade } from "react-reveal";
 
 export default function WorkExperience() {
   if (workExperiences.display) {
@@ -11,10 +10,8 @@ export default function WorkExperience() {
         <Fade bottom duration={1000} distance="20px">
           <div className="experience-container" id="workExperience">
             <div>
-              <h1 className="experience-heading">
-                Brands That I Have Worked With
-              </h1>
-              <ExperienceCarousel />
+              <h1 className="experience-heading">Products</h1>
+              <p>Coming Soon...</p>
             </div>
           </div>
         </Fade>
