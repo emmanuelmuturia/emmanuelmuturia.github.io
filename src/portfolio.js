@@ -188,14 +188,14 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Communities",
+  title: "Tech Communities",
   subtitle: "",
   projects: [
     {
       image: require("./assets/images/Android254.png"),
       projectName: "Android254",
       projectDesc:
-        "Android254 brings together Android Engineers to learn more about Android, best practices and also hear talks from industry experts...",
+        "",
       footerLink: [
         {
           name: "Learn More",
@@ -208,7 +208,7 @@ const bigProjects = {
       image: require("./assets/images/Kotlin Kenya.png"),
       projectName: "Kotlin Kenya",
       projectDesc:
-        "Karibu Kotlin Kenya! We are a collective bunch of lovely people from all different backgrounds interested in this fun[ctional] language that has been taking the programming world by storm [well, at least in the JVM arena]...",
+        "",
       footerLink: [
         {
           name: "Learn More",
@@ -220,7 +220,7 @@ const bigProjects = {
       image: require("./assets/images/Space Ya Tech.png"),
       projectName: "Space Ya Tech",
       projectDesc:
-        "Space Ya Tech is a Community fostering Innovation across African Borders for Tech Enthusiasts. With Memberships across Kenya, Tanzania, Nigeria and Pockets of Africa, we aim to give Life and let live to innovative Ideas in The Tech EcoSphere.",
+        "",
       footerLink: [
         {
           name: "Learn More",
