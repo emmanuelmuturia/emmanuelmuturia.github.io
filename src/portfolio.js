@@ -401,7 +401,11 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact"),
-  email_address: "science@emmanuelmuturia.com"
+  // Keep the address out of the initial HTML and plain-text source.
+  email_address: [
+    115, 99, 105, 101, 110, 99, 101, 64, 101, 109, 109, 97, 110, 117, 101,
+    108, 109, 117, 116, 117, 114, 105, 97, 46, 99, 111, 109
+  ]
 };
 
 // Twitter Section
