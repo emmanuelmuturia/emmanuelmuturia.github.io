@@ -39,15 +39,15 @@ function Header() {
         <label
           className="menu-icon"
           htmlFor="menu-btn"
-          style={{color: "white"}}
+          style={{ color: "white" }}
         >
           <span className="navicon"></span>
         </label>
         <ul className="menu">
           {viewSkills && (
             <li>
-              <a href="#skills" onClick={handleMenuClick}>
-                Skills
+              <a href="#videos" onClick={handleMenuClick}>
+                Videos
               </a>
             </li>
           )}
@@ -61,14 +61,14 @@ function Header() {
           {viewOpenSource && (
             <li>
               <a href="#opensource" onClick={handleMenuClick}>
-                Projects
+                Research
               </a>
             </li>
           )}
           {viewAchievement && (
             <li>
               <a href="#achievements" onClick={handleMenuClick}>
-                Credentials
+                Certifications
               </a>
             </li>
           )}
