@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import "./Skills.scss";
-import { skillsSection } from "../../portfolio";
+import {skillsSection} from "../../portfolio";
 import Button from "../../components/button/Button";
 
 export default function Skills() {

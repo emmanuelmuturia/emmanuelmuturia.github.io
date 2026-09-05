@@ -206,7 +206,8 @@ if (YOUTUBE_API_KEY && YOUTUBE_CHANNEL_ID) {
     null,
     channelData => {
       const channel = JSON.parse(channelData);
-      const uploadsPlaylistId = channel.items?.[0]?.contentDetails?.relatedPlaylists?.uploads;
+      const uploadsPlaylistId =
+        channel.items?.[0]?.contentDetails?.relatedPlaylists?.uploads;
 
       if (!uploadsPlaylistId) {
         console.error(ERR.requestFailedYouTube);
@@ -214,7 +215,7 @@ if (YOUTUBE_API_KEY && YOUTUBE_CHANNEL_ID) {
       }
 
       const videosPath = `/youtube/v3/playlistItems?part=snippet&maxResults=3&playlistId=${uploadsPlaylistId}&key=${YOUTUBE_API_KEY}`;
-      const videosOptions = { ...channelOptions, path: videosPath };
+      const videosOptions = {...channelOptions, path: videosPath};
 
       safeRequest(
         videosOptions,
@@ -234,13 +235,17 @@ if (YOUTUBE_API_KEY && YOUTUBE_CHANNEL_ID) {
           saveVideos(latestVideos);
         },
         err => {
-          console.error(`⚠️ YouTube API unavailable (${err.message}). Using RSS fallback.`);
+          console.error(
+            `⚠️ YouTube API unavailable (${err.message}). Using RSS fallback.`
+          );
           fetchYouTubeRss();
         }
       );
     },
     err => {
-      console.error(`⚠️ YouTube API unavailable (${err.message}). Using RSS fallback.`);
+      console.error(
+        `⚠️ YouTube API unavailable (${err.message}). Using RSS fallback.`
+      );
       fetchYouTubeRss();
     }
   );
