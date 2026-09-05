@@ -1,34 +1,46 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Skills.scss";
-import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import {illustration, skillsSection} from "../../portfolio";
-import {Fade} from "react-reveal";
-import codingPerson from "../../assets/lottie/codingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import { skillsSection } from "../../portfolio";
+import Button from "../../components/button/Button";
 
 export default function Skills() {
+  const [videos, setVideos] = useState([]);
+
+  useEffect(() => {
+    fetch("/videos.json")
+      .then(response => (response.ok ? response.json() : []))
+      .then(setVideos)
+      .catch(() => setVideos([]));
+  }, []);
+
   if (!skillsSection.display) {
     return null;
   }
   return (
-    <div className="dark-mode main" id="skills">
-      <div className="skills-main-div" style={{alignItems: "center"}}>
-        <Fade left duration={1000}>
-          <div className="skills-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={codingPerson} />
-            ) : null}
-          </div>
-        </Fade>
-        <Fade right duration={1000}>
-          <div className="skills-text-div">
-            <h1 className="dark-mode skills-heading">{skillsSection.title} </h1>
-            <p className="dark-mode subTitle skills-text-subtitle">
-              {skillsSection.subTitle}
-            </p>
-            <SoftwareSkill />
-          </div>
-        </Fade>
+    <div className="dark-mode main" id="videos">
+      <div className="videos-main-div">
+        <h1 className="dark-mode skills-heading">Videos</h1>
+        <div className="videos-grid">
+          {videos.slice(0, 3).map(video => (
+            <a
+              className="video-card"
+              href={video.url}
+              key={video.id}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={video.thumbnail} alt="" />
+              <h2>{video.title}</h2>
+              <span>Watch video &#8594;</span>
+            </a>
+          ))}
+        </div>
+        <Button
+          text="More Videos"
+          href="https://www.youtube.com/@emmanuelmuturia"
+          newTab={true}
+          className="project-button"
+        />
       </div>
     </div>
   );
