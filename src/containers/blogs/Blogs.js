@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "./Blog.scss";
 import BlogCard from "../../components/blogCard/BlogCard";
+import Button from "../../components/button/Button";
 import {blogSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 export default function Blogs() {
@@ -56,7 +57,7 @@ export default function Blogs() {
           <div className="blog-text-div">
             {blogSection.displayMediumBlogs !== "true" ||
             mediumBlogs === "Error"
-              ? blogSection.blogs.map((blog, i) => {
+              ? blogSection.blogs.slice(0, 3).map((blog, i) => {
                   return (
                     <BlogCard
                       key={i}
@@ -69,7 +70,7 @@ export default function Blogs() {
                     />
                   );
                 })
-              : mediumBlogs.map((blog, i) => {
+              : mediumBlogs.slice(0, 3).map((blog, i) => {
                   return (
                     <BlogCard
                       key={i}
@@ -83,6 +84,12 @@ export default function Blogs() {
                 })}
           </div>
         </div>
+        <Button
+          text="More Publications"
+          href="https://medium.com/@emmanuelmuturia"
+          newTab={true}
+          className="project-button"
+        />
       </div>
     </Fade>
   );

@@ -236,8 +236,32 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Credentials"),
+  title: emoji("Certifications"),
   achievementsCards: [
+    {
+      title: "KCNA [Kubernetes and Cloud Native Associate]",
+      image: require("./assets/images/The KCNA [Kubernetes and Cloud Native Associate] Badge.png"),
+      imageAlt: "KCNA: Kubernetes and Cloud Native Associate",
+      url: ""
+    },
+    {
+      title: "AWS Certified Cloud Practitioner",
+      image: require("./assets/images/AWS Certified Cloud Practitioner.png"),
+      imageAlt: "AWS Certified Cloud Practitioner",
+      url: ""
+    },
+    {
+      title: "Microsoft SC-900",
+      image: require("./assets/images/Microsoft SC-900.png"),
+      imageAlt: "Microsoft SC-900",
+      url: "https://learn.microsoft.com/api/credentials/share/en-us/emmanuelmuturia/B8FCE3614A1AB26C?sharingId=7A0D56BE201DBB61"
+    },
+    {
+      title: "Microsoft AZ-104",
+      image: require("./assets/images/Microsoft AZ-104.png"),
+      imageAlt: "Microsoft AZ-104",
+      url: "https://learn.microsoft.com/api/credentials/share/en-us/emmanuelmuturia/A27A40BE7EF89F6A?sharingId=7A0D56BE201DBB61"
+    },
     {
       title: "CCNA [Introduction To Networking]",
       image: require("./assets/images/CCNA [Introduction To Networks].png"),
@@ -248,13 +272,6 @@ const achievementSection = {
       title: "CCNA [Routing & Switching]",
       image: require("./assets/images/CCNA [Routing & Switching].png"),
       imageAlt: "CCNA [Routing & Switching]",
-      url: ""
-    },
-
-    {
-      title: "AWS Certified Cloud Practitioner",
-      image: require("./assets/images/AWS Certified Cloud Practitioner.png"),
-      imageAlt: "AWS Certified Cloud Practitioner",
       url: ""
     },
 
@@ -270,19 +287,6 @@ const achievementSection = {
       image: require("./assets/images/HCIA [WLAN].png"),
       imageAlt: "HCIA WLAN",
       url: ""
-    },
-
-    {
-      title: "Microsoft SC-900",
-      image: require("./assets/images/Microsoft SC-900.png"),
-      imageAlt: "Microsoft SC-900",
-      url: "https://learn.microsoft.com/api/credentials/share/en-us/emmanuelmuturia/B8FCE3614A1AB26C?sharingId=7A0D56BE201DBB61"
-    },
-    {
-      title: "Microsoft AZ-104",
-      image: require("./assets/images/Microsoft AZ-104.png"),
-      imageAlt: "Microsoft AZ-104",
-      url: "https://learn.microsoft.com/api/credentials/share/en-us/emmanuelmuturia/A27A40BE7EF89F6A?sharingId=7A0D56BE201DBB61"
     }
   ],
   display: true // Set false to hide this section, defaults to true
