@@ -194,8 +194,7 @@ const bigProjects = {
     {
       image: require("./assets/images/Android254.png"),
       projectName: "Android254",
-      projectDesc:
-        "",
+      projectDesc: "",
       footerLink: [
         {
           name: "Learn More",
@@ -207,8 +206,7 @@ const bigProjects = {
     {
       image: require("./assets/images/Kotlin Kenya.png"),
       projectName: "Kotlin Kenya",
-      projectDesc:
-        "",
+      projectDesc: "",
       footerLink: [
         {
           name: "Learn More",
@@ -219,8 +217,7 @@ const bigProjects = {
     {
       image: require("./assets/images/Space Ya Tech.png"),
       projectName: "Space Ya Tech",
-      projectDesc:
-        "",
+      projectDesc: "",
       footerLink: [
         {
           name: "Learn More",
@@ -367,10 +364,10 @@ const talkSection = {
       event_url: "https://youtu.be/ThRR8PhzczQ?si=ZvdaT4fgopNCVtOZ"
     },
     {
-      title: "The Web Application Security Demo [feat. The OWASP Top 10 and Burp Suite] with Emmanuel Muturia",
+      title:
+        "The Web Application Security Demo [feat. The OWASP Top 10 and Burp Suite] with Emmanuel Muturia",
       subtitle: "",
-      slides_url:
-        "https://youtu.be/Y2dmWkDr35w?si=jdU30LAhhAo5xdfN",
+      slides_url: "https://youtu.be/Y2dmWkDr35w?si=jdU30LAhhAo5xdfN",
       event_url: "https://youtu.be/Y2dmWkDr35w?si=jdU30LAhhAo5xdfN"
     }
   ],
@@ -403,8 +400,8 @@ const contactInfo = {
   title: emoji("Contact"),
   // Keep the address out of the initial HTML and plain-text source.
   email_address: [
-    115, 99, 105, 101, 110, 99, 101, 64, 101, 109, 109, 97, 110, 117, 101,
-    108, 109, 117, 116, 117, 114, 105, 97, 46, 99, 111, 109
+    115, 99, 105, 101, 110, 99, 101, 64, 101, 109, 109, 97, 110, 117, 101, 108,
+    109, 117, 116, 117, 114, 105, 97, 46, 99, 111, 109
   ]
 };
 

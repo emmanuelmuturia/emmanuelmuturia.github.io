@@ -1,7 +1,7 @@
 import React from "react";
 import "./TalkCard.scss";
 
-export default function TalkCard({ talkDetails, variant }) {
+export default function TalkCard({talkDetails, variant}) {
   return (
     <a
       className={`talk-card ${variant}`}
