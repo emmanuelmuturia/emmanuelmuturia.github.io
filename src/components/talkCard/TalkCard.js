@@ -1,29 +1,18 @@
 import React from "react";
 import "./TalkCard.scss";
 
-export default function TalkCard({talkDetails}) {
+export default function TalkCard({ talkDetails, variant }) {
   return (
-    <div>
-      <div className="container">
-        <div
-          className={
-            talkDetails.isDark ? "dark-rectangle rectangle" : "rectangle"
-          }
-        >
-          <div className="diagonal-fill"></div>
-          <div className="talk-card-title">{talkDetails.title}</div>
-          <p className="talk-card-subtitle">{talkDetails.subtitle}</p>
-
-          <div className="card-footer-button-div">
-            <a href={talkDetails.slides_url} target="_" className="talk-button">
-              Slides
-            </a>
-            <a href={talkDetails.event_url} target="_" className="talk-button">
-              Event
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <a
+      className={`talk-card ${variant}`}
+      href={talkDetails.event_url}
+      target="_blank"
+      rel="noreferrer"
+    >
+      <span className="talk-card-kicker">Talk &amp; Session</span>
+      <h2 className="talk-card-title">{talkDetails.title}</h2>
+      <p className="talk-card-subtitle">{talkDetails.subtitle}</p>
+      <span className="talk-card-link">Watch the event &#8594;</span>
+    </a>
   );
 }

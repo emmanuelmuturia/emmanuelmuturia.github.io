@@ -355,30 +355,23 @@ const labsSection = {
 // Talks Sections
 
 const talkSection = {
-  title: "Talks",
+  title: "Talks & Sessions",
   subtitle: "",
 
   talks: [
     {
-      title: "Unlocking Passkeys in Android (feat. Credentials Manager)",
-      subtitle: "Android254 Monthly Meetup",
+      title: "Application Security",
+      subtitle: "",
       slides_url:
-        "https://speakerdeck.com/emmanuelmuturia/unlocking-passkeys-in-android-feat-credentials-manager",
-      event_url: "https://www.meetup.com/android254"
+        "https://speakerdeck.com/emmanuelmuturia/application-security",
+      event_url: "https://youtu.be/ThRR8PhzczQ?si=ZvdaT4fgopNCVtOZ"
     },
     {
-      title: "The 3 Musketeers of Android Security (feat. Africa's Talking)",
-      subtitle: "Africa's Talking Summit 2023",
+      title: "The Web Application Security Demo [feat. The OWASP Top 10 and Burp Suite] with Emmanuel Muturia",
+      subtitle: "",
       slides_url:
-        "https://speakerdeck.com/emmanuelmuturia/the-3-musketeers-of-android-security-feat-africas-talking",
-      event_url: "https://summit.africastalking.com/"
-    },
-    {
-      title: "How To Build Insecure Android Apps (feat. Sanitizers)",
-      subtitle: "DroidCon Kenya 2023",
-      slides_url:
-        "https://speakerdeck.com/emmanuelmuturia/how-to-build-insecure-android-apps-feat-sanitizers",
-      event_url: "https://droidcon.co.ke/"
+        "https://youtu.be/Y2dmWkDr35w?si=jdU30LAhhAo5xdfN",
+      event_url: "https://youtu.be/Y2dmWkDr35w?si=jdU30LAhhAo5xdfN"
     }
   ],
   display: true // Set false to hide this section, defaults to true
