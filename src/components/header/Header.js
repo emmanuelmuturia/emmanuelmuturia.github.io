@@ -46,22 +46,22 @@ function Header() {
         <ul className="menu">
           {viewSkills && (
             <li>
-              <a href="#skills" onClick={handleMenuClick}>
-                Skills
+              <a href="#videos" onClick={handleMenuClick}>
+                Videos
               </a>
             </li>
           )}
           {viewExperience && (
             <li>
               <a href="#experience" onClick={handleMenuClick}>
-                Experience
+                Brands
               </a>
             </li>
           )}
           {viewOpenSource && (
             <li>
               <a href="#opensource" onClick={handleMenuClick}>
-                Projects
+                Research
               </a>
             </li>
           )}

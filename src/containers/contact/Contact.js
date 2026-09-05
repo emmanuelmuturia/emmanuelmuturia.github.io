@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {illustration, contactInfo} from "../../portfolio";
@@ -7,6 +7,9 @@ import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function Contact() {
+  const [emailRevealed, setEmailRevealed] = useState(false);
+  const emailAddress = String.fromCharCode(...contactInfo.email_address);
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main contact-margin-top" id="contact">
@@ -27,12 +30,22 @@ export default function Contact() {
                   <br />
                 </>
               )}
-              <a
-                className="contact-detail-email"
-                href={"mailto:" + contactInfo.email_address}
-              >
-                {contactInfo.email_address}
-              </a>
+              {emailRevealed ? (
+                <a
+                  className="contact-detail-email"
+                  href={"mailto:" + emailAddress}
+                >
+                  {emailAddress}
+                </a>
+              ) : (
+                <button
+                  className="contact-email-reveal"
+                  type="button"
+                  onClick={() => setEmailRevealed(true)}
+                >
+                  Reveal Email Address
+                </button>
+              )}
               <br />
               <br />
               <SocialMedia />

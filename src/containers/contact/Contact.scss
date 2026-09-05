@@ -40,6 +40,25 @@
   cursor: default;
 }
 
+.contact-email-reveal {
+  background-color: #fff;
+  border: 0;
+  border-radius: 21px;
+  color: #000;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 13px 22px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-email-reveal:hover {
+  background-color: $darkBoxShadow2;
+  color: $buttonColor;
+  transform: translateY(-3px);
+}
+
 .contact-subtitle {
   text-transform: uppercase;
 }
@@ -84,7 +103,8 @@
   }
 
   .contact-detail,
-  .contact-detail-email {
+  .contact-detail-email,
+  .contact-email-reveal {
     font-size: 20px;
   }
 
