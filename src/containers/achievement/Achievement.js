@@ -41,7 +41,7 @@ export default function Achievement() {
             style={{display: "flex", justifyContent: "center", marginTop: 24}}
           >
             <Button
-              text="More Credentials"
+              text="More Certifications"
               href="https://www.credly.com/users/emmanuelmuturia"
               newTab={true}
             />

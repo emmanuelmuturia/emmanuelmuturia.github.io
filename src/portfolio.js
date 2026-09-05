@@ -23,7 +23,7 @@ const greeting = {
   username: "Emmanuel Muturia™",
   title: "Hi, my name is Emmanuel Muturia™...",
   subTitle: emoji(
-    "Hi, my name is Emmanuel Muturia™, and I help fight Crime on The Internet through my practice in Cyber Security Engineering. Since 2019, I have been studying and researching Computer Networking and Cyber Security [Telecommunications] and acquired the foundational Knowledge needed to kickstart my Career in Cyber Security. I currently work with SMEs by helping them secure their Digital Products and Infrastructure, therefore reducing their chances of being the next hacked Companies. I intend to leverage my Brand and other Resources to empower Individuals to protect their Digital Assets through Education and Awareness in Cyber Security, thereby creating a safer Cyber Space..."
+    "Hi, my name is Emmanuel Muturia, and I help fight Crime on The Internet through my practice in Product Security Engineering. Since 2019, I have been practising Computer Networking & Cyber Security [Telecommunications] and have acquired the foundational Knowledge required for my Career in Cyber Security. I work with Cyber Security Teams to help Businesses and Companies secure their Digital Products, therefore saving Costs incurred by Cyber Attacks and Security Breaches. I intend to leverage my Brand and other Resources to empower The General Population [GenPop] to protect their Digital Assets through Education and Awareness in Cyber Security, thereby creating a safer Cyber Space..."
   ),
   resumeLink: "", // Set to empty to hide the button
   profileImage: require("./assets/images/The Profile Photo.png"),
@@ -143,26 +143,34 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Cyber Security Training",
-      company: "Cyber Shujaa",
-      companylogo: require("./assets/images/Cyber Shujaa.png"),
-      date: "April 2025 – Present",
+      role: "",
+      company: "Caava Group",
+      companylogo: require("./assets/images/Caava Group.png"),
+      date: "",
       link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
       descBullets: []
     },
     {
-      role: "Android Engineering [Security, Performance, and Testing]",
+      role: "",
+      company: "CIFOR-ICRAF",
+      companylogo: require("./assets/images/CIFOR-ICRAF.png"),
+      date: "",
+      link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
+      descBullets: []
+    },
+    {
+      role: "",
       company: "DroidCon Kenya",
       companylogo: require("./assets/images/DroidCon Kenya.png"),
-      date: "June 2023 - April 2025",
+      date: "",
       link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
       descBullets: []
     },
     {
-      role: "Network Operations Centre [NOC] Training",
+      role: "",
       company: "Kinde Engineering Works Ltd.",
       companylogo: require("./assets/images/Kinde Engineering Works Limited.png"),
-      date: "February 2023 – April 2023",
+      date: "",
       link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
       descBullets: []
     }
@@ -180,14 +188,13 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Communities",
+  title: "Tech Communities",
   subtitle: "",
   projects: [
     {
       image: require("./assets/images/Android254.png"),
       projectName: "Android254",
-      projectDesc:
-        "Android254 brings together Android Engineers to learn more about Android, best practices and also hear talks from industry experts...",
+      projectDesc: "",
       footerLink: [
         {
           name: "Learn More",
@@ -199,8 +206,7 @@ const bigProjects = {
     {
       image: require("./assets/images/Kotlin Kenya.png"),
       projectName: "Kotlin Kenya",
-      projectDesc:
-        "Karibu Kotlin Kenya! We are a collective bunch of lovely people from all different backgrounds interested in this fun[ctional] language that has been taking the programming world by storm [well, at least in the JVM arena]...",
+      projectDesc: "",
       footerLink: [
         {
           name: "Learn More",
@@ -211,8 +217,7 @@ const bigProjects = {
     {
       image: require("./assets/images/Space Ya Tech.png"),
       projectName: "Space Ya Tech",
-      projectDesc:
-        "Space Ya Tech is a Community fostering Innovation across African Borders for Tech Enthusiasts. With Memberships across Kenya, Tanzania, Nigeria and Pockets of Africa, we aim to give Life and let live to innovative Ideas in The Tech EcoSphere.",
+      projectDesc: "",
       footerLink: [
         {
           name: "Learn More",
@@ -231,6 +236,30 @@ const achievementSection = {
   title: emoji("Certifications"),
   achievementsCards: [
     {
+      title: "KCNA [Kubernetes and Cloud Native Associate]",
+      image: require("./assets/images/The KCNA [Kubernetes and Cloud Native Associate] Badge.png"),
+      imageAlt: "KCNA: Kubernetes and Cloud Native Associate",
+      url: ""
+    },
+    {
+      title: "AWS Certified Cloud Practitioner",
+      image: require("./assets/images/AWS Certified Cloud Practitioner.png"),
+      imageAlt: "AWS Certified Cloud Practitioner",
+      url: ""
+    },
+    {
+      title: "Microsoft SC-900",
+      image: require("./assets/images/Microsoft SC-900.png"),
+      imageAlt: "Microsoft SC-900",
+      url: "https://learn.microsoft.com/api/credentials/share/en-us/emmanuelmuturia/B8FCE3614A1AB26C?sharingId=7A0D56BE201DBB61"
+    },
+    {
+      title: "Microsoft AZ-104",
+      image: require("./assets/images/Microsoft AZ-104.png"),
+      imageAlt: "Microsoft AZ-104",
+      url: "https://learn.microsoft.com/api/credentials/share/en-us/emmanuelmuturia/A27A40BE7EF89F6A?sharingId=7A0D56BE201DBB61"
+    },
+    {
       title: "CCNA [Introduction To Networking]",
       image: require("./assets/images/CCNA [Introduction To Networks].png"),
       imageAlt: "CCNA [Introduction To Networking]",
@@ -240,13 +269,6 @@ const achievementSection = {
       title: "CCNA [Routing & Switching]",
       image: require("./assets/images/CCNA [Routing & Switching].png"),
       imageAlt: "CCNA [Routing & Switching]",
-      url: ""
-    },
-
-    {
-      title: "AWS Certified Cloud Practitioner",
-      image: require("./assets/images/AWS Certified Cloud Practitioner.png"),
-      imageAlt: "AWS Certified Cloud Practitioner",
       url: ""
     },
 
@@ -262,19 +284,6 @@ const achievementSection = {
       image: require("./assets/images/HCIA [WLAN].png"),
       imageAlt: "HCIA WLAN",
       url: ""
-    },
-
-    {
-      title: "Microsoft SC-900",
-      image: require("./assets/images/Microsoft SC-900.png"),
-      imageAlt: "Microsoft SC-900",
-      url: "https://learn.microsoft.com/api/credentials/share/en-us/emmanuelmuturia/B8FCE3614A1AB26C?sharingId=7A0D56BE201DBB61"
-    },
-    {
-      title: "Microsoft AZ-104",
-      image: require("./assets/images/Microsoft AZ-104.png"),
-      imageAlt: "Microsoft AZ-104",
-      url: "https://learn.microsoft.com/api/credentials/share/en-us/emmanuelmuturia/A27A40BE7EF89F6A?sharingId=7A0D56BE201DBB61"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -343,30 +352,23 @@ const labsSection = {
 // Talks Sections
 
 const talkSection = {
-  title: "Talks",
+  title: "Talks & Sessions",
   subtitle: "",
 
   talks: [
     {
-      title: "Unlocking Passkeys in Android (feat. Credentials Manager)",
-      subtitle: "Android254 Monthly Meetup",
+      title: "Application Security",
+      subtitle: "",
       slides_url:
-        "https://speakerdeck.com/emmanuelmuturia/unlocking-passkeys-in-android-feat-credentials-manager",
-      event_url: "https://www.meetup.com/android254"
+        "https://speakerdeck.com/emmanuelmuturia/application-security",
+      event_url: "https://youtu.be/ThRR8PhzczQ?si=ZvdaT4fgopNCVtOZ"
     },
     {
-      title: "The 3 Musketeers of Android Security (feat. Africa's Talking)",
-      subtitle: "Africa's Talking Summit 2023",
-      slides_url:
-        "https://speakerdeck.com/emmanuelmuturia/the-3-musketeers-of-android-security-feat-africas-talking",
-      event_url: "https://summit.africastalking.com/"
-    },
-    {
-      title: "How To Build Insecure Android Apps (feat. Sanitizers)",
-      subtitle: "DroidCon Kenya 2023",
-      slides_url:
-        "https://speakerdeck.com/emmanuelmuturia/how-to-build-insecure-android-apps-feat-sanitizers",
-      event_url: "https://droidcon.co.ke/"
+      title:
+        "The Web Application Security Demo [feat. The OWASP Top 10 and Burp Suite] with Emmanuel Muturia",
+      subtitle: "",
+      slides_url: "https://youtu.be/Y2dmWkDr35w?si=jdU30LAhhAo5xdfN",
+      event_url: "https://youtu.be/Y2dmWkDr35w?si=jdU30LAhhAo5xdfN"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -396,7 +398,11 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact"),
-  email_address: "science@emmanuelmuturia.com"
+  // Keep the address out of the initial HTML and plain-text source.
+  email_address: [
+    115, 99, 105, 101, 110, 99, 101, 64, 101, 109, 109, 97, 110, 117, 101, 108,
+    109, 117, 116, 117, 114, 105, 97, 46, 99, 111, 109
+  ]
 };
 
 // Twitter Section
