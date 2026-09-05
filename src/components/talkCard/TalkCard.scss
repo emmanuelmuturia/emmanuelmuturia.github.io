@@ -5,139 +5,95 @@
   justify-content: center;
 }
 
-/* Rectangle Card Layout */
-.rectangle {
-  background: url(../../assets/images/theTalksCard.svg);
-  width: 380px;
-  height: 300px;
-  border-radius: 4px;
-  box-shadow: 0px 20px 50px $darkBoxShadow;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  margin-top: 50px;
-}
-
-.rectangle:hover {
-  box-shadow: 0 20px 40px $textColorDark;
-}
-
-.dark-rectangle {
-  box-shadow: 0px 0px 20px 0px;
-}
-
-.mask {
-  clip: rect(0px, 460px, 220px, 0px);
-  border-radius: 4px;
-  position: absolute;
-}
-
-/* Card  Styling */
-.talk-card-title {
-  color: #000;
-  margin: auto;
-  text-align: left;
-  margin-top: 25px;
-  padding: 0px 0px 40px 30px;
-  font-size: 30px;
-  line-height: normal;
+.talk-card {
+  position: relative;
+  display: flex;
+  min-height: 260px;
+  flex-direction: column;
+  justify-content: space-between;
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  padding: 2rem;
+  border: 2px solid #fff;
+  border-radius: 21px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: $darkBoxShadow 0px 10px 30px -15px;
+  transition: all 0.3s ease;
+}
+
+.talk-card::after {
+  position: absolute;
+  right: -45px;
+  bottom: -65px;
+  width: 180px;
+  height: 180px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  content: "";
+  transition: transform 0.3s ease;
+}
+
+.talk-card:hover {
+  color: #111;
+  box-shadow: 0 0 24px 4px #fff, $darkBoxShadow2 0px 20px 30px -10px;
+  transform: translateY(-3px);
+}
+
+.talk-card:hover::after {
+  transform: scale(1.25);
+}
+
+.application-security {
+  background: linear-gradient(135deg, #101010 0%, #263b4a 100%);
+}
+
+.application-security:hover {
+  background: #d9f1ff;
+}
+
+.web-security {
+  background: linear-gradient(135deg, #101010 0%, #51352d 100%);
+}
+
+.web-security:hover {
+  background: #ffe4d5;
+}
+
+.talk-card-kicker,
+.talk-card-link {
+  position: relative;
+  z-index: 1;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.talk-card-title {
+  position: relative;
+  z-index: 1;
+  margin: 1.5rem 0 0.75rem;
+  color: inherit;
+  font-size: 1.7rem;
+  line-height: 1.15;
 }
 
 .talk-card-subtitle {
-  margin-top: 35px;
-  text-align: justify;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 16px;
-  color: $textColorDark;
-  line-height: 18px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.talk-button {
-  background-color: #fff !important; // White background
-  color: #000 !important; // Black text
-  width: 90px;
-  padding: 10px 18px;
-  border-radius: 21px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  margin-top: 20px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background 0.3s, color 0.3s,
-    transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.talk-button:hover {
-  background: #fff !important; // Stay white on hover
-  color: #000 !important; // Stay black on hover
-  transform: scale(1.07); // Slight enlargement
-}
-
-.card-footer-button-div {
-  display: flex;
-  justify-content: space-around;
-}
-
-/* Media Query */
-@media (max-width: 1380px) {
-  .card-title {
-    font-size: 25px;
-  }
+  position: relative;
+  z-index: 1;
+  margin: 0 0 1.5rem;
+  color: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 768px) {
-  .mask {
-    clip-path: none;
-    position: relative;
+  .talk-card {
+    min-height: 230px;
+    padding: 1.5rem;
   }
 
   .talk-card-title {
-    margin-top: 30px;
-  }
-
-  .talk-card-image {
-    width: 100%;
-  }
-
-  .talk-button {
-    background-color: #fff !important;
-    color: #000 !important;
-    width: 90px;
-    padding: 10px 18px;
-    border-radius: 3px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    margin-top: 20px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: 0.2s ease-in, transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .talk-button:hover {
-    background: #fff !important;
-    color: #000 !important;
-    transform: scale(1.07);
-  }
-
-  .card-footer-button-div {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .square {
-    width: 100%;
-    height: auto;
-    padding-bottom: 30px;
+    font-size: 1.4rem;
   }
 }

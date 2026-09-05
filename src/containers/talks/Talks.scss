@@ -3,13 +3,14 @@
 .talk-header-title {
   font-size: 56px;
   font-weight: 400;
-  line-height: 0px;
+  line-height: normal;
 }
 
 .talk-cards-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1rem 1rem;
+  margin-top: 1.5rem;
 }
 
 .subTitle {
@@ -21,9 +22,14 @@
     font-size: 30px;
     text-align: center;
   }
+
   .talk-header-subtitle {
     font-size: 16px;
     line-height: normal;
     text-align: center;
+  }
+
+  .talk-cards-div {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
