@@ -1,7 +1,7 @@
 import React from "react";
 import "./WorkExperience.scss";
 import {workExperiences} from "../../portfolio";
-import {Fade} from "react-reveal";
+import {Fade} from "react-awesome-reveal";
 
 export default function WorkExperience() {
   if (workExperiences.display) {

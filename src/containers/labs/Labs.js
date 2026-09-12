@@ -2,7 +2,7 @@ import React from "react";
 import "./Labs.scss";
 import LabCard from "../../components/labCard/LabCard";
 import {labsSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+import {Fade} from "react-awesome-reveal";
 
 export default function Labs() {
   if (!labsSection.display) {
