@@ -3,7 +3,7 @@ import "./Blog.scss";
 import BlogCard from "../../components/blogCard/BlogCard";
 import Button from "../../components/button/Button";
 import {blogSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+import {Fade} from "react-awesome-reveal";
 export default function Blogs() {
   const [mediumBlogs, setMediumBlogs] = useState([]);
   function setMediumBlogsFunction(array) {

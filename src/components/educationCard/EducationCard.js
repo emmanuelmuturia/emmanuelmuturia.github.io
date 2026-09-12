@@ -1,5 +1,5 @@
 import React, {createRef} from "react";
-import {Fade, Slide} from "react-reveal";
+import {Fade, Slide} from "react-awesome-reveal";
 import "./EducationCard.scss";
 
 export default function EducationCard({school}) {
