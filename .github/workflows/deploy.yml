@@ -6,6 +6,8 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   USE_GITHUB_DATA: "true"
   MEDIUM_USERNAME: "emmanuelmuturia"
+  YOUTUBE_CHANNEL_ID: "UCg2Ponw8OIvcSXKwR6F5mMw"
+  YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
 
 on:
   workflow_dispatch:
@@ -19,20 +21,20 @@ jobs:
 
     steps:
       - name: Checkout...
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           persist-credentials: false
 
       - name: Setup Node.js...
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 22.x
 
       # ❌ Removed npm@latest step to avoid Version Conflict...
 
       - name: Install and Build...
         run: |
-          npm install
+          npm ci
           npm run build
 
       - name: Deploy...

@@ -1,7 +1,7 @@
 import React from "react";
 import "./StartupProjects.scss";
-import {bigProjects} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { bigProjects } from "../../portfolio";
+import { Fade } from "react-awesome-reveal";
 import TechCommunitiesCarousel from "./TechCommunitiesCarousel";
 
 export default function StartupProject() {

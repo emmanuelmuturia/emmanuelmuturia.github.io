@@ -1,11 +1,11 @@
-import React, { useState, useEffect, Suspense, lazy } from "react";
+import React, {useState, useEffect, Suspense, lazy} from "react";
 import "./Project.scss";
 import Button from "../../components/button/Button";
-import { openSource, socialMediaLinks } from "../../portfolio";
+import {openSource, socialMediaLinks} from "../../portfolio";
 import Loading from "../../containers/loading/Loading";
 export default function Projects() {
-  const GithubRepoCard = lazy(() =>
-    import("../../components/githubRepoCard/GithubRepoCard")
+  const GithubRepoCard = lazy(
+    () => import("../../components/githubRepoCard/GithubRepoCard")
   );
   const FailedLoading = () => null;
   const renderLoader = () => <Loading />;
@@ -48,10 +48,7 @@ export default function Projects() {
             {repo
               .filter(repoEdge => repoEdge && repoEdge.node)
               .map(repoEdge => (
-                <GithubRepoCard
-                  repo={repoEdge}
-                  key={repoEdge.node.id}
-                />
+                <GithubRepoCard repo={repoEdge} key={repoEdge.node.id} />
               ))}
           </div>
           <Button
