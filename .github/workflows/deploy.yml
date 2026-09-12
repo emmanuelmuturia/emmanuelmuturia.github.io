@@ -18,6 +18,8 @@ on:
 jobs:
   security:
     runs-on: ubuntu-latest
+    env:
+      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
     steps:
       - name: Checkout...
@@ -59,15 +61,16 @@ jobs:
           if-no-files-found: ignore
 
       - name: Run Snyk dependency scan...
-        run: |
-          if [[ -z "$SNYK_TOKEN" ]]; then
-            echo "SNYK_TOKEN is not configured; skipping optional Snyk scan."
-            exit 0
-          fi
-          npm install --global snyk
-          snyk test --severity-threshold=high
+        if: ${{ env.SNYK_TOKEN != '' }}
+        uses: snyk/actions/node@master
+        with:
+          args: --file=package.json --package-manager=npm --severity-threshold=high
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+      - name: Snyk configuration notice...
+        if: ${{ env.SNYK_TOKEN == '' }}
+        run: echo "SNYK_TOKEN is not configured; Snyk scan was skipped."
 
   test:
     runs-on: ubuntu-latest
