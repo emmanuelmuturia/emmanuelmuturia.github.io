@@ -1,11 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.84349872.css",
-    "main.js": "/static/js/main.35ac31fb.js",
+    "main.css": "/static/css/main.b20c32f1.css",
+    "main.js": "/static/js/main.fe6e1894.js",
     "static/css/141.29c476cd.chunk.css": "/static/css/141.29c476cd.chunk.css",
-    "static/js/141.439a9813.chunk.js": "/static/js/141.439a9813.chunk.js",
-    "static/css/769.1fac0194.chunk.css": "/static/css/769.1fac0194.chunk.css",
-    "static/js/769.07182d53.chunk.js": "/static/js/769.07182d53.chunk.js",
+    "static/js/141.ba6c250e.chunk.js": "/static/js/141.ba6c250e.chunk.js",
     "static/media/Kotlin Kenya.png": "/static/media/Kotlin Kenya.5511bf8e46fd9e651597.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/The Emmanuel Muturia™ Logo.png": "/static/media/The Emmanuel Muturia™ Logo.b025159405562550a4e0.png",
@@ -26,15 +24,13 @@
     "static/media/DroidCon Kenya.png": "/static/media/DroidCon Kenya.a3b916c52ac7a9449f25.png",
     "static/media/resume.pdf": "/static/media/resume.f0f733dd3cd732b39262.pdf",
     "index.html": "/index.html",
-    "main.84349872.css.map": "/static/css/main.84349872.css.map",
-    "main.35ac31fb.js.map": "/static/js/main.35ac31fb.js.map",
+    "main.b20c32f1.css.map": "/static/css/main.b20c32f1.css.map",
+    "main.fe6e1894.js.map": "/static/js/main.fe6e1894.js.map",
     "141.29c476cd.chunk.css.map": "/static/css/141.29c476cd.chunk.css.map",
-    "141.439a9813.chunk.js.map": "/static/js/141.439a9813.chunk.js.map",
-    "769.1fac0194.chunk.css.map": "/static/css/769.1fac0194.chunk.css.map",
-    "769.07182d53.chunk.js.map": "/static/js/769.07182d53.chunk.js.map"
+    "141.ba6c250e.chunk.js.map": "/static/js/141.ba6c250e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84349872.css",
-    "static/js/main.35ac31fb.js"
+    "static/css/main.b20c32f1.css",
+    "static/js/main.fe6e1894.js"
   ]
 }
