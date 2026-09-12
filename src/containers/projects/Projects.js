@@ -1,7 +1,7 @@
-import React, {useState, useEffect, Suspense, lazy} from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import "./Project.scss";
 import Button from "../../components/button/Button";
-import {openSource, socialMediaLinks} from "../../portfolio";
+import { openSource, socialMediaLinks } from "../../portfolio";
 import Loading from "../../containers/loading/Loading";
 export default function Projects() {
   const GithubRepoCard = lazy(() =>
@@ -45,14 +45,14 @@ export default function Projects() {
         <div className="main" id="opensource">
           <h1 className="project-title">Research Projects</h1>
           <div className="repo-cards-div-main">
-            {repo.map((v, i) => {
-              if (!v) {
-                console.error(
-                  `Github Object for repository number : ${i} is undefined`
-                );
-              }
-              return <GithubRepoCard repo={v} key={v.node.id} />;
-            })}
+            {repo
+              .filter(repoEdge => repoEdge && repoEdge.node)
+              .map(repoEdge => (
+                <GithubRepoCard
+                  repo={repoEdge}
+                  key={repoEdge.node.id}
+                />
+              ))}
           </div>
           <Button
             text={"More Projects"}
