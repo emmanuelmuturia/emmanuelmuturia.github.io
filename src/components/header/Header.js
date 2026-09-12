@@ -54,7 +54,7 @@ function Header() {
           {viewExperience && (
             <li>
               <a href="#experience" onClick={handleMenuClick}>
-                Brands
+                Products
               </a>
             </li>
           )}
