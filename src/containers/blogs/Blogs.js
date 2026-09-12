@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import "./Blog.scss";
 import BlogCard from "../../components/blogCard/BlogCard";
 import Button from "../../components/button/Button";
-import { blogSection } from "../../portfolio";
-import { Fade } from "react-awesome-reveal";
+import {blogSection} from "../../portfolio";
+import {Fade} from "react-awesome-reveal";
 export default function Blogs() {
   const [mediumBlogs, setMediumBlogs] = useState([]);
   function setMediumBlogsFunction(array) {
@@ -13,11 +13,11 @@ export default function Blogs() {
   function extractTextContent(html) {
     return typeof html === "string"
       ? html
-        .split(/<\/p>/i)
-        .map(part => part.split(/<p[^>]*>/i).pop())
-        .filter(el => el.trim().length > 0)
-        .map(el => el.replace(/<\/?[^>]+(>|$)/g, "").trim())
-        .join(" ")
+          .split(/<\/p>/i)
+          .map(part => part.split(/<p[^>]*>/i).pop())
+          .filter(el => el.trim().length > 0)
+          .map(el => el.replace(/<\/?[^>]+(>|$)/g, "").trim())
+          .join(" ")
       : NaN;
   }
   useEffect(() => {
@@ -56,32 +56,32 @@ export default function Blogs() {
         <div className="blog-main-div">
           <div className="blog-text-div">
             {blogSection.displayMediumBlogs !== "true" ||
-              mediumBlogs === "Error"
+            mediumBlogs === "Error"
               ? blogSection.blogs.slice(0, 3).map((blog, i) => {
-                return (
-                  <BlogCard
-                    key={i}
-                    blog={{
-                      url: blog.url,
-                      image: blog.image,
-                      title: blog.title,
-                      description: blog.description
-                    }}
-                  />
-                );
-              })
+                  return (
+                    <BlogCard
+                      key={i}
+                      blog={{
+                        url: blog.url,
+                        image: blog.image,
+                        title: blog.title,
+                        description: blog.description
+                      }}
+                    />
+                  );
+                })
               : mediumBlogs.slice(0, 3).map((blog, i) => {
-                return (
-                  <BlogCard
-                    key={i}
-                    blog={{
-                      url: blog.link,
-                      title: blog.title,
-                      description: extractTextContent(blog.content)
-                    }}
-                  />
-                );
-              })}
+                  return (
+                    <BlogCard
+                      key={i}
+                      blog={{
+                        url: blog.link,
+                        title: blog.title,
+                        description: extractTextContent(blog.content)
+                      }}
+                    />
+                  );
+                })}
           </div>
         </div>
         <Button

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Talks.scss";
 import TalkCard from "../../components/talkCard/TalkCard";
-import { talkSection } from "../../portfolio";
-import { Fade } from "react-awesome-reveal";
+import {talkSection} from "../../portfolio";
+import {Fade} from "react-awesome-reveal";
 
 export default function Talks() {
   if (!talkSection.display) {

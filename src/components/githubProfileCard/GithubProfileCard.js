@@ -1,11 +1,11 @@
 import React from "react";
 import "./GithubProfileCard.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { contactInfo, isHireable } from "../../portfolio";
+import {contactInfo, isHireable} from "../../portfolio";
 import emoji from "react-easy-emoji";
-import { Fade } from "react-awesome-reveal";
+import {Fade} from "react-awesome-reveal";
 
-export default function GithubProfileCard({ prof }) {
+export default function GithubProfileCard({prof}) {
   if (isHireable) {
     prof.hireable = "Yes";
   } else {
