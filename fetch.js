@@ -57,6 +57,63 @@ function safeRequest(options, dataToSend, onSuccess, onFail) {
   req.end();
 }
 
+function saveGitHubProfile(data) {
+  fs.writeFile("./public/profile.json", JSON.stringify(data), err => {
+    if (err) console.error("❌ Failed to write GitHub data:", err);
+    else console.log("✅ Saved GitHub data to public/profile.json");
+  });
+}
+
+function fetchPublicRepositories() {
+  const repositoriesOptions = {
+    hostname: "api.github.com",
+    path: `/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=6`,
+    port: 443,
+    method: "GET",
+    family: 4,
+    timeout: TIMEOUT,
+    headers: {
+      Authorization: `Bearer ${GITHUB_TOKEN}`,
+      "User-Agent": "Node.js"
+    }
+  };
+
+  safeRequest(
+    repositoriesOptions,
+    null,
+    repositoriesData => {
+      const repositories = JSON.parse(repositoriesData);
+      const edges = repositories.map(repository => ({
+        node: {
+          name: repository.name,
+          description: repository.description,
+          forkCount: repository.forks_count,
+          stargazers: {totalCount: repository.stargazers_count},
+          url: repository.html_url,
+          id: repository.node_id,
+          diskUsage: 0,
+          primaryLanguage: repository.language
+            ? {name: repository.language, color: "#888"}
+            : null
+        }
+      }));
+
+      saveGitHubProfile({
+        data: {
+          user: {
+            name: GITHUB_USERNAME,
+            bio: "",
+            avatarUrl: "",
+            location: null,
+            pinnedItems: {edges}
+          }
+        }
+      });
+    },
+    err => console.error("❌ GitHub repositories fallback failed:", err.message)
+  );
+}
+
 function saveVideos(videos) {
   fs.writeFile(
     "./public/videos.json",
@@ -150,13 +207,21 @@ if (USE_GITHUB_DATA === "true") {
     githubOptions,
     githubQuery,
     data => {
-      fs.writeFile("./public/profile.json", data, err => {
-        if (err) console.error("❌ Failed to write GitHub data:", err);
-        else console.log("✅ Saved GitHub data to public/profile.json");
-      });
+      const profile = JSON.parse(data);
+      const edges = profile.data?.user?.pinnedItems?.edges || [];
+
+      if (edges.some(edge => edge && edge.node)) {
+        saveGitHubProfile(profile);
+      } else {
+        console.warn(
+          "⚠️ No pinned GitHub repositories found. Using public repositories fallback."
+        );
+        fetchPublicRepositories();
+      }
     },
     err => {
       console.error("❌ GitHub fetch failed:", err.message);
+      fetchPublicRepositories();
     }
   );
 }
