@@ -4,3 +4,4 @@ build/
 /public/blogs.json
 /public/profile.json
 /public/videos.json
+.all-contributorsrc
