@@ -112,7 +112,9 @@
 .dark-card-mode.repo-card-div:hover {
   background-color: #fff !important; // White on hover
   color: #222 !important;
-  box-shadow: 0 0 24px 4px #fff, $darkBoxShadow2 0px 20px 30px -10px;
+  box-shadow:
+    0 0 24px 4px #fff,
+    $darkBoxShadow2 0px 20px 30px -10px;
   border-color: #fff;
 
   // Make all text and icons black on hover for visibility

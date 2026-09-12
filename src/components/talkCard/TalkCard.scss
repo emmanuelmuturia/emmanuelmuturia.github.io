@@ -35,7 +35,9 @@
 
 .talk-card:hover {
   color: #fff;
-  box-shadow: 0 0 24px 4px #fff, $darkBoxShadow2 0px 20px 30px -10px;
+  box-shadow:
+    0 0 24px 4px #fff,
+    $darkBoxShadow2 0px 20px 30px -10px;
   transform: translateY(-3px);
 }
 
