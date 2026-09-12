@@ -88,12 +88,12 @@ function fetchPublicRepositories() {
           name: repository.name,
           description: repository.description,
           forkCount: repository.forks_count,
-          stargazers: { totalCount: repository.stargazers_count },
+          stargazers: {totalCount: repository.stargazers_count},
           url: repository.html_url,
           id: repository.node_id,
           diskUsage: 0,
           primaryLanguage: repository.language
-            ? { name: repository.language, color: "#888" }
+            ? {name: repository.language, color: "#888"}
             : null
         }
       }));
@@ -105,7 +105,7 @@ function fetchPublicRepositories() {
             bio: "",
             avatarUrl: "",
             location: null,
-            pinnedItems: { edges }
+            pinnedItems: {edges}
           }
         }
       });
@@ -280,7 +280,7 @@ if (YOUTUBE_API_KEY && YOUTUBE_CHANNEL_ID) {
       }
 
       const videosPath = `/youtube/v3/playlistItems?part=snippet&maxResults=3&playlistId=${uploadsPlaylistId}&key=${YOUTUBE_API_KEY}`;
-      const videosOptions = { ...channelOptions, path: videosPath };
+      const videosOptions = {...channelOptions, path: videosPath};
 
       safeRequest(
         videosOptions,

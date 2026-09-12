@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
@@ -15,7 +15,7 @@ import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import SplashScreen from "./splashScreen/SplashScreen";
-import { splashScreen } from "../portfolio";
+import {splashScreen} from "../portfolio";
 import "./Main.scss";
 import Labs from "./labs/Labs";
 

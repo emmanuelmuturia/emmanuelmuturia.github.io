@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.scss";
-import { Fade } from "react-awesome-reveal";
+import {Fade} from "react-awesome-reveal";
 import SocialMedia from "../socialMedia/SocialMedia";
 
 export default function Footer() {
