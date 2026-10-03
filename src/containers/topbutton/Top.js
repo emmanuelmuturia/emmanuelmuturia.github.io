@@ -1,7 +1,7 @@
 import React from "react";
 import "./Top.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowUp} from "@fortawesome/free-solid-svg-icons";
 
 export default function Top() {
   function TopEvent() {

@@ -23,7 +23,6 @@ body {
 
 /* Media Query */
 @media (max-width: 1380px) {
-
   html,
   body {
     font-size: rem;

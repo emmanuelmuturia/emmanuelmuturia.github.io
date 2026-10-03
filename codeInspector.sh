@@ -1,3 +1,7 @@
 #!/bin/bash
+set -euo pipefail
 
-npx prettier --write .
+npm run format
+npm run check-format
+npm run test:ci
+npm run build

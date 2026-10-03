@@ -1,7 +1,7 @@
 import React from "react";
 import "./SocialMedia.scss";
-import { socialMediaLinks } from "../../portfolio";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {socialMediaLinks} from "../../portfolio";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
   faDiscord,
   faGithub,

@@ -1,10 +1,10 @@
-import React, { useRef } from "react";
+import React, {useRef} from "react";
 import "../../components/carousel/Carousel.scss";
-import { bigProjects } from "../../portfolio";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import {bigProjects} from "../../portfolio";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faChevronLeft, faChevronRight} from "@fortawesome/free-solid-svg-icons";
 
-export default function TechCommunitiesCarousel({ isDark }) {
+export default function TechCommunitiesCarousel({isDark}) {
   const carouselRef = useRef(null);
 
   const scroll = direction => {

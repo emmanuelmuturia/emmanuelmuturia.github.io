@@ -1,8 +1,8 @@
 import React from "react";
-import { Fade } from "react-awesome-reveal";
+import {Fade} from "react-awesome-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import { greeting } from "../../portfolio";
+import {greeting} from "../../portfolio";
 
 export default function Greeting() {
   if (!greeting.displayGreeting) {

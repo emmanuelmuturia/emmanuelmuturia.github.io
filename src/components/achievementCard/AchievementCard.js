@@ -1,7 +1,7 @@
 import React from "react";
 import "./AchievementCard.scss";
 
-export default function AchievementCard({ cardInfo }) {
+export default function AchievementCard({cardInfo}) {
   function openUrlInNewTab(url, name) {
     if (!url) {
       return;
@@ -19,15 +19,16 @@ export default function AchievementCard({ cardInfo }) {
 
   return (
     <div
-      className={`achievement-circle-card dark-mode${clickable ? " clickable-card" : ""
-        }`}
+      className={`achievement-circle-card dark-mode${
+        clickable ? " clickable-card" : ""
+      }`}
       onClick={clickable ? handleClick : undefined}
       tabIndex={clickable ? 0 : undefined}
       role={clickable ? "button" : undefined}
       aria-label={
         clickable ? `Open certificate for ${cardInfo.title}` : undefined
       }
-      style={clickable ? { outline: "none" } : {}}
+      style={clickable ? {outline: "none"} : {}}
     >
       <div className="achievement-circle-image-wrapper">
         <img
