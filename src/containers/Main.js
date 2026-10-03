@@ -1,23 +1,18 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
-import Skills from "./skills/Skills";
-import StackProgress from "./skillProgress/skillProgress";
-import WorkExperience from "./workExperience/WorkExperience";
+import Videos from "./videos/Videos";
+import Products from "./products/Products";
 import Projects from "./projects/Projects";
 import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
 import Blogs from "./blogs/Blogs";
 import Footer from "../components/footer/Footer";
 import Talks from "./talks/Talks";
-import Podcast from "./podcast/Podcast";
-import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
-import Twitter from "./twitter-embed/twitter";
 import SplashScreen from "./splashScreen/SplashScreen";
-import {splashScreen} from "../portfolio";
+import { splashScreen } from "../portfolio";
 import "./Main.scss";
-import Labs from "./labs/Labs";
 
 const Main = () => {
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
@@ -43,18 +38,13 @@ const Main = () => {
         <>
           <Header />
           <Greeting />
-          <Skills />
-          <StackProgress />
-          <Education />
-          <WorkExperience />
+          <Videos />
+          <Products />
           <Projects />
           <StartupProject />
           <Achievement />
           <Blogs />
-          <Labs />
           <Talks />
-          <Twitter />
-          <Podcast />
           <Footer />
           <ScrollToTopButton />
         </>

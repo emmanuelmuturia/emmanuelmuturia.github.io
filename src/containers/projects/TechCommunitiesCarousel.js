@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "../workExperience/ExperienceCarousel.scss";
+import "../../components/carousel/Carousel.scss";
 import { bigProjects } from "../../portfolio";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
@@ -18,7 +18,7 @@ export default function TechCommunitiesCarousel() {
   };
 
   return (
-    <div className="experience-carousel-wrapper tech-communities-carousel">
+    <div className="content-carousel-wrapper tech-communities-carousel">
       <button
         className="carousel-arrow left"
         onClick={() => scroll("left")}
@@ -26,7 +26,7 @@ export default function TechCommunitiesCarousel() {
       >
         <FontAwesomeIcon icon={faChevronLeft} />
       </button>
-      <div className="experience-carousel" ref={carouselRef}>
+      <div className="content-carousel" ref={carouselRef}>
         {bigProjects.projects.map((proj, i) => (
           <a
             key={i}

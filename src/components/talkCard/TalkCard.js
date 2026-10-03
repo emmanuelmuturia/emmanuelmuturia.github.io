@@ -1,10 +1,10 @@
 import React from "react";
 import "./TalkCard.scss";
 
-export default function TalkCard({talkDetails, variant}) {
+export default function TalkCard({ talkDetails }) {
   return (
     <a
-      className={`talk-card ${variant}`}
+      className="talk-card"
       href={talkDetails.event_url}
       target="_blank"
       rel="noreferrer"

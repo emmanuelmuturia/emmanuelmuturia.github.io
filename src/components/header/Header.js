@@ -3,23 +3,21 @@ import Headroom from "react-headroom";
 import "./Header.scss";
 import logo from "../../assets/images/The Emmanuel Muturia™ Logo.png";
 import {
-  workExperiences,
-  skillsSection,
+  productsSection,
+  videoSection,
   openSource,
   blogSection,
   talkSection,
-  achievementSection,
-  resumeSection
+  achievementSection
 } from "../../portfolio";
 
 function Header() {
-  const viewExperience = workExperiences.display;
+  const viewProducts = productsSection.display;
   const viewOpenSource = openSource.display;
-  const viewSkills = skillsSection.display;
+  const viewVideos = videoSection.display;
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
-  const viewResume = resumeSection.display;
 
   // Close menu after navigation (mobile)
   const handleMenuClick = () => {
@@ -39,21 +37,21 @@ function Header() {
         <label
           className="menu-icon"
           htmlFor="menu-btn"
-          style={{color: "white"}}
+          style={{ color: "white" }}
         >
           <span className="navicon"></span>
         </label>
         <ul className="menu">
-          {viewSkills && (
+          {viewVideos && (
             <li>
               <a href="#videos" onClick={handleMenuClick}>
                 Videos
               </a>
             </li>
           )}
-          {viewExperience && (
+          {viewProducts && (
             <li>
-              <a href="#experience" onClick={handleMenuClick}>
+              <a href="#products" onClick={handleMenuClick}>
                 Products
               </a>
             </li>

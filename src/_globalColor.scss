@@ -5,26 +5,16 @@ For greater control over colors visit each components .scss file. */
 // button colors
 $buttonColor: #55198b;
 $buttonHover: #8c43ce;
-$topButtonHover: #000;
 
 // text color dark theme
 $textColorDark: #ffffff;
 $subTitle: #b0b0b0;
-$titleColor: #ffffff;
-$cardSubtitle: #b0b0b0;
-$blogCardTitleColor: #ffffff;
-
-// toggle switch colors (can be removed if ToggleSwitch is deleted)
-// $toggleCheck: #2196f3;
-// $toggleSwitchSliderBG: #ccc;
 
 // githubRepo specific colors
 $githubRepoCardLanguageColorBG: #0000ff;
 $githubRepoCardColor: rgb(88, 96, 105);
 $githubRepoCardRepoCardStatsColor: rgb(106, 115, 125);
 $githubRepoCardRepoNameColor: rgb(36, 41, 46);
-$githubProfileCardLocationTS: #ffebcd;
-$githubProfileCardBorder: #6c63ff;
 
 // dark background colors
 $darkBackground: #000;
@@ -33,42 +23,7 @@ $darkBackground: #000;
 $darkBoxShadow: #d9dbdf;
 $darkBoxShadow2: #ffffff;
 
-// linear gradients
-$experienceCardBlurredDivLG: linear-gradient(
-  rgba(0, 0, 0, 0.4),
-  rgba(0, 0, 0, 0.2)
-);
-$experienceCardBannerLG: linear-gradient(
-  rgba(0, 0, 0, 0.7),
-  rgba(0, 0, 0, 0.5)
-);
-
-// borders
-$progressBarBackground: rgb(243, 239, 239);
 $educationCardBorder: #a9a7f9;
 
 // hovers
-$achievementCertificateCardHoverDark: rgba(255, 255, 255, 0.2);
-$blogCardHoverSmallColor: rgba(255, 255, 255, 0.8);
-$headerHoverBG: #f4f4f4;
-
-// misc backgrounds
-$progressBarSpanBG: #aaa5ff;
 $iconBackground: #333;
-$appHeaderBG: #282c34;
-
-// misc colors
-$skillsColor: #645beb;
-$appLink: #09d3ac;
-
-// social media icons
-$faceBook: #3b5998;
-$linkedin: #0e76a8;
-$github: #333;
-$gitlab: #fca326;
-$google: #ea4335;
-$twitter: #1da1f2;
-$medium: #000;
-$stackoverflow: #f48024;
-$instagram: #c13584;
-$kaggle: #20beff;

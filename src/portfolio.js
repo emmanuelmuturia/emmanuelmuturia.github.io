@@ -3,30 +3,19 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 // Splash Screen
 
 const splashScreen = {
   enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
 
-// Summary And Greeting Section
-
-const illustration = {
-  animated: true // Set to false to use static SVG
-};
-
 const greeting = {
-  username: "Emmanuel Muturia™",
   title: "Hi, my name is Emmanuel Muturia™...",
   subTitle: emoji(
     "Hi, my name is Emmanuel Muturia, and I help fight Crime on The Internet through my practice in Product Security Engineering. Since 2019, I have been practising Computer Networking & Cyber Security [Telecommunications] and have acquired the foundational Knowledge required for my Career in Cyber Security. I work with Cyber Security Teams to help Businesses and Companies secure their Digital Products, therefore saving Costs incurred by Cyber Attacks and Security Breaches. I intend to leverage my Brand and other Resources to empower The General Population [GenPop] to protect their Digital Assets through Education and Awareness in Cyber Security, thereby creating a safer Cyber Space..."
   ),
-  resumeLink: "", // Set to empty to hide the button
-  profileImage: require("./assets/images/The Profile Photo.png"),
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -45,143 +34,21 @@ const socialMediaLinks = {
   reddit: "https://www.reddit.com/user/emmanuelmuturia",
   threads: "https://www.threads.com/@emmanuelmuturia",
   snapchat: "https://www.snapchat.com/add/emmanuelmuturia",
-  // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
 
-// Skills Section
-
-const skillsSection = {
-  title: "Skills",
-  skills: [],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
-  softwareSkills: [
-    {
-      skillName: "Android",
-      fontAwesomeClassname: "fab fa-android"
-    },
-    {
-      skillName: "Linux",
-      fontAwesomeClassname: "fab fa-linux"
-    },
-    {
-      skillName: "Git",
-      fontAwesomeClassname: "fab fa-git"
-    },
-    {
-      skillName: "AWS",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "Docker",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "Networking",
-      fontAwesomeClassname: "fa-solid fa-wifi"
-    },
-    {
-      /*
-      skillName: "Firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    */
-    }
-  ],
+const videoSection = {
   display: true // Set false to hide this section, defaults to true
 };
 
-// Education Section
-
-const educationInfo = {
-  display: false, // Set false to hide this section, defaults to true
-  schools: [
-    {
-      schoolName: "Strathmore University",
-      logo: require("./assets/images/The Emmanuel Muturia™ Logo.png"),
-      subHeader: "Bachelor of Science [BSc.] in Telecommunications",
-      desc: "I took up Leadership roles in the following Clubs & Societies:",
-      descBullets: [
-        "Google Developer Student Clubs [GDSC]...",
-        "Millenium Campus Network [MCN]...",
-        "Strathmore Business Club [SBC]..."
-      ]
-    }
-  ]
-};
-
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: false, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
-
-// Work experience section
-
-const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
-  experience: [
-    {
-      role: "",
-      company: "Caava Group",
-      companylogo: require("./assets/images/Caava Group.png"),
-      date: "",
-      link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
-      descBullets: []
-    },
-    {
-      role: "",
-      company: "CIFOR-ICRAF",
-      companylogo: require("./assets/images/CIFOR-ICRAF.png"),
-      date: "",
-      link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
-      descBullets: []
-    },
-    {
-      role: "",
-      company: "DroidCon Kenya",
-      companylogo: require("./assets/images/DroidCon Kenya.png"),
-      date: "",
-      link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
-      descBullets: []
-    },
-    {
-      role: "",
-      company: "Kinde Engineering Works Ltd.",
-      companylogo: require("./assets/images/Kinde Engineering Works Limited.png"),
-      date: "",
-      link: "https://www.linkedin.com/in/emmanuelmuturia/", // Add link attribute
-      descBullets: []
-    }
-  ]
+const productsSection = {
+  display: true
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -311,44 +178,6 @@ const blogSection = {
   display: true // Set false to hide this section, defaults to true
 };
 
-// src/portfolio.js
-const labsSection = {
-  display: false,
-  displayLabs: "true",
-  title: "Labs",
-  labs: [
-    {
-      pdfUrl: "/pdfs/lab1.pdf",
-      title: "Lab #1 [Microsoft Identity and Access Management Solutions Lab]"
-    },
-    {
-      pdfUrl: "/pdfs/lab2.pdf",
-      title: "Lab #2 [Describe Capabilities of Microsoft Security Solutions]"
-    },
-    {
-      pdfUrl: "/pdfs/lab3.pdf",
-      title: "Lab #3 [Manage Microsoft Entra ID Identities]"
-    },
-    {
-      pdfUrl: "/pdfs/lab4.pdf",
-      title: "Lab #4 [Capabilities of Microsoft Compliance Solution]"
-    },
-    {
-      pdfUrl: "/pdfs/lab5.pdf",
-      title: "Lab #5 [Manage Subscriptions and RBAC]"
-    },
-    {
-      pdfUrl: "/pdfs/lab6.pdf",
-      title: "Lab #6 [Manage Governance via Azure Policy]"
-    },
-    {
-      pdfUrl: "/pdfs/lab7.pdf",
-      title:
-        "Lab #7 [Manage Azure resources by using Azure Resource Manager Templates]"
-    }
-  ]
-};
-
 // Talks Sections
 
 const talkSection = {
@@ -359,76 +188,33 @@ const talkSection = {
     {
       title: "Application Security with Cyber Shujaa",
       subtitle: "",
-      slides_url:
-        "https://speakerdeck.com/emmanuelmuturia/application-security",
       event_url: "https://youtu.be/ThRR8PhzczQ?si=ZvdaT4fgopNCVtOZ"
     },
     {
       title:
         "The Web Application Security Demo [feat. The OWASP Top 10 and Burp Suite] with Cyber Shujaa",
       subtitle: "",
-      slides_url: "https://youtu.be/Y2dmWkDr35w?si=jdU30LAhhAo5xdfN",
       event_url: "https://youtu.be/Y2dmWkDr35w?si=jdU30LAhhAo5xdfN"
     },
     {
       title:
         "The Application Security Demo [feat. Google Cloud Build and GitLeaks] with Cyber Shujaa",
       subtitle: "",
-      slides_url: "https://youtu.be/pi36hPuP8EQ?si=F2C-SJ3fjb34H6f8",
       event_url: "https://youtu.be/pi36hPuP8EQ?si=F2C-SJ3fjb34H6f8"
     }
   ],
   display: true // Set false to hide this section, defaults to true
 };
 
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-// Resume Section
-const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Twitter Section
-
-const twitterDetails = {
-  userName: "emmanuelmuturia", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
-};
-
-const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
-
 export {
-  illustration,
   greeting,
   socialMediaLinks,
   splashScreen,
-  skillsSection,
-  educationInfo,
-  techStack,
-  workExperiences,
+  videoSection,
+  productsSection,
   openSource,
   bigProjects,
   achievementSection,
   blogSection,
-  labsSection,
-  talkSection,
-  podcastSection,
-  twitterDetails,
-  isHireable,
-  resumeSection
+  talkSection
 };

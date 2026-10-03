@@ -1,0 +1,29 @@
+.products-heading {
+    font-size: 56px;
+    font-weight: 400;
+}
+
+.products-container {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    padding: 20px 10px;
+    margin: 2rem auto 0;
+}
+
+@media (max-width: 1380px) {
+    .products-heading {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .products-heading {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .products-container {
+        align-items: center;
+    }
+}

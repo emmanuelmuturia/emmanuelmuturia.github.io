@@ -26,22 +26,9 @@
   display: flex;
 }
 
-.greeting-main > * {
+.greeting-main>* {
   flex: 1;
   margin-bottom: 30px;
-}
-
-.empty-div {
-  margin-bottom: 40px;
-}
-
-.button-greeting-div {
-  display: flex;
-  margin-top: 40px;
-}
-
-.download-link-button {
-  text-decoration: none;
 }
 
 .greeting-text {
@@ -56,7 +43,7 @@
   color: $textColorDark;
 }
 
-.greeting-image-div > img {
+.greeting-image-div>img {
   max-width: 100%;
   height: auto;
 }
@@ -111,10 +98,6 @@
 }
 
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
-
   .greeting-text {
     font-size: 24px; // Smaller name size for mobile
     text-align: center;

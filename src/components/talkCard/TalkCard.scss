@@ -1,10 +1,5 @@
 @import "../../_globalColor";
 
-.container {
-  display: flex;
-  justify-content: center;
-}
-
 .talk-card {
   position: relative;
   display: flex;
@@ -39,22 +34,6 @@
 
 .talk-card:hover::after {
   transform: scale(1.25);
-}
-
-.application-security {
-  background: #000;
-}
-
-.application-security:hover {
-  background: #000;
-}
-
-.web-security {
-  background: #000;
-}
-
-.web-security:hover {
-  background: #000;
 }
 
 .talk-card-kicker,
