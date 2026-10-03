@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.b20c32f1.css",
-    "main.js": "/static/js/main.c54c5bf4.js",
+    "main.css": "/static/css/main.f4444f37.css",
+    "main.js": "/static/js/main.ddc10b10.js",
     "static/css/141.29c476cd.chunk.css": "/static/css/141.29c476cd.chunk.css",
     "static/js/141.ba6c250e.chunk.js": "/static/js/141.ba6c250e.chunk.js",
     "static/media/Kotlin Kenya.png": "/static/media/Kotlin Kenya.5511bf8e46fd9e651597.png",
-    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/The Emmanuel Muturia™ Logo.png": "/static/media/The Emmanuel Muturia™ Logo.b025159405562550a4e0.png",
     "static/media/The Profile Photo.png": "/static/media/The Profile Photo.b025159405562550a4e0.png",
     "static/media/CCNA [Introduction To Networks].png": "/static/media/CCNA [Introduction To Networks].e09389804e884b4eccf0.png",
@@ -17,20 +16,15 @@
     "static/media/AWS Certified Cloud Practitioner.png": "/static/media/AWS Certified Cloud Practitioner.dc3e4349b946ac761f36.png",
     "static/media/Space Ya Tech.png": "/static/media/Space Ya Tech.5d003c9bbd8b436ce993.png",
     "static/media/CCNA [Routing & Switching].png": "/static/media/CCNA [Routing & Switching].c6b576afdb872e14dc96.png",
-    "static/media/Kinde Engineering Works Limited.png": "/static/media/Kinde Engineering Works Limited.de4b475154745dead907.png",
-    "static/media/CIFOR-ICRAF.png": "/static/media/CIFOR-ICRAF.786f9ede199574488fdf.png",
     "static/media/Microsoft SC-900.png": "/static/media/Microsoft SC-900.2c2acc06c013b6bfa593.png",
-    "static/media/Caava Group.png": "/static/media/Caava Group.9e88ca0b2424396a8d40.png",
-    "static/media/DroidCon Kenya.png": "/static/media/DroidCon Kenya.a3b916c52ac7a9449f25.png",
-    "static/media/resume.pdf": "/static/media/resume.f0f733dd3cd732b39262.pdf",
     "index.html": "/index.html",
-    "main.b20c32f1.css.map": "/static/css/main.b20c32f1.css.map",
-    "main.c54c5bf4.js.map": "/static/js/main.c54c5bf4.js.map",
+    "main.f4444f37.css.map": "/static/css/main.f4444f37.css.map",
+    "main.ddc10b10.js.map": "/static/js/main.ddc10b10.js.map",
     "141.29c476cd.chunk.css.map": "/static/css/141.29c476cd.chunk.css.map",
     "141.ba6c250e.chunk.js.map": "/static/js/141.ba6c250e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b20c32f1.css",
-    "static/js/main.c54c5bf4.js"
+    "static/css/main.f4444f37.css",
+    "static/js/main.ddc10b10.js"
   ]
 }
