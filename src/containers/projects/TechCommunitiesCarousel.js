@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-import "../workExperience/ExperienceCarousel.scss";
+import "../../components/carousel/Carousel.scss";
 import {bigProjects} from "../../portfolio";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronLeft, faChevronRight} from "@fortawesome/free-solid-svg-icons";
@@ -18,19 +18,15 @@ export default function TechCommunitiesCarousel() {
   };
 
   return (
-    <div className="experience-carousel-wrapper tech-communities-carousel">
+    <div className="content-carousel-wrapper tech-communities-carousel">
       <button
         className="carousel-arrow left"
         onClick={() => scroll("left")}
         aria-label="Scroll left"
       >
-        <FontAwesomeIcon
-          icon={faChevronLeft}
-          color="#fff"
-          style={{fontSize: "2.2rem"}}
-        />
+        <FontAwesomeIcon icon={faChevronLeft} />
       </button>
-      <div className="experience-carousel" ref={carouselRef}>
+      <div className="content-carousel" ref={carouselRef}>
         {bigProjects.projects.map((proj, i) => (
           <a
             key={i}
@@ -52,6 +48,8 @@ export default function TechCommunitiesCarousel() {
                 src={proj.image}
                 alt={proj.projectName}
                 className="carousel-logo"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="carousel-company">{proj.projectName}</div>
@@ -65,11 +63,7 @@ export default function TechCommunitiesCarousel() {
         onClick={() => scroll("right")}
         aria-label="Scroll right"
       >
-        <FontAwesomeIcon
-          icon={faChevronRight}
-          color="#fff"
-          style={{fontSize: "2.2rem"}}
-        />
+        <FontAwesomeIcon icon={faChevronRight} />
       </button>
     </div>
   );

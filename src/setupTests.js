@@ -6,14 +6,9 @@ jest.mock("react-awesome-reveal", () => {
     React.createElement(React.Fragment, null, children);
 
   return {
-    Fade: passthrough,
-    Slide: passthrough
+    Fade: passthrough
   };
 });
-
-jest.mock("lottie-react", () => ({
-  Lottie: () => null
-}));
 
 Object.defineProperty(window, "scrollTo", {
   value: jest.fn(),

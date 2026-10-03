@@ -31,19 +31,6 @@
   margin-bottom: 30px;
 }
 
-.empty-div {
-  margin-bottom: 40px;
-}
-
-.button-greeting-div {
-  display: flex;
-  margin-top: 40px;
-}
-
-.download-link-button {
-  text-decoration: none;
-}
-
 .greeting-text {
   font-size: 70px;
   line-height: 1.1;
@@ -111,10 +98,6 @@
 }
 
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
-
   .greeting-text {
     font-size: 24px; // Smaller name size for mobile
     text-align: center;

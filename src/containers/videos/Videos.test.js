@@ -1,6 +1,6 @@
 import React from "react";
 import {render, screen, waitFor} from "@testing-library/react";
-import Skills from "./Skills";
+import Videos from "./Videos";
 
 const videos = [
   {
@@ -35,7 +35,7 @@ test("renders the latest three videos and the channel button", async () => {
     json: async () => videos
   });
 
-  render(<Skills />);
+  render(<Videos />);
 
   await waitFor(() =>
     expect(screen.getByText("Third video")).toBeInTheDocument()

@@ -1,6 +1,6 @@
 @import "../../_globalColor";
 
-.skills-heading {
+.videos-heading {
   font-size: 56px;
   font-weight: 400;
   text-align: center;
@@ -62,15 +62,14 @@
   text-transform: uppercase;
 }
 
-/* Media Query */
 @media (max-width: 1380px) {
-  .skills-heading {
+  .videos-heading {
     font-size: 40px;
   }
 }
 
 @media (max-width: 768px) {
-  .skills-heading {
+  .videos-heading {
     font-size: 30px;
     text-align: center;
   }

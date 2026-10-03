@@ -1,10 +1,5 @@
 @import "../../_globalColor";
 
-.container {
-  display: flex;
-  justify-content: center;
-}
-
 .talk-card {
   position: relative;
   display: flex;
@@ -17,7 +12,6 @@
   border-radius: 21px;
   color: #fff;
   text-decoration: none;
-  box-shadow: $darkBoxShadow 0px 10px 30px -15px;
   transition: all 0.3s ease;
 }
 
@@ -35,30 +29,11 @@
 
 .talk-card:hover {
   color: #fff;
-  box-shadow:
-    0 0 24px 4px #fff,
-    $darkBoxShadow2 0px 20px 30px -10px;
   transform: translateY(-3px);
 }
 
 .talk-card:hover::after {
   transform: scale(1.25);
-}
-
-.application-security {
-  background: #000;
-}
-
-.application-security:hover {
-  background: #000;
-}
-
-.web-security {
-  background: #000;
-}
-
-.web-security:hover {
-  background: #000;
 }
 
 .talk-card-kicker,

@@ -35,6 +35,8 @@ export default function AchievementCard({cardInfo}) {
           src={cardInfo.image}
           alt={cardInfo.imageAlt || "Card Thumbnail"}
           className="achievement-circle-image"
+          loading="lazy"
+          decoding="async"
         />
       </div>
       <div className="achievement-circle-title">{cardInfo.title}</div>

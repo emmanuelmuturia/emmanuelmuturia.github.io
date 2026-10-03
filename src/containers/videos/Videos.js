@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react";
-import "./Skills.scss";
-import {skillsSection} from "../../portfolio";
+import "./Videos.scss";
+import {videoSection} from "../../portfolio";
 import Button from "../../components/button/Button";
 
-export default function Skills() {
+export default function Videos() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
@@ -13,13 +13,14 @@ export default function Skills() {
       .catch(() => setVideos([]));
   }, []);
 
-  if (!skillsSection.display) {
+  if (!videoSection.display) {
     return null;
   }
+
   return (
     <div className="dark-mode main" id="videos">
       <div className="videos-main-div">
-        <h1 className="dark-mode skills-heading">Videos</h1>
+        <h1 className="dark-mode videos-heading">Videos</h1>
         <div className="videos-grid">
           {videos.slice(0, 3).map(video => (
             <a
@@ -29,7 +30,12 @@ export default function Skills() {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={video.thumbnail} alt="" />
+              <img
+                src={video.thumbnail}
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
               <h2>{video.title}</h2>
               <span>Watch video &#8594;</span>
             </a>

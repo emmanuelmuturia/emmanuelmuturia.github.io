@@ -1,7 +1,6 @@
 import React from "react";
 import "./GithubRepoCard.scss";
 import {Fade} from "react-awesome-reveal";
-import {formatFileSizeDisplay} from "../../utils";
 
 export default function GithubRepoCard({repo}) {
   function openUrlInNewTab(url, name) {
@@ -83,9 +82,6 @@ export default function GithubRepoCard({repo}) {
                 <p>{repo.node.stargazers.totalCount}</p>
               </span>
             </div>
-            {/* <div className="repo-right-stat">
-              <p>{formatFileSizeDisplay(repo.node.diskUsage)}</p>
-            </div> */}
           </div>
         </div>
       </div>
