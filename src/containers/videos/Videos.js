@@ -30,7 +30,12 @@ export default function Videos() {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <img src={video.thumbnail} alt="" />
+                            <img
+                                src={video.thumbnail}
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                            />
                             <h2>{video.title}</h2>
                             <span>Watch video &#8594;</span>
                         </a>

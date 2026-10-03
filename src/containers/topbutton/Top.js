@@ -1,5 +1,7 @@
 import React from "react";
 import "./Top.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 export default function Top() {
   function TopEvent() {
@@ -26,7 +28,7 @@ export default function Top() {
   // When the user clicks on the button, scroll to the top of the document
   return (
     <button onClick={TopEvent} id="topButton" title="Go to top">
-      <i className="fas fa-hand-point-up" aria-hidden="true"></i>
+      <FontAwesomeIcon icon={faArrowUp} aria-hidden="true" />
     </button>
   );
 }

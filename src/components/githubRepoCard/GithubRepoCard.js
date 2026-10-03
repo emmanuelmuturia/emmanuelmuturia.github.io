@@ -1,8 +1,8 @@
 import React from "react";
 import "./GithubRepoCard.scss";
-import { Fade } from "react-awesome-reveal";
+import {Fade} from "react-awesome-reveal";
 
-export default function GithubRepoCard({ repo }) {
+export default function GithubRepoCard({repo}) {
   function openUrlInNewTab(url, name) {
     if (!url) {
       return;
@@ -42,7 +42,7 @@ export default function GithubRepoCard({ repo }) {
                 <span>
                   <div
                     className="language-color"
-                    style={{ backgroundColor: repo.node.primaryLanguage.color }}
+                    style={{backgroundColor: repo.node.primaryLanguage.color}}
                   ></div>
                   <p>{repo.node.primaryLanguage.name}</p>
                 </span>

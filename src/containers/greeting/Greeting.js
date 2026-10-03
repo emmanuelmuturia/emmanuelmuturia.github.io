@@ -27,6 +27,8 @@ export default function Greeting() {
               alt="Greeting Visual"
               src={require("../../assets/images/The Profile Photo.png")}
               className="greeting-replacement-image"
+              fetchPriority="high"
+              decoding="async"
             />
           </div>
         </div>

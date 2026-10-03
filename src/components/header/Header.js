@@ -31,7 +31,13 @@ function Header() {
     <Headroom>
       <header className="header">
         <a href="/" className="logo">
-          <img src={logo} alt="Logo" className="site-logo" />
+          <img
+            src={logo}
+            alt="Logo"
+            className="site-logo"
+            fetchPriority="high"
+            decoding="async"
+          />
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label

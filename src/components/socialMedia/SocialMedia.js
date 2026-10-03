@@ -1,6 +1,19 @@
 import React from "react";
 import "./SocialMedia.scss";
 import { socialMediaLinks } from "../../portfolio";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDiscord,
+  faGithub,
+  faInstagram,
+  faLinkedinIn,
+  faMedium,
+  faRedditAlien,
+  faSnapchat,
+  faTiktok,
+  faXTwitter,
+  faYoutube
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
@@ -15,7 +28,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-github"></i>
+          <FontAwesomeIcon icon={faGithub} aria-hidden="true" />
           <span></span>
         </a>
       ) : null}
@@ -27,7 +40,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-linkedin-in"></i>
+          <FontAwesomeIcon icon={faLinkedinIn} aria-hidden="true" />
           <span></span>
         </a>
       ) : null}
@@ -39,7 +52,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-instagram"></i>
+          <FontAwesomeIcon icon={faInstagram} aria-hidden="true" />
           <span></span>
         </a>
       ) : null}
@@ -51,7 +64,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-medium"></i>
+          <FontAwesomeIcon icon={faMedium} aria-hidden="true" />
           <span></span>
         </a>
       ) : null}
@@ -63,7 +76,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-youtube"></i>
+          <FontAwesomeIcon icon={faYoutube} aria-hidden="true" />
           <span></span>
         </a>
       ) : null}
@@ -75,7 +88,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-twitter"></i>
+          <FontAwesomeIcon icon={faXTwitter} aria-hidden="true" />
           <span></span>
         </a>
       ) : null}
@@ -87,7 +100,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-tiktok"></i>
+          <FontAwesomeIcon icon={faTiktok} aria-hidden="true" />
           <span></span>
         </a>
       ) : null}
@@ -99,7 +112,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-discord"></i>
+          <FontAwesomeIcon icon={faDiscord} aria-hidden="true" />
           <span></span>
         </a>
       ) : null}
@@ -111,7 +124,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-reddit-alien"></i>
+          <FontAwesomeIcon icon={faRedditAlien} aria-hidden="true" />
           <span></span>
         </a>
       ) : null}
@@ -123,7 +136,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-snapchat"></i>
+          <FontAwesomeIcon icon={faSnapchat} aria-hidden="true" />
           <span></span>
         </a>
       ) : null}

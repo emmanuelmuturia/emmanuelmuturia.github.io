@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Videos from "./videos/Videos";
@@ -11,7 +11,7 @@ import Footer from "../components/footer/Footer";
 import Talks from "./talks/Talks";
 import ScrollToTopButton from "./topbutton/Top";
 import SplashScreen from "./splashScreen/SplashScreen";
-import { splashScreen } from "../portfolio";
+import {splashScreen} from "../portfolio";
 import "./Main.scss";
 
 const Main = () => {

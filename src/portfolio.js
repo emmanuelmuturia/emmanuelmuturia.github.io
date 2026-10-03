@@ -8,7 +8,7 @@ import emoji from "react-easy-emoji";
 
 const splashScreen = {
   enabled: true, // set false to disable splash screen
-  duration: 2000 // Set animation duration as per your animation
+  duration: 800
 };
 
 const greeting = {

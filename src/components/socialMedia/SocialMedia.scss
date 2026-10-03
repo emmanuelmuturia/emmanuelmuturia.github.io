@@ -6,7 +6,7 @@
   margin-bottom: 10px;
 }
 
-.icon-button i {
+.icon-button svg {
   background: #fff !important;
   color: #000 !important;
   border-radius: 50% !important;
@@ -26,7 +26,7 @@
     transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-button i:hover {
+.icon-button svg:hover {
   transform: scale(1.13);
   z-index: 2;
   /* No background or color change on hover */

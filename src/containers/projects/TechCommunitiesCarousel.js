@@ -48,6 +48,8 @@ export default function TechCommunitiesCarousel() {
                 src={proj.image}
                 alt={proj.projectName}
                 className="carousel-logo"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="carousel-company">{proj.projectName}</div>
