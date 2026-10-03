@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "Montserrat";
-  src:
-    local("Montserrat"),
-    url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
-  font-display: swap;
-}
-
 code {
   font-family:
     source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -19,9 +11,10 @@ body {
 body {
   margin: 0;
   font:
-    19px / 23px Montserrat,
-    "Montserrat",
-    sans-serif;
+    19px / 23px "Architects Daughter",
+    cursive;
+  font-weight: 400;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #000 !important;

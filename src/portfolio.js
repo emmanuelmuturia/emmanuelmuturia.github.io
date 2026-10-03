@@ -12,7 +12,7 @@ const splashScreen = {
 };
 
 const greeting = {
-  title: "Hi, my name is Emmanuel Muturia™...",
+  title: "Hi, my name is Emmanuel Muturia...",
   subTitle: emoji(
     "Hi, my name is Emmanuel Muturia, and I help fight Crime on The Internet through my practice in Product Security Engineering. Since 2019, I have been practising Computer Networking & Cyber Security [Telecommunications] and have acquired the foundational Knowledge required for my Career in Cyber Security. I work with Cyber Security Teams to help Businesses and Companies secure their Digital Products, therefore saving Costs incurred by Cyber Attacks and Security Breaches. I intend to leverage my Brand and other Resources to empower The General Population [GenPop] to protect their Digital Assets through Education and Awareness in Cyber Security, thereby creating a safer Cyber Space..."
   ),
