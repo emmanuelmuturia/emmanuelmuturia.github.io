@@ -357,7 +357,7 @@ const talkSection = {
 
   talks: [
     {
-      title: "Application Security",
+      title: "Application Security with Cyber Shujaa",
       subtitle: "",
       slides_url:
         "https://speakerdeck.com/emmanuelmuturia/application-security",
@@ -365,10 +365,17 @@ const talkSection = {
     },
     {
       title:
-        "The Web Application Security Demo [feat. The OWASP Top 10 and Burp Suite] with Emmanuel Muturia",
+        "The Web Application Security Demo [feat. The OWASP Top 10 and Burp Suite] with Cyber Shujaa",
       subtitle: "",
       slides_url: "https://youtu.be/Y2dmWkDr35w?si=jdU30LAhhAo5xdfN",
       event_url: "https://youtu.be/Y2dmWkDr35w?si=jdU30LAhhAo5xdfN"
+    },
+    {
+      title:
+        "The Application Security Demo [feat. Google Cloud Build and GitLeaks] with Cyber Shujaa",
+      subtitle: "",
+      slides_url: "https://youtu.be/pi36hPuP8EQ?si=F2C-SJ3fjb34H6f8",
+      event_url: "https://youtu.be/pi36hPuP8EQ?si=F2C-SJ3fjb34H6f8"
     }
   ],
   display: true // Set false to hide this section, defaults to true
