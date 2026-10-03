@@ -1,8 +1,8 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import "../workExperience/ExperienceCarousel.scss";
-import {bigProjects} from "../../portfolio";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faChevronLeft, faChevronRight} from "@fortawesome/free-solid-svg-icons";
+import { bigProjects } from "../../portfolio";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function TechCommunitiesCarousel() {
   const carouselRef = useRef(null);
@@ -24,11 +24,7 @@ export default function TechCommunitiesCarousel() {
         onClick={() => scroll("left")}
         aria-label="Scroll left"
       >
-        <FontAwesomeIcon
-          icon={faChevronLeft}
-          color="#fff"
-          style={{fontSize: "2.2rem"}}
-        />
+        <FontAwesomeIcon icon={faChevronLeft} />
       </button>
       <div className="experience-carousel" ref={carouselRef}>
         {bigProjects.projects.map((proj, i) => (
@@ -65,11 +61,7 @@ export default function TechCommunitiesCarousel() {
         onClick={() => scroll("right")}
         aria-label="Scroll right"
       >
-        <FontAwesomeIcon
-          icon={faChevronRight}
-          color="#fff"
-          style={{fontSize: "2.2rem"}}
-        />
+        <FontAwesomeIcon icon={faChevronRight} />
       </button>
     </div>
   );
