@@ -1,12 +1,12 @@
 const fs = require("fs");
 const https = require("https");
+const {XMLParser} = require("fast-xml-parser");
 require("dotenv").config();
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GITHUB_USERNAME = process.env.GITHUB_USERNAME;
 const USE_GITHUB_DATA = process.env.USE_GITHUB_DATA;
 const MEDIUM_USERNAME = process.env.MEDIUM_USERNAME;
-const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 const YOUTUBE_CHANNEL_ID = process.env.YOUTUBE_CHANNEL_ID;
 
 const TIMEOUT = 15000; // 15 seconds
@@ -18,8 +18,7 @@ const ERR = {
     "❌ Request to GitHub failed. Check the GitHub token or connectivity.",
   requestFailedMedium:
     "❌ Request to Medium failed. Check Medium username or connectivity.",
-  requestFailedYouTube:
-    "❌ Request to YouTube failed. Check the API key, channel ID, or quota."
+  requestFailedYouTube: "❌ Failed to fetch the public YouTube channel feed."
 };
 
 function safeRequest(options, dataToSend, onSuccess, onFail) {
@@ -127,8 +126,8 @@ function saveVideos(videos) {
 
 function fetchYouTubeRss() {
   const rssOptions = {
-    hostname: "api.rss2json.com",
-    path: `/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?channel_id=${YOUTUBE_CHANNEL_ID}`,
+    hostname: "www.youtube.com",
+    path: `/feeds/videos.xml?channel_id=${encodeURIComponent(YOUTUBE_CHANNEL_ID)}`,
     port: 443,
     method: "GET",
     family: 4,
@@ -139,16 +138,38 @@ function fetchYouTubeRss() {
     rssOptions,
     null,
     rssData => {
-      const feed = JSON.parse(rssData);
-      saveVideos(
-        (feed.items || []).map(item => ({
-          id: item.guid.replace("yt:video:", ""),
-          title: item.title,
-          description: item.description,
-          thumbnail: item.thumbnail,
-          url: item.link
-        }))
-      );
+      const feed = new XMLParser({ignoreAttributes: false}).parse(rssData);
+      const entries = feed.feed?.entry || [];
+      const latestVideos = (Array.isArray(entries) ? entries : [entries])
+        .map(entry => {
+          const id = entry["yt:videoId"];
+          const links = Array.isArray(entry.link) ? entry.link : [entry.link];
+          const alternateLink = links.find(
+            link => link?.["@_rel"] === "alternate"
+          );
+          const thumbnails = entry["media:group"]?.["media:thumbnail"];
+          const thumbnail = Array.isArray(thumbnails)
+            ? thumbnails[0]
+            : thumbnails;
+
+          return {
+            id,
+            title: entry.title,
+            description: entry["media:group"]?.["media:description"] || "",
+            thumbnail: thumbnail?.["@_url"],
+            url:
+              alternateLink?.["@_href"] ||
+              `https://www.youtube.com/watch?v=${id}`
+          };
+        })
+        .filter(video => video.id && video.title && video.thumbnail);
+
+      if (latestVideos.length === 0) {
+        console.error(ERR.requestFailedYouTube);
+        return;
+      }
+
+      saveVideos(latestVideos);
     },
     err => console.error(ERR.requestFailedYouTube, err.message)
   );
@@ -253,65 +274,7 @@ if (MEDIUM_USERNAME) {
   );
 }
 
-if (YOUTUBE_API_KEY && YOUTUBE_CHANNEL_ID) {
+if (YOUTUBE_CHANNEL_ID) {
   console.log("▶️ Fetching latest YouTube videos...");
-
-  const channelPath = `/youtube/v3/channels?part=contentDetails&id=${YOUTUBE_CHANNEL_ID}&key=${YOUTUBE_API_KEY}`;
-  const channelOptions = {
-    hostname: "www.googleapis.com",
-    path: channelPath,
-    port: 443,
-    method: "GET",
-    family: 4,
-    timeout: TIMEOUT
-  };
-
-  safeRequest(
-    channelOptions,
-    null,
-    channelData => {
-      const channel = JSON.parse(channelData);
-      const uploadsPlaylistId =
-        channel.items?.[0]?.contentDetails?.relatedPlaylists?.uploads;
-
-      if (!uploadsPlaylistId) {
-        console.error(ERR.requestFailedYouTube);
-        return;
-      }
-
-      const videosPath = `/youtube/v3/playlistItems?part=snippet&maxResults=3&playlistId=${uploadsPlaylistId}&key=${YOUTUBE_API_KEY}`;
-      const videosOptions = {...channelOptions, path: videosPath};
-
-      safeRequest(
-        videosOptions,
-        null,
-        videosData => {
-          const videos = JSON.parse(videosData);
-          const latestVideos = (videos.items || []).map(item => ({
-            id: item.snippet.resourceId.videoId,
-            title: item.snippet.title,
-            description: item.snippet.description,
-            thumbnail:
-              item.snippet.thumbnails?.high?.url ||
-              item.snippet.thumbnails?.medium?.url,
-            url: `https://www.youtube.com/watch?v=${item.snippet.resourceId.videoId}`
-          }));
-
-          saveVideos(latestVideos);
-        },
-        err => {
-          console.error(
-            `⚠️ YouTube API unavailable (${err.message}). Using RSS fallback.`
-          );
-          fetchYouTubeRss();
-        }
-      );
-    },
-    err => {
-      console.error(
-        `⚠️ YouTube API unavailable (${err.message}). Using RSS fallback.`
-      );
-      fetchYouTubeRss();
-    }
-  );
+  fetchYouTubeRss();
 }
