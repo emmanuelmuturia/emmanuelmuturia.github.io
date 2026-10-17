@@ -16,8 +16,7 @@ const ERR = {
     "❌ GitHub Username is undefined. Please set all relevant environment variables.",
   requestFailed:
     "❌ Request to GitHub failed. Check the GitHub token or connectivity.",
-  requestFailedMedium:
-    "❌ Request to Medium failed. Check Medium username or connectivity.",
+  requestFailedMedium: "❌ Failed to fetch the public Medium feed.",
   requestFailedYouTube: "❌ Failed to fetch the public YouTube channel feed."
 };
 
@@ -251,8 +250,8 @@ if (MEDIUM_USERNAME) {
   console.log(`📰 Fetching Medium blogs for "${MEDIUM_USERNAME}"...`);
 
   const mediumOptions = {
-    hostname: "api.rss2json.com",
-    path: `/v1/api.json?rss_url=https://medium.com/feed/@${MEDIUM_USERNAME}`,
+    hostname: "medium.com",
+    path: `/feed/@${encodeURIComponent(MEDIUM_USERNAME)}`,
     port: 443,
     method: "GET",
     family: 4,
@@ -262,14 +261,28 @@ if (MEDIUM_USERNAME) {
   safeRequest(
     mediumOptions,
     null,
-    data => {
-      fs.writeFile("./public/blogs.json", data, err => {
+    feedData => {
+      const feed = new XMLParser({ignoreAttributes: false}).parse(feedData);
+      const entries = feed.rss?.channel?.item || [];
+      const items = (Array.isArray(entries) ? entries : [entries]).map(
+        item => ({
+          title: item.title || "",
+          link: item.link || "",
+          guid: item.guid || item.link || "",
+          author: item["dc:creator"] || "",
+          pubDate: item.pubDate || "",
+          content: item["content:encoded"] || item.description || "",
+          thumbnail: ""
+        })
+      );
+
+      fs.writeFile("./public/blogs.json", JSON.stringify({items}), err => {
         if (err) console.error("❌ Failed to write Medium data:", err);
         else console.log("✅ Saved Medium data to public/blogs.json");
       });
     },
     err => {
-      console.error("❌ Medium fetch failed:", err.message);
+      console.error(ERR.requestFailedMedium, err.message);
     }
   );
 }
