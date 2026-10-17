@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import "./Videos.scss";
-import { videoSection } from "../../portfolio";
+import {videoSection} from "../../portfolio";
 import Button from "../../components/button/Button";
 
 export default function Videos() {

@@ -1,6 +1,6 @@
 const fs = require("fs");
 const https = require("https");
-const { XMLParser } = require("fast-xml-parser");
+const {XMLParser} = require("fast-xml-parser");
 require("dotenv").config();
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
@@ -86,12 +86,12 @@ function fetchPublicRepositories() {
           name: repository.name,
           description: repository.description,
           forkCount: repository.forks_count,
-          stargazers: { totalCount: repository.stargazers_count },
+          stargazers: {totalCount: repository.stargazers_count},
           url: repository.html_url,
           id: repository.node_id,
           diskUsage: 0,
           primaryLanguage: repository.language
-            ? { name: repository.language, color: "#888" }
+            ? {name: repository.language, color: "#888"}
             : null
         }
       }));
@@ -103,7 +103,7 @@ function fetchPublicRepositories() {
             bio: "",
             avatarUrl: "",
             location: null,
-            pinnedItems: { edges }
+            pinnedItems: {edges}
           }
         }
       });
@@ -137,7 +137,7 @@ function fetchYouTubeRss() {
     rssOptions,
     null,
     rssData => {
-      const feed = new XMLParser({ ignoreAttributes: false }).parse(rssData);
+      const feed = new XMLParser({ignoreAttributes: false}).parse(rssData);
       const entries = feed.feed?.entry || [];
       const latestVideos = (Array.isArray(entries) ? entries : [entries])
         .map(entry => {
@@ -262,7 +262,7 @@ if (MEDIUM_USERNAME) {
     mediumOptions,
     null,
     feedData => {
-      const feed = new XMLParser({ ignoreAttributes: false }).parse(feedData);
+      const feed = new XMLParser({ignoreAttributes: false}).parse(feedData);
       const entries = feed.rss?.channel?.item || [];
       const items = (Array.isArray(entries) ? entries : [entries]).map(
         item => ({
@@ -276,7 +276,7 @@ if (MEDIUM_USERNAME) {
         })
       );
 
-      fs.writeFile("./public/blogs.json", JSON.stringify({ items }), err => {
+      fs.writeFile("./public/blogs.json", JSON.stringify({items}), err => {
         if (err) console.error("❌ Failed to write Medium data:", err);
         else console.log("✅ Saved Medium data to public/blogs.json");
       });
