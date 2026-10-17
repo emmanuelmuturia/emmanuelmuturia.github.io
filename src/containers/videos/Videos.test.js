@@ -1,5 +1,5 @@
 import React from "react";
-import {render, screen, waitFor} from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import Videos from "./Videos";
 
 const videos = [
@@ -42,14 +42,14 @@ test("renders the latest three videos and the channel button", async () => {
   );
 
   expect(
-    screen.getByRole("heading", {name: "First video"})
+    screen.getByRole("heading", { name: "First video" })
   ).toBeInTheDocument();
-  const watchButtons = screen.getAllByRole("link", {name: "Watch Video"});
+  const watchButtons = screen.getAllByRole("link", { name: "Watch Video" });
   expect(watchButtons).toHaveLength(3);
   expect(watchButtons[0]).toHaveAttribute("href", "https://youtu.be/one");
   expect(screen.getAllByRole("link")).toHaveLength(7);
   expect(screen.queryByText("Fourth video")).not.toBeInTheDocument();
-  expect(screen.getByRole("link", {name: "More Videos"})).toHaveAttribute(
+  expect(screen.getByRole("link", { name: "More Videos" })).toHaveAttribute(
     "href",
     "https://www.youtube.com/@emmanuelmuturia"
   );
