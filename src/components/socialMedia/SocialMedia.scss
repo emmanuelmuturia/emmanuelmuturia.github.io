@@ -1,40 +1,32 @@
 .social-media-div {
-  font-size: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
 }
 
 .icon-button {
-  margin-bottom: 10px;
+  display: inline-flex;
+  width: 2.85rem;
+  height: 2.85rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease;
 }
 
 .icon-button svg {
-  background: #fff !important;
-  color: #000 !important;
-  border-radius: 50% !important;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.3rem;
-  height: 2.6rem;
-  line-height: 2.6rem;
-  margin: 0 5px;
-  position: relative;
-  text-align: center;
-  width: 2.6rem;
-  margin-bottom: 10px;
-  transition:
-    0.2s ease-in,
-    transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #fff;
+  fill: currentColor;
 }
 
-.icon-button svg:hover {
-  transform: scale(1.13);
-  z-index: 2;
-  /* No background or color change on hover */
-}
-
-/* Media Query */
-@media (max-width: 768px) {
-  .social-media-div {
-    text-align: center;
-  }
+.icon-button:hover,
+.icon-button:focus-visible {
+  transform: scale(1.1);
 }
