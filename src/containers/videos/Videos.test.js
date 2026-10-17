@@ -41,7 +41,13 @@ test("renders the latest three videos and the channel button", async () => {
     expect(screen.getByText("Third video")).toBeInTheDocument()
   );
 
-  expect(screen.getAllByRole("link")).toHaveLength(4);
+  expect(
+    screen.getByRole("heading", {name: "First video"})
+  ).toBeInTheDocument();
+  const watchButtons = screen.getAllByRole("link", {name: "Watch Video"});
+  expect(watchButtons).toHaveLength(3);
+  expect(watchButtons[0]).toHaveAttribute("href", "https://youtu.be/one");
+  expect(screen.getAllByRole("link")).toHaveLength(7);
   expect(screen.queryByText("Fourth video")).not.toBeInTheDocument();
   expect(screen.getByRole("link", {name: "More Videos"})).toHaveAttribute(
     "href",

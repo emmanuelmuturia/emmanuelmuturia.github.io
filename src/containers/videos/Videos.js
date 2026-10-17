@@ -23,22 +23,29 @@ export default function Videos() {
         <h1 className="dark-mode videos-heading">Videos</h1>
         <div className="videos-grid">
           {videos.slice(0, 3).map(video => (
-            <a
-              className="video-card"
-              href={video.url}
-              key={video.id}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={video.thumbnail}
-                alt=""
-                loading="lazy"
-                decoding="async"
+            <div className="video-item" key={video.id}>
+              <a
+                className="video-card"
+                href={video.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Open video: ${video.title}`}
+              >
+                <img
+                  src={video.thumbnail}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <h2 className="video-title">{video.title}</h2>
+              <Button
+                text="Watch Video"
+                href={video.url}
+                newTab={true}
+                className="video-watch-button"
               />
-              <h2>{video.title}</h2>
-              <span>Watch video &#8594;</span>
-            </a>
+            </div>
           ))}
         </div>
         <Button
