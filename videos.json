@@ -1,23 +1,23 @@
 [
   {
-    "id": "8ix3z_XT2uo",
-    "title": "The First Ever Computer Worm [The Morris Worm]",
-    "description": "",
-    "thumbnail": "https://i1.ytimg.com/vi/8ix3z_XT2uo/hqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=8ix3z_XT2uo"
+    "id": "wehKgIChG-Q",
+    "title": "Lab #1] Exploiting LLM APIs with Excessive Agency [Web Security Academy by PortSwigger]",
+    "description": "Check out this Lab that I did on: Exploiting LLM APIs with Excessive Agency\n\nIn it, I demonstrated how LLM APIs work and how to map an LLM API Attack Surface to delete a User from an SQL Database. To do this, I used this Methodology:\n\n#1] Identify the LLM's Inputs, including both Direct [Such as a Prompt...] and Indirect [Such as Training Data...] Inputs...\n\n#2] Determine what Data and APIs the LLM can access...\n\n#3] Probe this new Attack Surface for Vulnerabilities...\n\nThank you to @PortSwiggerTV for offering Web Security Academy, which allowed Me to showcase this Demo...",
+    "thumbnail": "https://i4.ytimg.com/vi/wehKgIChG-Q/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=wehKgIChG-Q"
   },
   {
-    "id": "UbuhFdFDzJU",
-    "title": "The Most Expensive Typo in Hacking History",
-    "description": "",
-    "thumbnail": "https://i2.ytimg.com/vi/UbuhFdFDzJU/hqdefault.jpg",
-    "url": "https://www.youtube.com/shorts/UbuhFdFDzJU"
+    "id": "VE8W3qzLbaM",
+    "title": "The Biggest Unsolved Hacking Mystery [Cicada 3301]",
+    "description": "This is the biggest unsolved Mystery on The Internet as far as Hacking is concerned:\n\nIn January 2012, a mysterious Photo was posted Online with a simple Message: \"We are looking for highly intelligent individuals. To find them, we have devised a test.\" What followed became the most complex, mind-bending Puzzle in Internet History...\n\nA group going by \"Cicada 3301\" set off a global digital Scavenger Hunt. The Puzzle started with a single Photo. Hidden inside it was a secret Message. Solving it led People through Layers of Cryptography, Steganography, Ancient Books, Phone Numbers, and even physical Posters placed in Cities across the World, from Paris to Seoul to Sydney. Those who made it far enough were pulled into The Dark Web. Three Rounds of these Puzzles were released between 2012 and 2014. The final one remains unsolved to this Day…\n\nThen, just as mysteriously as it appeared, Cicada vanished. No company claimed it. No Government admitted creating it. And no verified Explanation has ever revealed its true Purpose. More than a Decade later, Cicada 3301 remains one of The Internet's greatest unsolved Mysteries...\n\nWas Cicada 3301 a Secret Society, an Intelligence Agency recruiting Talent, or the ultimate Hacker Puzzle? Nobody knows for sure. What do you believe it really was? Comment down below…\n\nSubscribe for more Cyber Stories, and send this to your Friend, will ya?",
+    "thumbnail": "https://i3.ytimg.com/vi/VE8W3qzLbaM/hqdefault.jpg",
+    "url": "https://www.youtube.com/shorts/VE8W3qzLbaM"
   },
   {
-    "id": "kJCs6C7h50I",
-    "title": "How To Build and Secure a CICD Pipeline [feat. Google Cloud Build and GitLeaks]",
-    "description": "",
-    "thumbnail": "https://i4.ytimg.com/vi/kJCs6C7h50I/hqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=kJCs6C7h50I"
+    "id": "8zqypyYSXH8",
+    "title": "The Capstone Project [Google Cybersecurity Certificate]",
+    "description": "[The Video Chapters]\n\n00:00 - The Introduction\n05:57 - Task #1 [Analyse The Data Breach and Gather Information]\n21:55 - Task #2 [Fix The Compute Engine Vulnerabilities]\n27:15 - Challenge [Delete The Compromised VM]\n28:19 - Task #3 [Fix Cloud Storage Bucket Permissions]\n29:35 - Challenge [Modify Storage Bucket Access]\n31:46 - Task #4 [Limit Firewall Ports Access]\n32:56 - Challenge [Restrict SSH Access]\n35:29 - Task #5 [Fix The Firewall Configuration]\n36:06 - Challenge [Customise Firewall Rules]\n37:09 - Challenge [Enable Logging]\n39:52 - Task #6 [Verify Compliance]\n43:57 - The Conclusion\n\nFor the last Year, you have been working as a Junior Cloud Security Analyst at Cymbal Retail. Cymbal Retail is a Market Powerhouse currently operating 170 Physical Stores and an Online Platform across 28 Countries. They reported $15 Billion in Revenue in 2022, and currently employ 80,400 Employees across the World.\n\nCymbal Retail boasts a vast Customer Base with a Multitude of Transactions happening daily on its Online Platform. The Organisation is committed to the Safety and Security of its Customers, Employees, and its Assets, ensuring that its Operations meet Internal and External Regulatory Compliance Expectations in all the Countries it operates in. Recently, the Company has experienced a massive Data Breach. As a Junior Member of The Security Team, you will help support The Security Team through the Lifecycle of this Security Incident. You will begin by identifying the Vulnerabilities related to the Breach, isolate and contain the Breach to prevent further Unauthorised Access, recover the compromised Systems, remediate any outstanding Compliance-related Issues, and verify Compliance with Frameworks.\n\nHere is how you will do this Task: First, you will examine the Vulnerabilities and Findings in Google Cloud Security Command Center. Next, you will shut the old VM down, and create a new VM from a Snapshot. Then, you will revoke Public Access to the Storage Bucket and switch to Uniform Bucket-Level Access Control. Next, you will limit the Firewall Ports Access and fix the Firewall Rules. Finally, you will run a Report to verify the Remediation of the Vulnerabilities...",
+    "thumbnail": "https://i1.ytimg.com/vi/8zqypyYSXH8/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=8zqypyYSXH8"
   }
 ]
