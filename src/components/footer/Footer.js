@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer-social-media">
           <SocialMedia />
         </div>
-        <p className="footer-text">{`© ${new Date().getFullYear()} by Emmanuel Muturia™`}</p>
+        <p className="footer-text">{`© ${new Date().getFullYear()} by Emmanuel Muturia`}</p>
       </div>
     </Fade>
   );
